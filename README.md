@@ -1,5 +1,10 @@
 # Final Project
 
+## Team Rule
+- 1
+- 2
+- 3
+
 ## DATA SET
 
 - 한국인 피부상태 데이터 (AIhub, 20기가)  [URL](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=71645)
