@@ -19,6 +19,10 @@
     - 피부병데이터2 - Kaggle, 7기가
       https://www.kaggle.com/datasets/ascanipek/skin-diseases
 
+■ Project PresenTation
+  - ??
+  - https://docs.google.com/presentation/d/1KoZi7Lba4PqW8EeTFeQRpXGDAW5UB0PrljZSdNT08V8/edit#slide=id.g3286aeb0b69_0_5
+
 ■ Process of developing ml
 
 ■ Process of Web-Page
