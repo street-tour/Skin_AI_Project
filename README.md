@@ -5,7 +5,7 @@
 - 2
 - 3
 
-## DATA SET
+## Data Set
 
 - 한국인 피부상태 데이터 (AIhub, 20기가)  [URL](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=71645)
 
@@ -21,4 +21,5 @@
 ## Process of developing ml
 
 ## Process of Web-Page
-- free admin web template : 웹에 사용할 템플릿 고르기 HTML, Bootstrap 기반 중에서 선택 (템플릿 설명에 어떤 엔진 기반인지 설명되 있음)
+- 웹 템플릿 고르기 : 웹에 사용할 템플릿 고르기 HTML, Bootstrap 기반 중에서 선택 (템플릿 설명에 어떤 엔진 기반인지 설명되 있음)
+  *구글에 free admin web template 검색해서 맘에드는 사이트 접속
