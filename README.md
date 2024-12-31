@@ -3,6 +3,7 @@
 ■ DATA SET 
 
   ● AIHUB에서 선택한 데이터
+  
     - 한국인 피부상태 데이터 - AIhub, 20기가
       https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=71645
 
