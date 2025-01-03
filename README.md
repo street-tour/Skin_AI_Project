@@ -1,11 +1,12 @@
 # Final Project
 
 ## Team Rule
-- 1
+- 1 
 - 2
 - 3
-- 
+
 ## 해결과제
+- 1/10까지 모델 마무리
 
 - Normal skin dataset 찾기
 - 알러지, 민감도, 지성/건성 피부데이터 찾기
