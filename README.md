@@ -8,7 +8,7 @@
 ## 해결과제
 
 - Normal skin dataset 찾기
-
+- 알러지, 민감도, 지성/건성 피부데이터 찾기
 
 ## Data Set
 
