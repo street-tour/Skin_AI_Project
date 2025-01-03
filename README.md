@@ -4,6 +4,11 @@
 - 1
 - 2
 - 3
+- 
+## 해결과제
+
+- Normal skin dataset 찾기
+
 
 ## Data Set
 
@@ -24,3 +29,5 @@
 ## Process of Web-Page
 - 웹 템플릿 고르기 : HTML, Bootstrap 기반 중에서 선택 (템플릿 설명에 어떤 엔진 기반인지 설명되 있음)<br>
   *구글에 free admin web template 검색해서 맘에드는 사이트 접속
+
+
