@@ -1,0 +1,8 @@
+네이버 마이박스 링크
+http://naver.me/F9NrUtAu
+
+데이터 내용
+Test_Data_Sets_01.pkl : 전면, 이마, 핸드폰, 색소침착
+
+Test_Data_Sets_02.pkl : 전면, 이마, 핸드폰, 제이슨파일전체
+
