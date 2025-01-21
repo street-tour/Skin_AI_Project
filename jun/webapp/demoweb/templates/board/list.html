@@ -1,0 +1,52 @@
+{% extends 'base_with_layout.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+            <h5 class="card-header">게시판</h5>
+            <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th scope="col">글번호</th>
+                            <th scope="col">제목</th>
+                            <th scope="col">작성자</th>
+                            <th scope="col">조회수</th>
+                            <th scope="col">작성일자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {% for board in boards %}
+                        <tr>
+                            <td class = "text-center">{{board['boardno']}}</td>
+                            <td>
+                                <a href = {{url_for('board.detail', boardno=board['boardno'])}}>{{board['title']}}</a>
+                            </td>
+                            <td class= "text-center">{{board['writer']}}</td>
+                            <td class= "text-center">{{board['readcount']}}</td>
+                            <td class= "text-center">{{board['writedate']}}</td>
+                            
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-12 text-right">
+        <button id = 'btn-write' type = "button" class="btn btn-outline-primary">글쓰기</button>
+    </div>
+</div>
+{% endblock %}
+
+{% block js_block %}
+<script>
+$(function(){
+    $('#btn-write').on('click', function(event){
+        //loaction.href = "/board/write/"; // 브라우저의 주소입력 위치에 'write'를 입력
+        location.href = "{{ url_for('board.write') }}"
+    });
+});
+</script>
+{% endblock %}
