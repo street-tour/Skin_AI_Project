@@ -24,6 +24,7 @@
   
 ## Project Presentation 
 - First-Presentation : [URL](https://docs.google.com/presentation/d/1KoZi7Lba4PqW8EeTFeQRpXGDAW5UB0PrljZSdNT08V8/edit#slide=id.g3286aeb0b69_0_5)
+- Seccond-Presentation : [URL](https://docs.google.com/presentation/d/11dHcHlZf1_au6vkZgwPYY-Yb2CRok7WV7OGGPuxrKHI/edit?usp=sharing)
   
 ## Process of project
 - 한국인 피부상태 데이터를 이용한 모델 개발 프로토콜 확립 (25.01.17)
