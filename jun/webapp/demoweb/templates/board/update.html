@@ -8,13 +8,15 @@
                 <strong>게시글 내용 보기</strong>
             </div>
             <div class="card-body card-block">
-                <form class="form-horizontal">
+                <form   id="update-form"
+                        action = "{{url_for('board.update')}}" method="post" class="form-horizontal">
+                    <input type="hidden" name="boardno" value="{{board['boardno']}}">
                     <div class="row form-group">
                         <div class="col col-md-2">
                             <label for="title" class=" form-control-label">제목</label>
                         </div>
                         <div class="col-12 col-md-10">
-                            <input type="text" id="title" readonly class="form-control" value ="{{board['title']}}">
+                            <input type="text" id="title" name = "title" class="form-control" value ="{{board['title']}}">
                         </div>
                     </div>
 
@@ -45,7 +47,7 @@
                                    readonly class="form-control">
                         </div>
                     </div>
-                    <!-- <div class="row form-group">
+                    <div class="row form-group">
                         <div class="col col-md-2">
                             <label for="writer" class=" form-control-label">수정일자</label>
                         </div>
@@ -53,7 +55,7 @@
                             <input type="text" id="writer" value = "{{ board['modifydate']}}" 
                                    readonly class="form-control">
                         </div>
-                    </div> -->
+                    </div>
                     <div class="row form-group">
                         <div class="col col-md-2">
                             <label for="attachment" class=" form-control-label">첨부파일</label>
@@ -67,7 +69,7 @@
                             <label for="content" class=" form-control-label">내용</label>
                         </div>
                         <div class="col-12 col-md-10">
-                            <textarea name="content" id="content" rows="9" readonly class="form-control" style = 'resize: none;'>{{ board['content'] }}</textarea>
+                            <textarea name="content" id="content" rows="9"  class="form-control" style = 'resize: none;'>{{ board['content'] }}</textarea>
                         </div>
                     </div>
                 </form>
@@ -76,14 +78,16 @@
                 <button id= 'btn-list' type="button" class="btn btn-primary btn-sm">
                     <i class="fa fa-list"></i> 목록
                 </button>
-                {% if session.get('loginuser') and session.get('loginuser')['memberid'] == board['writer'] %}
-                <button id= 'btn-edit' type="button" class="btn btn-primary btn-sm">
-                    <i class="fa fa-edit"></i> 수정
+                <button id= 'btn-update' type="button" class="btn btn-primary btn-sm">
+                    <i class="fa fa-edit"></i> 저장
                 </button>
-                <button id='btn-delete' type="button" class="btn btn-danger btn-sm">
+                <!-- <button id='btn-delete' type="button" class="btn btn-danger btn-sm">
                     <i class="fa fa-ban"></i> 삭제
+                </button> -->
+                <button id= 'btn-cancel' type="button" class="btn btn-primary btn-sm">
+                    <i class="fa fa-edit"></i> 취소
                 </button>
-                {% endif %}
+
             </div>
         </div>
     </div>
@@ -97,15 +101,19 @@ $(function(){
         location.href = "/board/list/";
     });
 
+    $('#btn-cancel').on('click', function(event){
+        history.back();
+    });
+
     $('#btn-delete').on('click', function(event){
         const yn = confirm("{{board['boardno']}}번 글을 삭제할까요?")
         if (yn){
-            location.href = "/borad/delete/?boardno={{board['boardno']}}"
+            location.href = "/board/delete/?boardno={{board['boardno']}}";
         }
     });
-    $('#btn-edit').on('click', function(event){
-        location.href = "/board/update/?boardno={{board['boardno']}}"
-    });
+    $('#btn-update').on('click', function(event){
+        $('#update-form').submit();
+    })
 });
 </script>
 {% endblock %}

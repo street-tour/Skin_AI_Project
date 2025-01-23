@@ -5,7 +5,7 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header">
-                <strong>예측 서비스</strong>
+                <strong>질병 상태 진단 서비스</strong>
             </div>
             <div class="card-body card-block">
                 <form id ="form-predict" class="form-horizontal"
@@ -81,7 +81,7 @@ $(function(){
             const formData = new FormData(this); // <form> 내부의 입력 데이터를 읽어서 변수에 저장
             // $.ajax : jQuery 의 비동기 요청 함수
             $.ajax({
-                "url" : "/serving/predict/",
+                "url" : "/serving/predict2/",
                 "type": "POST",
                 "data": formData,
                 "contentType": false, // 파일 업로드를 위한 설정
