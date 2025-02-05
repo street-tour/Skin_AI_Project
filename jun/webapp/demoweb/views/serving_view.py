@@ -47,6 +47,7 @@ def predict():
 
     predictions = mnist_model.predict(image_array)
     # predicted_class = np.argmax(predictions, axis=1)
+    print("---------------------------", predictions)
     predicted_class = (predictions >= 0.5).astype(int)[0][0]
     confidence = np.max(predictions)
 
