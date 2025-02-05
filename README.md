@@ -28,9 +28,9 @@
   
 ## Process of project
 - 한국인 피부상태 데이터를 이용한 모델 개발 프로토콜 확립 (25.01.17)
-- 화장품 추천을 위한 제품명, ingredients effect, URL 크롤링 (25.01.24)
 - Feature 와 Target 별 모델 개발 33개 완료 (25.01.31)
   * 문제상황 발견시 해결과제에 추가
+- 화장품 추천을 위한 제품명, ingredients effect, URL 크롤링 (25.02.04)
   
 ## Process of Web-Page
 - 웹 템플릿 고르기 (25.01.05)
