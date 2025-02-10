@@ -1,0 +1,6407 @@
+[
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "BF작은별피부과",
+        "doctor_name": "김대현1",
+        "address": "서울 영등포구 국제금융로6길 26 (여의도동) 4층 서울 영등포구 여의도동 35",
+        "number": "02-6277-2220"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "BR피부과",
+        "doctor_name": "이재철2",
+        "address": "서울 강남구 논현로 857 4층  (신사동, A857)",
+        "number": "02-518-2510"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP 차앤박피부과 도곡양재",
+        "doctor_name": "정수진",
+        "address": "서울 강남구 강남대로 248 (도곡동) 3층",
+        "number": "02-3463-1140"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP 차앤박피부과 양재",
+        "doctor_name": "권현조",
+        "address": "서울 강남구 강남대로 240  SK허브프리모 3층",
+        "number": "02-3463-2400"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박 피부과[여의도점]",
+        "doctor_name": "노도균",
+        "address": "서울 영등포구 여의나루로 53-1 대오빌딩 4층 (여의도동, 대오빌딩)",
+        "number": "02-786-5123"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 건대입구점",
+        "doctor_name": "김세연",
+        "address": "서울 광진구 화양동 6-2 연한빌딩 4층 CNP 차앤박피부과",
+        "number": "02-465-4227"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 노원점",
+        "doctor_name": "한봉균",
+        "address": "서울 노원구 상계2동  717 삼용빌딩 5층",
+        "number": "02-933-0571"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 노원점",
+        "doctor_name": "송원근",
+        "address": "서울 노원구 노해로 495 (상계동) 5층 차앤박피부과의원 서울 노원구 상계동 717",
+        "number": "02-933-0571"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 도곡양재점",
+        "doctor_name": "정유진1",
+        "address": "서울 강남구 강남대로 248 3층  (도곡동, 목원빌딩)",
+        "number": "02-3463-1140"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 명동점",
+        "doctor_name": "양정은",
+        "address": "서울 중구 명동2가  32-5 삼안빌딩 6층",
+        "number": "02-777-2488"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 명동점",
+        "doctor_name": "강현아",
+        "address": "서울 중구 명동2가 32-5 삼안빌딩 6층",
+        "number": "02-777-2488"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "CNP차앤박피부과 성신여대점",
+        "doctor_name": "최혜정",
+        "address": "서울 성북구 동선동1가 115번지 3층",
+        "number": "02-922-2900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 신촌점",
+        "doctor_name": "박건수",
+        "address": "서울 서대문구 창천동  18-50 엘리트빌딩 6층",
+        "number": "02-3147-0300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 신촌점",
+        "doctor_name": "홍진경",
+        "address": "서울 서대문구 신촌로 99 6층 cnp 차앤박피부과 (창천동, 엘리트빌딩)",
+        "number": "02-3147-0300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과 천호점",
+        "doctor_name": "노기영",
+        "address": "서울 강동구 천호대로 1033 3층 (천호동, 강동빌딩)",
+        "number": "02-485-4650"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "CNP차앤박피부과[도곡양재)",
+        "doctor_name": "차미경",
+        "address": "서울특별시 강남구 강남대로 248  (도곡동 952-10,목원빌딩)",
+        "number": "02-3463-1140"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과[성신여대점]",
+        "doctor_name": "김미연",
+        "address": "서울 성북구 동소문로 116 3층 (동선동1가)",
+        "number": "02-922-2900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과[압구정점]",
+        "doctor_name": "박진성",
+        "address": "서울 강남구 신사동 580-6 제림빌딩 4층",
+        "number": "02-515-2100"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "CNP차앤박피부과[양재본원]",
+        "doctor_name": "박연호",
+        "address": "서울 강남구 도곡동  952-9 심현빌딩 4층",
+        "number": "02-3463-1221"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CNP차앤박피부과[여의도점]",
+        "doctor_name": "권오찬",
+        "address": "서울 영등포구 여의나루로 53-1 대오빌딩 4층 CNP차앤박피부과 (여의도동, 대오빌딩)",
+        "number": "02-786-5123"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CU클린업피부과 강남점",
+        "doctor_name": "송민규",
+        "address": "서울 서초구 서초동 1305-7번지 유창빌딩 10층",
+        "number": "02-561-0007"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CU클린업피부과 노원점",
+        "doctor_name": "김희중",
+        "address": "서울 노원구 노해로 451 4층 클린업피부과 (상계동, 청산빌딩)",
+        "number": "02-556-9070"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CU클린업피부과 청담점",
+        "doctor_name": "오정준",
+        "address": "서울 강남구 선릉로 832 2층 (청담동, 소나무빌딩)",
+        "number": "02-512-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CU클린업피부과[영등포점]",
+        "doctor_name": "신종훈",
+        "address": "서울 영등포구 영중로 35 (영등포동4가) 삼경빌딩3층 클린업피부과 서울 영등포구 영등포동4가 65-1",
+        "number": "02-2634-7588"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "CU클린업피부과[영등포점]",
+        "doctor_name": "민형근",
+        "address": "서울 영등포구 영등포동4가  65-1 하나대투증권 3층",
+        "number": "02-2634-7588"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "DMC최한규피부과",
+        "doctor_name": "최한규",
+        "address": "서울특별시 서대문구 수색로 56  (북가좌동 487,성공타워1)",
+        "number": "02-306-9888"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "JF피부과의원",
+        "doctor_name": "정찬우",
+        "address": "서울 강남구 봉은사로 539 (삼성동) 제이에프피부과 2층 서울 강남구 삼성동 77-21",
+        "number": "02-515-0526"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "JF피부과의원",
+        "doctor_name": "김상엽",
+        "address": "서울 강남구 봉은사로 539 (삼성동) 2층 서울 강남구 삼성동 77-21",
+        "number": "02-515-0526"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "JM김정민피부과",
+        "doctor_name": "이예진1",
+        "address": "서울 서초구 사임당로 158 305호  (서초동, 리더스원 상가)",
+        "number": "02-6953-1212"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "JM김정민피부과",
+        "doctor_name": "김정민1",
+        "address": "서울 서초구 사임당로 158 리더스원상가 305호 (서초동, 리더스원 상가)",
+        "number": "02-5953-1212"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "J스타피부과",
+        "doctor_name": "정증태",
+        "address": "서울 동작구 대방동  394-7번지 금성빌딩 4층",
+        "number": "02-812-7535"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "MD Anderson Cancer Center",
+        "doctor_name": "오지원",
+        "address": "서울 강남구 세곡동",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "MJ올피부과",
+        "doctor_name": "김문정",
+        "address": "서울 중구 충무로2가 MJ 올 피부과 11-1 썬샤인빌딩 5층",
+        "number": "02-777-8275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "ST성모피부과",
+        "doctor_name": "임종호",
+        "address": "서울 강남구 봉은사로 469 (삼성동) 에스타워 2층 서울 강남구 삼성동 49-12",
+        "number": "025453575"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "ST성모피부과",
+        "doctor_name": "전희진",
+        "address": "서울 강남구 봉은사로 469 2층  (삼성동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "V&MJ피부과",
+        "doctor_name": "김민주",
+        "address": "서울 강남구 도산대로 303   (신사동)",
+        "number": "02-540-8300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "YK박윤기피부과",
+        "doctor_name": "김희정1",
+        "address": "서울 서초구 서초대로 316  하림인터내셔널 오피스텔빌딩 401호",
+        "number": "02-525-1155"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "YK박윤기피부과",
+        "doctor_name": "이은경",
+        "address": "서울 서초구 서초대로 316 401호 (서초동, 하림인터내셔날오피스텔)",
+        "number": "02-6052-1125"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "ZELL피부과",
+        "doctor_name": "박종민",
+        "address": "서울 강남구 도산대로 452 7층  (청담동, JS빌딩)",
+        "number": "02-549-2063"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "美 피부과",
+        "doctor_name": "이혜남",
+        "address": "서울 은평구 대조동  14-1 제일플라자 2층  美 피부과",
+        "number": "02-389-9600"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "가야성모피부과",
+        "doctor_name": "김의한",
+        "address": "서울 서초구 방배로 225 7층 (방배동, 성은빌딩)",
+        "number": "02-3432-0222"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강 피부과",
+        "doctor_name": "강주형",
+        "address": "서울 성북구 동선동1가 123번지 명기빌딩 201",
+        "number": "02-3443-1010"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강남 예인피부과",
+        "doctor_name": "김재원",
+        "address": "서울 서초구 서초4동 1306-5 삼영빌딩 4, 5층",
+        "number": "02-532-4476"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강남세브란스병원",
+        "doctor_name": "노미령",
+        "address": "서울 강남구 언주로 211 피부과 (도곡동, 강남세브란스병원)",
+        "number": "02-2019-3360"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강남세브란스병원",
+        "doctor_name": "권일주",
+        "address": "서울 강남구 언주로 211 (도곡동)  서울 강남구 도곡동 146-92",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강남세브란스병원 의생명연구센터",
+        "doctor_name": "김수민",
+        "address": "서울 강남구 도곡로 237 강남세브란스병원 의생명연구센터 1층 김락균 교수님 실험실 (역삼동, 강남세브란스병원 의생명연구센터)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강남우태하피부과",
+        "doctor_name": "임성빈",
+        "address": "서울 강남구 역삼동 강남우태하피부과",
+        "number": "02-567-1675"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강남제이피부과",
+        "doctor_name": "박지수",
+        "address": "서울특별시 강남구 역삼동 819-9",
+        "number": "02-501-5045"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강남테마피부과",
+        "doctor_name": "김재민",
+        "address": "서울 서초구 강남대로 423 한승빌딩 7층 강남테마피부과 (서초동, 한승빌딩)",
+        "number": "02-591-4477"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강남테마피부과",
+        "doctor_name": "이학규",
+        "address": "서울 서초구 강남대로 423 (서초동) 한승빌딩 7층",
+        "number": "02-591-4477"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강남테마피부과",
+        "doctor_name": "이윤주",
+        "address": "서울 서초구 강남대로 423 (서초동) 한승빌딩 7층",
+        "number": "02-591-4477"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강남테마피부과",
+        "doctor_name": "조성인",
+        "address": "서울 서초구 강남대로 423 (서초동) 한승빌딩 7층",
+        "number": "02-591-4477"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강동경희대병원",
+        "doctor_name": "김기훈2",
+        "address": "서울 강동구 동남로 892 강동경희대학교 (상일동, 강동경희대학교병원)",
+        "number": "ㅁㅁㅁ"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강동경희대학교병원",
+        "doctor_name": "권순효",
+        "address": "서울 강동구 동남로 892  (상일동, 강동경희대학교병원)",
+        "number": "02-440-7335"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강동오아로피부과",
+        "doctor_name": "권혁훈",
+        "address": "서울 강동구 고덕로 262 404호 강동오아로피부과 (명일동, 고덕역 효성해링턴 타워 더퍼스트)",
+        "number": "02-427-6556"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강북 이지함피부과",
+        "doctor_name": "백용관",
+        "address": "서울 노원구 노해로 457 (상계동) 은성빌딩 2층 서울 노원구 상계동 709-1",
+        "number": "02-939-4700"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강북삼성병원",
+        "doctor_name": "박지혜2",
+        "address": "서울 종로구 평동 강북삼성병원  피부과",
+        "number": "02-2001-2227"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강북삼성병원 피부과",
+        "doctor_name": "김원석2",
+        "address": "서울 종로구 평동  108",
+        "number": "02-2001-2228"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강북이지함피부과",
+        "doctor_name": "심재홍",
+        "address": "서울 노원구 노해로 457 (상계동) 은성빌딩 2층 서울 노원구 상계동 709-1",
+        "number": "02-9394700"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "강북이지함피부과",
+        "doctor_name": "한희진",
+        "address": "서울 노원구 노해로 457 (상계동) 은성빌딩2층 서울 노원구 상계동 709-1",
+        "number": "02-939-4700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강서휴먼피부과",
+        "doctor_name": "성재용",
+        "address": "서울 강서구 공항대로 261 (마곡동) 3층 강서휴먼피부과 서울 강서구 마곡동 797-4",
+        "number": "020000000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강서휴먼피부과의원",
+        "doctor_name": "박수정1",
+        "address": "서울 강서구 공항대로 261 (마곡동) 발산파크프라자 301호 휴먼피부과 서울 강서구 마곡동 797-4",
+        "number": "02-6348-5940"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강태욱피부과",
+        "doctor_name": "강태욱",
+        "address": "서울 성동구 행당동 346 행당한진타운 3층  302호",
+        "number": "02-2291-9500"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "강피부과",
+        "doctor_name": "오창남",
+        "address": "서울 금천구 시흥본동  883-7",
+        "number": "02-893-8546"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "갤러리아피부과",
+        "doctor_name": "이수영",
+        "address": "서울 서초구 잠원로4길 33-2 잠원동 스타빌딩 2층 (잠원동, 잠원동 스타빌딩)",
+        "number": "02-592-1240"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "갤러리아피부과",
+        "doctor_name": "이민석",
+        "address": "서울 강남구 선릉로 34 3층, 갤러리아피부과 개포도곡점  (개포동)",
+        "number": "02-417-7500"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "갤러리아피부과 개포도곡점",
+        "doctor_name": "김지언",
+        "address": "서울 강남구 선릉로 34 마커스나인빌딩 3층  (개포동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "갤러리아피부과 개포도곡점",
+        "doctor_name": "홍원진",
+        "address": "서울 강남구 선릉로 34 3층  (개포동)",
+        "number": "02-573-9839"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "갤러리아피부과 개포도곡점",
+        "doctor_name": "서지명",
+        "address": "서울 강남구 선릉로 34 3층 (개포동)",
+        "number": "02-573-9839"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "갤러리아피부과 반포 본점",
+        "doctor_name": "금동인",
+        "address": "서울 서초구 잠원로4길 33-2 (잠원동) 2층 갤러리아피부과의원",
+        "number": "025921240"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "갤러리아피부과의원",
+        "doctor_name": "이재원1",
+        "address": "서울 서초구 잠원로4길 33-2 스타빌딩 2층 (잠원동, 잠원동 스타빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "경찰병원",
+        "doctor_name": "심주현",
+        "address": "서울 송파구 가락본동 경찰병원 피부과",
+        "number": "02-3400-4129"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "경희대학교병원",
+        "doctor_name": "정기헌",
+        "address": "서울 동대문구 회기동 경희의료원 1층 피부과 외래",
+        "number": "02-958-8501"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "경희의료원",
+        "doctor_name": "안혜진",
+        "address": "서울 동대문구 경희대로 23 (회기동) 피부과",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "경희의료원",
+        "doctor_name": "신민경",
+        "address": "서울 동대문구 경희대로 23 (회기동)",
+        "number": "02-958-8508"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "경희의료원",
+        "doctor_name": "권효은",
+        "address": "서울 동대문구 경희대로 23  (회기동, 경희의료원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "계피부과",
+        "doctor_name": "김용상",
+        "address": "서울특별시 영등포구 영중로 60-1  (영등포동5가 40-4)",
+        "number": "02-2634-0108"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "계피부과",
+        "doctor_name": "김중호",
+        "address": "서울 영등포구 영등포동5가  40-4",
+        "number": "02-2634-0108"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "계피부과",
+        "doctor_name": "김신한",
+        "address": "서울 영등포구 영중로 68 (영등포동5가)",
+        "number": "02-2634-0108"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "계피부과 의원",
+        "doctor_name": "계희상",
+        "address": "서울 강서구 공항대로 271 301,302호, 계피부과 의원 (마곡동, 이천이프라자)",
+        "number": "02-6956-2713"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "계피부과 의원",
+        "doctor_name": "계영철",
+        "address": "서울 강서구 공항대로 271 301,302호 (마곡동, 이천이프라자)",
+        "number": "02-69562713"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "계피부과의원",
+        "doctor_name": "최성환",
+        "address": "서울 영등포구 영등포동5가  계피부과의원",
+        "number": "0226340108"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "계피부과의원",
+        "doctor_name": "천영일",
+        "address": "서울 영등포구 영중로 68 (영등포동5가)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "고려대학교 구로병원",
+        "doctor_name": "백유상",
+        "address": "서울 구로구 구로동로 148 (구로동) 피부과 서울 구로구 구로동 80",
+        "number": "02-2626-1308"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "고려대학교 안암병원",
+        "doctor_name": "김대현2",
+        "address": "서울 성북구 안암동5가 고려대병원  피부과",
+        "number": "02-920-5470"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "고우석JMO피부과",
+        "doctor_name": "고우석",
+        "address": "서울 강남구 도산대로 104 (논현동) 퍼스트애비뉴 빌딩  고우석JMO피부과 서울 강남구 논현동 1-1",
+        "number": "02-3445-3456"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "고운세상피부과 [방배점]",
+        "doctor_name": "이현승",
+        "address": "서울 서초구 방배동 1823번지 가나안빌딩 7층",
+        "number": "02-586-4378"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "고운세상피부과 강남점",
+        "doctor_name": "김태윤2",
+        "address": "서울특별시 강남구 테헤란로2길 8 3층 강남고운세상피부과의원 (역삼동 825-1)",
+        "number": "02-3477-2020"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "고운세상피부과 홍대점",
+        "doctor_name": "박종갑",
+        "address": "서울 마포구 월드컵로1길 14 (합정동, 마포 한강 푸르지오) 딜라이트스퀘어 1차 202호 서울 마포구 합정동 472",
+        "number": "02-3143-3822"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "고운세상피부과[잠실점]",
+        "doctor_name": "부태성",
+        "address": "서울 송파구 올림픽로35길 123  (신천동, 향군타워)",
+        "number": "02-2152-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "관악우태하피부과",
+        "doctor_name": "김홍석1",
+        "address": "서울 관악구 관악로 168 (봉천동, 대우디오슈페리움2단지) C동 406호 (봉천동, 디오슈페리움)",
+        "number": "02-875-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "광피부과의원",
+        "doctor_name": "조광현",
+        "address": "서울 강남구 도산대로 318 14층 (논현동, SB타워)",
+        "number": "02-566-2701"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "광화문헤리티크피부과",
+        "doctor_name": "김정엽2",
+        "address": "서울 종로구 새문안로 91 2층 (신문로1가, 광화문 고려빌딩)",
+        "number": "02-733-2237"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "구도피부과의원",
+        "doctor_name": "오영준",
+        "address": "서울 용산구 독서당로 124 L-place 4층 (한남동)",
+        "number": "02-749-5005"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "구로우태하피부과",
+        "doctor_name": "박상건",
+        "address": "서울 구로구 개봉2동 203-8번지 KS프리미어빌딩 401호",
+        "number": "02-2616-1675"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "구로참튼튼병원 피부과",
+        "doctor_name": "정소희",
+        "address": "서울 구로구 시흥대로 547 (구로동) 참튼튼병원",
+        "number": "02-851-9400"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "구앤장마취통증의학과피부과",
+        "doctor_name": "구자웅",
+        "address": "서울 관악구 남부순환로 1805 201호  (봉천동, 에이스에이존)",
+        "number": "02-882-0234"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "국홍일국정표 피부과의원",
+        "doctor_name": "신선혜",
+        "address": "서울 서초구 강남대로 221 3층 (양재동, 양재역환승주차장)",
+        "number": "02-574-0901"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "국홍일국정표피부과",
+        "doctor_name": "국정표",
+        "address": "서울 서초구 강남대로 221 (양재동) 302호 서울 서초구 양재동 23",
+        "number": "02-574-0901"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "권피부과의원",
+        "doctor_name": "권오진",
+        "address": "서울 중랑구 면목1동  115-1",
+        "number": "02-493-7653"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "권피부과의원",
+        "doctor_name": "권성대",
+        "address": "서울 구로구 구로5동 100-8 신안타워 3층 313호 (구로구청사거리)",
+        "number": "02-856-0079"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "규피부과",
+        "doctor_name": "김신규",
+        "address": "서울 강서구 등촌동 630-12  강서메디칼센터304호",
+        "number": "02-2659-0293"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "그랜드피부과",
+        "doctor_name": "노인호",
+        "address": "서울 강남구 강남대로 616 (신사동)  서울 강남구 신사동 501",
+        "number": "02-933-5224"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "그랜드피부과의원",
+        "doctor_name": "김준협",
+        "address": "서울 송파구 오금로 506 (거여동) 일동빌딩 5층",
+        "number": "024080345"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "그랜트피부과의원",
+        "doctor_name": "김지석",
+        "address": "서울 광진구 천호대로 549 G타워 3층 그랜트피부과 (중곡동, 지타워)",
+        "number": "02-2039-1477"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "기분좋은피부과",
+        "doctor_name": "배병기",
+        "address": "서울 강남구 도산대로 211 4층 402호  (신사동, 동현빌딩)",
+        "number": "02-512-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "기분좋은피부과",
+        "doctor_name": "위성호",
+        "address": "서울 강남구 도산대로 211 4층 402호 (신사동, 동현빌딩)",
+        "number": "02-512-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "기쁨병원 피부과",
+        "doctor_name": "박형권",
+        "address": "서울 서초구 서초중앙로 4 기쁨병원 피부과 (서초동, 기쁨병원 빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김덕현피부과",
+        "doctor_name": "김덕현",
+        "address": "서울 강남구 논현동  143",
+        "number": "02-549-8599"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김동건피부과",
+        "doctor_name": "김동건",
+        "address": "서울 송파구 방이동 207-10",
+        "number": "02-414-7557"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김동준피부과",
+        "doctor_name": "김동준",
+        "address": "서울 성동구 행당로 87 (행당동) 대림프라자 405호 서울 성동구 행당동 347",
+        "number": "02-2281-6589"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김명애피부과",
+        "doctor_name": "김명애",
+        "address": "서울 서초구 사평대로 18 2층 203호  (방배동, 학림빌딩)",
+        "number": "02-599-2416"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김성호피부과",
+        "doctor_name": "김성호",
+        "address": "서울 광진구 자양동  553-502 대양크리닉센터3F",
+        "number": "02-456-9721"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김소영피부과",
+        "doctor_name": "김소영",
+        "address": "서울 서대문구 홍제동 253-7 3층  김소영 피부과",
+        "number": "02-396-0522"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김앤김 피부과의원",
+        "doctor_name": "김재현",
+        "address": "서울 강동구 천호동 454-15 김앤김 피부과의원",
+        "number": "02-470-0579"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "김앤김 피부과의원",
+        "doctor_name": "김성운",
+        "address": "서울 강동구 천호동 454-15  김앤김 피부과의원",
+        "number": "02-470-0579"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김영환피부과",
+        "doctor_name": "김영환",
+        "address": "서울 서대문 홍은동  217-5 백련빌딩 김영환피부과의원",
+        "number": "02-3216-2787"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김유찬피부과",
+        "doctor_name": "김유찬",
+        "address": "서울 양천구 목5동 우성에펠타운빌딩 양천구 목5동 907-4 우성에펠타운 308호",
+        "number": "02-2654-0031"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김윤섭 피부과",
+        "doctor_name": "최유리",
+        "address": "서울특별시 동작구 사당2동 86-9 2층 김윤섭 피부과",
+        "number": "02-591-7789"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김윤섭피부과의원",
+        "doctor_name": "김윤섭1",
+        "address": "서울 동작구 동작대로 129 2층 김윤섭피부과 (사당동)",
+        "number": "02-591-7789"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김이중피부과",
+        "doctor_name": "김이중",
+        "address": "서울 강동구 성내동  서울시 강동구 성내3동 428-5",
+        "number": "02-484-6455"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김재선피부과",
+        "doctor_name": "김재선",
+        "address": "서울 광진구 자양동  681 3층",
+        "number": "02-455-0080"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김정피부과",
+        "doctor_name": "하지민",
+        "address": "서울 성북구 동소문로 315 (길음동) 10층 김정피부과",
+        "number": "02-2117-1890"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김정피부과",
+        "doctor_name": "김정",
+        "address": "서울 성북구 길음동 현대백화점10층",
+        "number": "02-2117-1890"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김지수피부과",
+        "doctor_name": "김지수",
+        "address": "서울 구로구 개봉2동 403-103",
+        "number": "02-2682-1223"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김지은피부과",
+        "doctor_name": "김지은2",
+        "address": "서울 송파구 송파대로 345 (가락동, 헬리오시티) 헬리오시티 상가 1A동 3층 41,42호 서울 송파구 가락동 479",
+        "number": "02-414-0975"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김진권피부과",
+        "doctor_name": "김진권1",
+        "address": "서울 강남구 일원동 683 금성빌딩3층 김진권피부과의원",
+        "number": "02-445-5373"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김피부과의원",
+        "doctor_name": "김정회",
+        "address": "서울 강북구 미아5동  61-81 3층",
+        "number": "02-980-5687"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김혜영피부과",
+        "doctor_name": "김혜영",
+        "address": "서울 강남구 대치동 936해바라기상가301",
+        "number": "02-567-0307"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "김희옥피부과",
+        "doctor_name": "김희옥",
+        "address": "서울 성동구 독서당로 300 시은빌딩 5층  (금호동4가)",
+        "number": "02-2232-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "나미피부과",
+        "doctor_name": "성남희",
+        "address": "서울 중랑구 사가정로 384 3층, 4층 나미피부과  (면목동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "나음피부과의원",
+        "doctor_name": "전수영1",
+        "address": "서울 중구 세종대로 13 5층 나음피부과의원 (남대문로5가, 화남빌딩)",
+        "number": "02-6959-7533"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "나음피부과의원",
+        "doctor_name": "구본철",
+        "address": "서울 중구 세종대로 13 (남대문로5가) 5층(화남빌딩) 서울 중구 남대문로5가 6-8",
+        "number": "02-6959-7533"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "나의미래피부과",
+        "doctor_name": "노효진",
+        "address": "서울 영등포구 국제금융로2길 7 (여의도동) 한주빌딩3층 서울 영등포구 여의도동 24",
+        "number": "02-761-1010"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "나의미래피부과",
+        "doctor_name": "이상윤",
+        "address": "서울 마포구 월드컵북로 381 (상암동, 상암 월드컵파크 4단지) 상가 2층 나의미래피부과 서울 마포구 상암동 1655",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "나의미래피부과 여의도점",
+        "doctor_name": "도정은",
+        "address": "서울 영등포구 여의도동 24번지 두레빌딩 3층 오라클피부과의원",
+        "number": "02-377-1012"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "나이스피부과",
+        "doctor_name": "강호정",
+        "address": "서울시 중구 다산로 96 유호빌딩 4 층 나이스피부과",
+        "number": "02-2232-2502"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "나인피부과",
+        "doctor_name": "권혁만",
+        "address": "서울 은평구 갈현동 396-12 진원와이타운 9층",
+        "number": "02-353-9990"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "나인피부과 강남점",
+        "doctor_name": "박유정",
+        "address": "서울 서초구 강남대로 463 10층, 12층  (서초동, 리젠메디컬타워)",
+        "number": "02-599-9990"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "네이처피부과",
+        "doctor_name": "한광호",
+        "address": "서울 강남구 논현2동 94-21 정주빌딩 6층",
+        "number": "02-512-3375"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "노바에스피부과",
+        "doctor_name": "이성훈1",
+        "address": "서울 강남구 역삼동 820-11 시계탑빌딩 5층 노바에스피부과",
+        "number": "02-554-9565"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "노바에스피부과의원",
+        "doctor_name": "장성남",
+        "address": "서울 강남구 역삼동  820-11, 시계탑빌딩 5층",
+        "number": "02-563-7977"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "노바피부과의원",
+        "doctor_name": "이보인",
+        "address": "서울 송파구 오금로 507 (거여동) 거여빌딩 502호 서울 송파구 거여동 37-3",
+        "number": "02-449-2430"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "노원우태하피부과",
+        "doctor_name": "노병화",
+        "address": "서울 노원구 월계1동 46-1 인현빌딩 3층 우태하피부과",
+        "number": "02-942-4223"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "눈피부과",
+        "doctor_name": "손일영",
+        "address": "서울 강남구 도산대로27길 33 201호 (신사동, 쟈스미빌딩)",
+        "number": "02-3446-9523"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "다른코스메틱스",
+        "doctor_name": "이동원1",
+        "address": "서울 강남구 학동로 335 (논현동)  서울 강남구 논현동 118-15",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "다인피부과",
+        "doctor_name": "신항계",
+        "address": "서울특별시 강남구 압구정로50길 8 3층 (신사동 660-10)",
+        "number": "02-542-0080"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터로피부과",
+        "doctor_name": "노용관",
+        "address": "서울 노원구 상계동  724-1 길 B/D 5층",
+        "number": "02-937-0043"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "닥터스프링",
+        "doctor_name": "박새보미",
+        "address": "서울 강남구 도산대로58길 12 (청담동) 4 층 서울 강남구 청담동 22-11",
+        "number": "025410640"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 강북미아점",
+        "doctor_name": "정지희",
+        "address": "서울 강북구 도봉로 52 4층  (미아동, 연이빌딩)",
+        "number": "02-6437-0082"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 공덕점",
+        "doctor_name": "배진호",
+        "address": "서울 마포구 마포대로 127 2층 (공덕동, 풍림브이아이피텔)",
+        "number": "02-702-3033"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 공덕점",
+        "doctor_name": "김태인",
+        "address": "서울 마포구 마포대로 127 2층 (공덕동, 풍림브이아이피텔)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 공덕점",
+        "doctor_name": "이찬양",
+        "address": "서울 마포구 마포대로 127 2층  (공덕동, 풍림브이아이피텔)",
+        "number": "02-702-3033"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 공덕점",
+        "doctor_name": "천승현2",
+        "address": "서울 마포구 마포대로 127 201호 (공덕동, 풍림브이아이피텔)",
+        "number": "02-702-3033"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 반포점",
+        "doctor_name": "장희선",
+        "address": "서울 서초구 서초중앙로 249 5층-6층 (반포동)",
+        "number": "02-533-9333"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신도림점",
+        "doctor_name": "조경종",
+        "address": "서울 구로구 경인로67길 23 3층 닥터스피부과 (신도림동, 신도림2차푸르지오)",
+        "number": "02-2634-9090"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신도림점",
+        "doctor_name": "이원경",
+        "address": "서울 구로구 경인로67길 23 (신도림동, 신도림2차푸르지오) 닥터스피부과 신도림점",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신도림점",
+        "doctor_name": "최윤진2",
+        "address": "서울 구로구 경인로67길 23 3층 닥터스피부과 (신도림동, 신도림2차푸르지오)",
+        "number": "02-2634-9090"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신도림점",
+        "doctor_name": "정한힘",
+        "address": "서울 구로구 경인로67길 23 3층  (신도림동, 신도림2차푸르지오)",
+        "number": "02-2634-9090"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신사",
+        "doctor_name": "고범준",
+        "address": "서울 강남구 도산대로 107 10층 (신사동, BIO)",
+        "number": "1670-1637"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신사본점",
+        "doctor_name": "서지인",
+        "address": "서울 강남구 도산대로 107 10층  (신사동, BIO)",
+        "number": "1670-1637"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신사점",
+        "doctor_name": "박지현",
+        "address": "서울 강남구 도산대로 107 SYH성형타워 10층 (신사동, BIO)",
+        "number": "1670-1637"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신사점",
+        "doctor_name": "오영주",
+        "address": "서울 강남구 도산대로 107 10층 (신사동, BIO)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신사점",
+        "doctor_name": "오대영",
+        "address": "서울 강남구 도산대로 107 10층  (신사동, BIO)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신사점",
+        "doctor_name": "이지홍",
+        "address": "서울 강남구 도산대로 107 10층 (신사동, BIO)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 신사점",
+        "doctor_name": "성현철",
+        "address": "서울 강남구 도산대로 107 (신사동) 10층 닥터스피부과 서울 강남구 신사동 501-2",
+        "number": "1670-1637"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 은평점",
+        "doctor_name": "송지용",
+        "address": "서울 은평구 통일로 750 경인빌딩 4층 (불광동)",
+        "number": "02-356-7572"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과 잠실송파점",
+        "doctor_name": "박해은",
+        "address": "서울 송파구 백제고분로 364 5층 (석촌동, 대신빌딩)",
+        "number": "02-420-7702"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과의원 강북미아점",
+        "doctor_name": "최병곤",
+        "address": "서울 강북구 도봉로 52 4층 (미아동, 연이빌딩)",
+        "number": "02-6437-0082"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과의원 은평점",
+        "doctor_name": "이정우3",
+        "address": "서울특별시 은평구 통일로 750 경일빌딩 4층 (불광동)",
+        "number": "02-356-7572"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과의원 잠실송파",
+        "doctor_name": "정성규",
+        "address": "서울 송파구 백제고분로 364 (석촌동) 대신빌딩 5층 닥터스피부과 의원 서울 송파구 석촌동 286-5",
+        "number": "024207702"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "닥터스피부과의원 한티점",
+        "doctor_name": "박재양",
+        "address": "서울 강남구 선릉로 311 (역삼동) 한티빌딩 2층 서울 강남구 역삼동 765-7",
+        "number": "02-567-3630"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "닥터이레이저피부과",
+        "doctor_name": "서광석",
+        "address": "서울 강남구 청담동 84-7 공신진흥빌딩 2층 닥터이레이저 피부과 의원",
+        "number": "02-543-2202"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "대원피부과",
+        "doctor_name": "이인욱",
+        "address": "서울 광진구 중곡동 78-2",
+        "number": "02-453-7900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "대치W피부과의원",
+        "doctor_name": "우준하",
+        "address": "서울 강남구 삼성로 233 (대치동) 신사빌딩 2층 서울 강남구 대치동 1019-1",
+        "number": "02-2038-0259"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "대치수피부과의원",
+        "doctor_name": "김광수2",
+        "address": "서울 강남구 남부순환로 2941 (대치동) 506호",
+        "number": "02-577-1175"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더3.0피부과",
+        "doctor_name": "황은주",
+        "address": "서울 강남구 신사동  567-22 참빌딩 4층",
+        "number": "02-511-0079"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더끌림피부과",
+        "doctor_name": "이형래",
+        "address": "서울 송파구 법원로 128 (문정동) SK V1 GL 메트로시티 B동 317호 더끌림피부과 서울 송파구 문정동 642-3",
+        "number": "02-402-0220"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "더레드피부과",
+        "doctor_name": "이용우",
+        "address": "서울 강남구 강남대로 470 (역삼동) 9층 서울 강남구 역삼동 808",
+        "number": "02-565-1808"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더리버피부과의원",
+        "doctor_name": "강인정",
+        "address": "서울 영등포구 양평로 68 (당산동6가) 6층 더리버피부과의원",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더마인피부과의원",
+        "doctor_name": "손인평",
+        "address": "서울 송파구 송파대로 111 (문정동, 파크하비오) 205동 312호 서울 송파구 문정동 618",
+        "number": "02-443-2900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더마주 피부과의원",
+        "doctor_name": "김주영",
+        "address": "서울 강남구 영동대로 607 7층 (삼성동, 랜드마크빌딩)",
+        "number": "02-549-9277"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더미소피부과",
+        "doctor_name": "지민선",
+        "address": "서울 강남구 신사동  634-5 글로벌메디컬빌딩 B1 더미소피부과",
+        "number": "02-541-2223"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더서울피부과의원",
+        "doctor_name": "전혜찬",
+        "address": "서울특별시 강남구 논현로 838 , 5층 피부과 (신사동 598-3,원방프라자)",
+        "number": "02-514-8575"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "더셀피부과",
+        "doctor_name": "심현철",
+        "address": "서울 강남구 선릉로 323 (역삼동) 샘클리닉 4,5층 (역삼동 756-14)",
+        "number": "02-568-1009"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더셀피부과",
+        "doctor_name": "홍준기",
+        "address": "서울 강남구 선릉로 323 3,4,5층 더셀피부과의원 (역삼동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "더셀피부과",
+        "doctor_name": "박혜상",
+        "address": "서울 강남구 선릉로 323 샘클리닉5층 (역삼동)",
+        "number": "02-414-4905"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더셀피부과 강남본점",
+        "doctor_name": "한지수",
+        "address": "서울 강남구 선릉로 323 샘클리닉 4~5층  (역삼동)",
+        "number": "02-568-1009"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "더셀피부과 강남본점",
+        "doctor_name": "서성훈",
+        "address": "서울 강남구 선릉로 323 샘클리닉 4, 5층 (역삼동)",
+        "number": "02-568-1009"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더스킨피부과",
+        "doctor_name": "강민정2",
+        "address": "서울 강동구 아리수로 427 2층  (강일동, 중앙프라자)",
+        "number": "02-429-1011"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더윤피부과의원",
+        "doctor_name": "윤영훈",
+        "address": "서울 성동구 왕십리로 50 (성수동1가) 메가박스 성수 지하 1층 더윤피부과의원 서울 성동구 성수동1가 656-335",
+        "number": "0269538085"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더초이스피부과",
+        "doctor_name": "최광호",
+        "address": "서울 노원구 한글비석로 56 미성상가 1층 106호  (하계동, 미성아파트)",
+        "number": "02-977-3345"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과",
+        "doctor_name": "이미소",
+        "address": "서울 동작구 현충로 75 7층  (흑석동, 원불교100년기념관 및 역사문화기념관)",
+        "number": "02-6484-8200"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과",
+        "doctor_name": "한송희",
+        "address": "서울 강남구 강남대로 652 7층 (신사동, SINSA SQUARE)",
+        "number": "02-541-9790"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과",
+        "doctor_name": "우수한",
+        "address": "서울 강남구 강남대로 652 7층  (신사동, SINSA SQUARE)",
+        "number": "02-541-9790"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과",
+        "doctor_name": "김건",
+        "address": "서울 동작구 현충로 75 (흑석동) 7층 1호 더힐피부과의원",
+        "number": "02-6484-8200"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과 흑석점",
+        "doctor_name": "이주희2",
+        "address": "서울 동작구 현충로 75 소태산기념관 3층  (흑석동, 원불교100년기념관 및 역사문화기념관)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과신사점",
+        "doctor_name": "이경근",
+        "address": "서울 강남구 강남대로 652 7층 (신사동, SINSA SQUARE)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과의원",
+        "doctor_name": "고은정",
+        "address": "서울 동작구 현충로 75 7층 (흑석동, 원불교100년기념관 및 역사문화기념관)",
+        "number": "02-6484-8200"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과의원",
+        "doctor_name": "박주혁",
+        "address": "서울 강남구 강남대로 652 7층  (신사동, SINSA SQUARE)",
+        "number": "02-541-9790"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "더힐피부과의원 동대문점",
+        "doctor_name": "고병용",
+        "address": "서울 동대문구 왕산로36길 6 101동 2층 201~207호 (전농동, 힐스테이트 청량리 더퍼스트)",
+        "number": "02-960-3469"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "도곡 리더스 피부과",
+        "doctor_name": "임상희",
+        "address": "서울 강남구 언주로30길 21 (도곡동, 아카데미스위트) 2층 리더스피부과 서울 강남구 도곡동 467-7",
+        "number": "025752300"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "돈암고운세상피부과",
+        "doctor_name": "김동희",
+        "address": "서울 성북구 동소문로 97 4층 고운세상피부과 (동소문동6가)",
+        "number": "02-926-1007"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "돈암고운세상피부과",
+        "doctor_name": "노성욱",
+        "address": "서울 성북구 동소문로 97 (동소문동6가) 삼경빌딩 4층",
+        "number": "02-926-1007"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "돈암고운세상피부과",
+        "doctor_name": "김조용",
+        "address": "서울 성북구 동소문로 97 (동소문동6가) 삼경빌딩 4층",
+        "number": "02-926-1007"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "동안피부과",
+        "doctor_name": "박동재",
+        "address": "서울 구로구 새말로 89 태영빌딩 401호 동안피부과의원 (구로동)",
+        "number": "02-3283-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "듀오피부과",
+        "doctor_name": "홍남수",
+        "address": "서울 성북구 동소문로 106 (동선동1가) 유타몰 6층",
+        "number": "02-922-3723"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "듀오피부과",
+        "doctor_name": "박희용",
+        "address": "서울 성북구 동소문로 106 (동선동1가) 유타몰 6층",
+        "number": "029223723"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "드림 피부과",
+        "doctor_name": "이호균",
+        "address": "서울 강남구 신사동 575 극동스포츠빌딩 B동 302호",
+        "number": "02-546-1613"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디라운지피부과의원",
+        "doctor_name": "안효상",
+        "address": "서울 강남구 강남대로 626 (신사동) 6층 서울 강남구 신사동 502-5",
+        "number": "02-515-6171"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디렉터피부과",
+        "doctor_name": "양나경",
+        "address": "서울 강동구 고덕로 266 4층 디렉터피부과 (명일동, 고덕역 대명벨리온)",
+        "number": "02-6959-1255"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "디렉터피부과",
+        "doctor_name": "류숙인",
+        "address": "서울 강동구 고덕로 266 4층 (명일동, 고덕역 대명벨리온)",
+        "number": "02-6959-1255"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디렉터피부과",
+        "doctor_name": "이호정2",
+        "address": "서울 강동구 고덕로 266 4층 디렉터피부과의원 (명일동, 고덕역 대명벨리온)",
+        "number": "02-6959-1255"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디렉터피부과",
+        "doctor_name": "이지민2",
+        "address": "서울 강동구 고덕로 266 4층 닥터스피부과의원 (명일동, 고덕역 대명벨리온)",
+        "number": "02-6959-1255"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디알피부과",
+        "doctor_name": "방숙현",
+        "address": "서울 강남구 도산대로 404 (청담동) 퍼스트빌딩 4층 DR피부과 서울 강남구 청담동 1-1",
+        "number": "02-561-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디앤써피부과의원",
+        "doctor_name": "최용원",
+        "address": "서울 영등포구 신풍로 93 (신길동) 3층 디앤써피부과의원 서울 영등포구 신길동 2363",
+        "number": "02-834-7001"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디앤에이피부과",
+        "doctor_name": "노태경",
+        "address": "서울 강남구 언주로 871 A동 6층 디앤에이피부과 (신사동, 호산병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디앤에이피부과",
+        "doctor_name": "임하성",
+        "address": "서울 강남구 언주로 871 호산병원 a동 6층 (신사동, 호산병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디앤에이피부과",
+        "doctor_name": "전병환",
+        "address": "서울 강남구 언주로 871 (신사동) A동 6층",
+        "number": "02-3444-1003"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디오디피부과 용산점",
+        "doctor_name": "이현주4",
+        "address": "서울 용산구 한강대로 95 래미안 더센트럴상가동 213호 (한강로2가, 래미안용산 더 센트럴)",
+        "number": "02-6925-0409"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디오디피부과의원",
+        "doctor_name": "김한샘",
+        "address": "서울 용산구 한강대로 95 상가동 213호 디오디피부과의원 (한강로2가, 래미안용산 더 센트럴)",
+        "number": "0507-1419-7555"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "디오피부과",
+        "doctor_name": "전택환",
+        "address": "서울 영등포구 당산로 222 202-1 (당산동5가, 당산디오빌)",
+        "number": "02-3667-3875"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "디파인피부과",
+        "doctor_name": "성재민",
+        "address": "서울 강남구 언주로30길 39 4층 디파인피부과 (도곡동, 린스퀘어)",
+        "number": "02-6205-3468"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "딜라이트피부과",
+        "doctor_name": "윤상열",
+        "address": "서울 서초구 강남대로 509 하늘안과빌딩 B동 4층  (반포동)",
+        "number": "02-517-9991"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "라메스피부과",
+        "doctor_name": "장상재",
+        "address": "서울 강남구 언주로 563 원에디션강남 1층  (역삼동)",
+        "number": "02-549-5052"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "라온피부과",
+        "doctor_name": "백종헌",
+        "address": "서울 성동구 고산자로 234 5층 라온피부과 (행당동)",
+        "number": "02-2299-7975"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "라인피부과",
+        "doctor_name": "장인강",
+        "address": "서울 서초구 반포동  707-2",
+        "number": "02-549-0043"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "라인피부과",
+        "doctor_name": "채구석",
+        "address": "서울 서초구 강남대로 543 (반포동) 국전빌딩 5층 라인피부과 서울 서초구 반포동 707-2",
+        "number": "02-549-0043"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "래미피부과",
+        "doctor_name": "이경열",
+        "address": "서울 강동구 성내3동  416-6호 심포니타워 4층 (둔촌역 4번 출구앞)",
+        "number": "02-487-7077"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "레디피부과",
+        "doctor_name": "김나영",
+        "address": "서울 서초구 방배로 105 5층  (방배동, 디엠타워 2관)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "레디피부과",
+        "doctor_name": "나형민",
+        "address": "서울 서초구 방배로 105 4-5층 (방배동, 디엠타워 2관)",
+        "number": "02-522-6227"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "레디피부과의원",
+        "doctor_name": "은성혜",
+        "address": "서울 서초구 방배로 105 5층 레디피부과의원 (방배동, 디엠타워 2관)",
+        "number": "02-522-6227"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "레디피부과의원",
+        "doctor_name": "민정",
+        "address": "서울 서초구 방배로 105 5층 레디피부과 (방배동, 디엠타워 2관)",
+        "number": "025226227"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "레아주서울피부과",
+        "doctor_name": "이재열",
+        "address": "서울 강남구 논현로 841 (신사동) 4층 403호 서울 강남구 신사동 583-3",
+        "number": "02-511-7501"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "로즈피부과 강남점",
+        "doctor_name": "윤영민",
+        "address": "서울 강남구 도산대로 455 (청담동) 3층 로즈피부과의원 서울 강남구 청담동 98-6",
+        "number": "02-542-9900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "루미인피부과",
+        "doctor_name": "최재원",
+        "address": "서울 강남구 선릉로 324 3층  (대치동, SH타워)",
+        "number": "02-565-8273"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "류피부과의원",
+        "doctor_name": "한경옥로사",
+        "address": "서울 강남구 도곡동  538-1 진달래 상가 3층 301호",
+        "number": "02-000-0000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미 서초",
+        "doctor_name": "강인혜",
+        "address": "서울 서초구 효령로 279 (서초동) 2층 리뉴미 서초점 서울 서초구 서초동 1602-1",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과",
+        "doctor_name": "정민재",
+        "address": "서울 서대문구 통일로 433  (홍제동, 조이빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과",
+        "doctor_name": "변은정",
+        "address": "서울 송파구 올림픽로 114 서경빌딩 9층 (잠실동, 서경빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과",
+        "doctor_name": "양윤석",
+        "address": "서울 서초구 효령로 279 삼경빌딩 2층 리뉴미피부과 (서초동)",
+        "number": "02-588-2304"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과",
+        "doctor_name": "송병한",
+        "address": "서울 서대문구 통일로 433 (홍제동) 8층 리뉴미피부과 서울 서대문구 홍제동 173-16",
+        "number": "02-394-8275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과",
+        "doctor_name": "김중근",
+        "address": "서울 중구 을지로 251 2층 리뉴미피부과 (을지로6가, 을지회관)",
+        "number": "02-2275-5085"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과",
+        "doctor_name": "백가연",
+        "address": "서울 중구 을지로 251 2층 리뉴미피부과 (을지로6가, 을지회관)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리뉴미피부과",
+        "doctor_name": "하지현",
+        "address": "서울특별시 송파구 올림픽로 114 9층 (잠실동 184,서경빌딩)",
+        "number": "02-413-2303"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과 동대문점",
+        "doctor_name": "신동민",
+        "address": "서울 중구 을지로 251 2층 리뉴미피부과 (을지로6가, 을지회관)",
+        "number": "02-2275-5085"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과 서초점",
+        "doctor_name": "우주연",
+        "address": "서울 서초구 효령로 279 삼경빌딩 2층 (서초동)",
+        "number": "025882304"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과 잠실점",
+        "doctor_name": "황상현",
+        "address": "서울 송파구 올림픽로 114 서경빌딩 9층 (잠실동, 서경빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리뉴미피부과 잠실점",
+        "doctor_name": "오용우",
+        "address": "서울 송파구 올림픽로 114 9층  (잠실동, 서경빌딩)",
+        "number": "02-413-2303"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과 잠실점",
+        "doctor_name": "이단비",
+        "address": "서울 송파구 올림픽로 114 9층 (잠실동, 서경빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과 잠실점",
+        "doctor_name": "박근휘",
+        "address": "서울 송파구 올림픽로 114 9층  (잠실동, 서경빌딩)",
+        "number": "02-413-2303"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리뉴미피부과 홍제점",
+        "doctor_name": "조은아",
+        "address": "서울 서대문구 통일로 433 8층  (홍제동, 조이빌딩)",
+        "number": "02-394-8275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리뉴미피부과 화곡점",
+        "doctor_name": "고나영",
+        "address": "서울 강서구 화곡3동 1065-9 3층 리뉴미 피부과 화곡점",
+        "number": "02-2607-7574"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리뉴미피부과의원 동대문점",
+        "doctor_name": "백은주",
+        "address": "서울 중구 을지로 251 기승플러스빌딩 2층 (을지로6가, 을지회관)",
+        "number": "02-2275-5085"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스 피부과",
+        "doctor_name": "이득표",
+        "address": "서울 양천구 오목로 299 (목동) 이스턴에비뉴 7층",
+        "number": "02-2605-2700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스 피부과",
+        "doctor_name": "장경애",
+        "address": "서울 중구 퇴계로 72 (회현동1가, 리더스뷰남산) 지하층 서울 중구 회현동1가 206",
+        "number": "02-6677-1945"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스 피부과 청담점",
+        "doctor_name": "정성태",
+        "address": "서울 강남구 압구정로 445 서울특별시 강남구 압구정로 445 (청담동)",
+        "number": "0262033301"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스피부과",
+        "doctor_name": "장시혁",
+        "address": "서울 양천구 목동동로 257 목동 현대백화점 지하1층 리더스피부과 (목동, 현대하이페리온)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스피부과",
+        "doctor_name": "강승희",
+        "address": "서울 강남구 언주로 843 (신사동) 4,5층 서울 강남구 신사동 623-1",
+        "number": "02-548-7833"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스피부과",
+        "doctor_name": "윤성재",
+        "address": "서울 강남구 언주로 843 (신사동) 4층, 5층 서울 강남구 신사동 623-1",
+        "number": "02-548-7833"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리더스피부과",
+        "doctor_name": "박석범",
+        "address": "서울 강남구 도곡동 아카데미 스위트 2층",
+        "number": "02-575-2300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스피부과 강남도곡점",
+        "doctor_name": "박상진",
+        "address": "서울 강남구 언주로30길 21 (도곡동, 아카데미스위트) 2층 서울 강남구 도곡동 467-7",
+        "number": "02-575-2300"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리더스피부과 건대점",
+        "doctor_name": "김재경",
+        "address": "서울 광진구 능동로 90 (자양동) 2층 건대리더스피부과",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스피부과 명동점",
+        "doctor_name": "김영재",
+        "address": "서울 중구 퇴계로 72 리더스피부과 명동점 (회현동1가, 리더스뷰남산)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스피부과 목동점",
+        "doctor_name": "신장현",
+        "address": "서울 양천구 목동동로 257 (목동, 현대하이페리온) 현대백화점 유플렉스 목동점 지하3층 서울 양천구 목동 916",
+        "number": "02-2163-3973"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스피부과 청담도산대로점",
+        "doctor_name": "노낙경",
+        "address": "서울 강남구 도산대로 409 5층 (청담동, S&S TOWER)",
+        "number": "02-2088-7828"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리더스피부과 트라팰리스점",
+        "doctor_name": "김정아",
+        "address": "서울 양천구 오목로 299 (목동) 목동트라팰리스 이스턴에비뉴 7층",
+        "number": "0215887833"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리드미피부과",
+        "doctor_name": "김현욱1",
+        "address": "서울 강남구 도곡로 409 402호 (대치동, 타워엠프리스)",
+        "number": "02-567-9357"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리라피부과",
+        "doctor_name": "오두진",
+        "address": "서울 강남구 선릉로 806 (청담동) 킹콩빌딩 7층",
+        "number": "02-512-4568"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리마인드피부과",
+        "doctor_name": "신은재",
+        "address": "서울 서초구 강남대로 206 2층 (양재동)",
+        "number": "025758275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리멤버피부과",
+        "doctor_name": "백재우",
+        "address": "서울 노원구 동일로 1380 5층 리멤버피부과 (상계동, 상계동 국민은행)",
+        "number": "02-936-8253"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리멤버피부과 강서마곡점",
+        "doctor_name": "김대홍",
+        "address": "서울 강서구 강서로 385 (마곡동) 우성에스비타원 3층(302,303호) 서울 강서구 마곡동 794-1",
+        "number": "02-2658-5901"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리멤버피부과의원 강동점",
+        "doctor_name": "서동우",
+        "address": "서울 강동구 양재대로 1625 6층 601호 (천호동, 숨결TOWER)",
+        "number": "02-488-1368"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리멤버피부과의원 약수",
+        "doctor_name": "윤도경",
+        "address": "서울 중구 다산로 128-1 5층 (신당동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리멤버피부과의원 잠실점",
+        "doctor_name": "이경문",
+        "address": "서울 송파구 올림픽로37길 130 A동 5층 (신천동, 파크리오)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리엔장성형외과피부과",
+        "doctor_name": "박세하",
+        "address": "서울 서초구 강남대로 403 343강남타워 17층  (서초동)",
+        "number": "02-591-3625"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리엔장성형외과피부과",
+        "doctor_name": "여인권",
+        "address": "서울 서초구 강남대로 465 (서초동) 13층 피부센터",
+        "number": "02-000-0000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리엔장피부과",
+        "doctor_name": "오원종",
+        "address": "서울 서초구 강남대로 403 17층 (서초동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리원피부과",
+        "doctor_name": "문정윤",
+        "address": "서울 강남구 도산대로 327 SGF청담타워 2, 3층 (신사동)",
+        "number": "02-543-0210"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리원피부과",
+        "doctor_name": "이미혜",
+        "address": "서울 강남구 도산대로 327 SGF청담타워 8층  (신사동)",
+        "number": "02-543-0210"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "리원피부과",
+        "doctor_name": "김동영",
+        "address": "서울 강남구 도산대로 327 SGF청담타워 2, 3층 리원피부과 (신사동)",
+        "number": "02-543-0210"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리윤피부과",
+        "doctor_name": "지현중",
+        "address": "서울 송파구 양재대로 1164 5층  (오금동, 홍일빌딩)",
+        "number": "02-443-8575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리윤피부과의원",
+        "doctor_name": "이동윤2",
+        "address": "서울 송파구 양재대로 1164 5층 502, 503호 (오금동, 홍일빌딩)",
+        "number": "02-443-8575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리츠피부과",
+        "doctor_name": "박경제",
+        "address": "서울 강남구 역삼동  820-11 시계탑빌딩 6층 리츠피부과",
+        "number": "02-561-4555"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리퓨어피부과",
+        "doctor_name": "김태진2",
+        "address": "서울 중랑구 면목로 319 2층  (면목동, 삼성종합프라자)",
+        "number": "02-466-9033"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리프톤 피부과",
+        "doctor_name": "문성훈",
+        "address": "서울 강남구 도산대로 119 9층 (신사동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리프톤피부과",
+        "doctor_name": "김도현2",
+        "address": "서울 강남구 도산대로 119 케이타워 9층  (신사동)",
+        "number": "02-6677-6300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리프톤피부과",
+        "doctor_name": "전재욱",
+        "address": "서울 강남구 도산대로 119 9층 리프톤피부과 (신사동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리프티크피부과",
+        "doctor_name": "원용연",
+        "address": "서울 서초구 나루터로 80 자은빌딩 6층 (잠원동, 자은빌딩)",
+        "number": "025432829"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리피부과",
+        "doctor_name": "최광현",
+        "address": "서울 중랑구 면목로 481 5층 리피부과의원(상봉동) (상봉동, 오렌지타워)",
+        "number": "02-2207-7707"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리피부과",
+        "doctor_name": "이종록",
+        "address": "서울 강남구 도곡로 442 (대치동) 501호 서울 강남구 대치동 1022-2",
+        "number": "02-567-0575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "리피부과의원",
+        "doctor_name": "권태광",
+        "address": "서울 중랑구 면목로 481 (상봉동) 501호",
+        "number": "02-2207-7707"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "린피부과",
+        "doctor_name": "김준호",
+        "address": "서울특별시 강동구 양재대로 1473 희헌타워 203호 린피부과 (길동 389-7)",
+        "number": "02-424-5007"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "림林피부과",
+        "doctor_name": "신자경",
+        "address": "서울 강남구 압구정로28길 14 형원 빌딩 4층 (신사동)",
+        "number": "025453462"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "마이디피부과 신사점",
+        "doctor_name": "안봉균",
+        "address": "서울 서초구 잠원동 20-9 휴먼타워 5층 마이디 피부과",
+        "number": "02-3444-8585"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "마이디피부과 양재점",
+        "doctor_name": "김병대",
+        "address": "서울특별시 강남구 강남대로 242 4층 마이디피부과 (도곡동 953-3,크리스탈빌딩)",
+        "number": "02-576-5033"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "마이디피부과 은평점",
+        "doctor_name": "김종윤",
+        "address": "서울 은평구 대조동 224-15 수메디컬빌딩 3층 마이디 피부과 3층",
+        "number": "02-355-5533"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "마이디피부과 이촌점",
+        "doctor_name": "변희진",
+        "address": "서울 용산구 이촌동 한강쇼핑센터 3층 마이디피부과 이촌점",
+        "number": "02-790-7277"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "마이스킨피부과",
+        "doctor_name": "손인범",
+        "address": "서울 노원구 한글비석로 254  대명프라자 206호  마이스킨피부과의원",
+        "number": "02-938-0070"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "마이피부과",
+        "doctor_name": "유정환",
+        "address": "서울 강남구 테헤란로87길 13 4층 마이피부과 (삼성동, 서영빌딩)",
+        "number": "02-3453-7500"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "마이피부과",
+        "doctor_name": "이훈2",
+        "address": "서울 강남구 삼성동 158-12 서영빌딩4층  서영빌딩 4층",
+        "number": "02-3453-7500"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "마인드피부과",
+        "doctor_name": "최민화",
+        "address": "서울 마포구 양화로18길 3 3층 마인드피부과 (동교동, 삼양세븐스프링스)",
+        "number": "02-333-3133"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "마인드피부과의원",
+        "doctor_name": "이홍선",
+        "address": "서울 마포구 양화로18길 3  삼양세븐스프링스빌딩 3층",
+        "number": "02-333-3133"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "마인드피부과의원",
+        "doctor_name": "유지영",
+        "address": "서울특별시 마포구 동교동 166-13 세븐스프링스빌딩 3층",
+        "number": "023333133"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "마포공덕 에스앤유 피부과",
+        "doctor_name": "신효승",
+        "address": "서울특별시 마포구 백범로 178 마포신영지웰빌딩 2층 마포공덕 에스앤유 피부과 (공덕동 461,마포신영지웰)",
+        "number": "02-706-5250"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "마포공덕 에스앤유피부과",
+        "doctor_name": "강희",
+        "address": "서울 마포구 공덕동 461번지 신영지웰 2층  마포공덕에스앤유피부과",
+        "number": "02-706-5252"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "마포공덕 에스앤유피부과",
+        "doctor_name": "김영걸",
+        "address": "서울 마포구 공덕동 461번지 신영지웰빌딩 2층 마포공덕 에스앤유 피부과",
+        "number": "02-706-5252"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "마포공덕 에스앤유피부과 의원",
+        "doctor_name": "김병윤",
+        "address": "서울 마포구 공덕동  461 마포신영지월 2층",
+        "number": "02-6205-8404"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "마포공덕에스앤유피부과",
+        "doctor_name": "김민지1",
+        "address": "서울 마포구 공덕동  461 마포 신영지웰 2층",
+        "number": "02-706-5250"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "맑은 피부과 중랑구점",
+        "doctor_name": "전진희",
+        "address": "서울 중랑구 신내1동 666번지 신아타운 7층 709호 맑은 피부과",
+        "number": "02-3421-7600"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "맑은문피부과의원",
+        "doctor_name": "문형식",
+        "address": "서울특별시 중구 퇴계로 447 황학아크로타워 3층 (황학동 2523,황학 아크로타워)",
+        "number": "02-436-7575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "맑은미피부과",
+        "doctor_name": "박용태",
+        "address": "서울 강남구 대치동 507-2 대치퍼스트 308호",
+        "number": "02-564-7072"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "맑은성심피부과",
+        "doctor_name": "윤영란",
+        "address": "서울 중랑구 망우2동 465-13",
+        "number": "02-437-6152"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "맑은우리피부과의원",
+        "doctor_name": "김성근",
+        "address": "서울 강서구 강서로 267 503호 (내발산동, 송화쇼핑센터)",
+        "number": "02-6956-9700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "매직피부과",
+        "doctor_name": "장훈영",
+        "address": "서울 강남구 테헤란로 328 4층 (역삼동, 동우빌딩)",
+        "number": "02-3453-3114"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "메디셀플러스의원",
+        "doctor_name": "김진희",
+        "address": "서울 서초구 남부순환로 2646 메디셀플러스의원 (양재동, 메디셀 플러스 의원빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "메리트피부과",
+        "doctor_name": "우상혁",
+        "address": "서울 서초구 방배로 95 (방배동) 서경빌딩 5층 메리트피부과 서울 서초구 방배동 910-13",
+        "number": "02-521-8835"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "메이저피부과",
+        "doctor_name": "박정훈2",
+        "address": "서울 성북구 동소문동6가 117-2  보미빌딩 4층 메이저 피부과",
+        "number": "02-927-1925"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "메이저피부과",
+        "doctor_name": "조희령",
+        "address": "서울 성북구 동소문동6가 117-2 보미타워빌딩 4층 메이저피부과",
+        "number": "02-927-1925"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "메이저피부과 성신여대역점",
+        "doctor_name": "신영빈",
+        "address": "서울 성북구 동소문로 89 4층  (동소문동6가, 보미리즌빌)",
+        "number": "02-927-1925"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "메이저피부과의원 신촌점",
+        "doctor_name": "황규철",
+        "address": "서울 서대문구 창천동  18-26 버티고 4층 메이저피부과",
+        "number": "02-392-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "멜로우피부과의원",
+        "doctor_name": "천동욱",
+        "address": "서울 도봉구 마들로13길 61 301-3호 (창동, 씨드큐브 창동)",
+        "number": "02-6077-8811"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "멜로우피부과의원",
+        "doctor_name": "고영욱",
+        "address": "서울 도봉구 마들로13길 61 301-3호 (창동, 씨드큐브 창동)",
+        "number": "0507-1447-8811"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "멜로우피부과의원",
+        "doctor_name": "박복원",
+        "address": "서울 강남구 도산대로 429 2층 (청담동)",
+        "number": "02-6448-5404"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "멜로우피부과의원 천호점",
+        "doctor_name": "김태림1",
+        "address": "서울 강동구 천호대로 1024 401호 (성내동, 힐스테이트 천호역 젠트리스)",
+        "number": "02-2051-6971~2"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "명동고운세상피부과",
+        "doctor_name": "임현상",
+        "address": "서울 중구 퇴계로 131 (충무로2가) 신일빌딩 3층 명동 고운세상피부과 서울 중구 충무로2가 64-5",
+        "number": "02-755-5411"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "모건피부과",
+        "doctor_name": "심우영",
+        "address": "서울 강남구 논현로 841 5층  (신사동, 제이비 미소 빌딩)",
+        "number": "02-511-5859"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "모건피부과의원",
+        "doctor_name": "이승용",
+        "address": "서울특별시 강남구 신사동 583-3 JB미소빌딩 511호",
+        "number": "02-511-5859"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "모나라피부과의원",
+        "doctor_name": "김대우",
+        "address": "서울 강남구 논현로171길 15 5층 모나라피부과의원 (신사동, 카로시티1)",
+        "number": "02-6956-9115"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "모델로피부과",
+        "doctor_name": "박은상",
+        "address": "서울 강남구 압구정로60길 21 청담분더샵 N관 5층  (청담동, 분더샵 청담A)",
+        "number": "02-591-5800"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "모델로피부과",
+        "doctor_name": "서구일",
+        "address": "서울 강남구 압구정로60길 21 (청담동) 청담분더샵,N관 5층",
+        "number": "02-591-5800"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "모델로피부과",
+        "doctor_name": "정화영",
+        "address": "서울 강남구 압구정로60길 21 5층 (청담동, 분더샵 청담A)",
+        "number": "025915800"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "모리치피부과",
+        "doctor_name": "오준규",
+        "address": "서울 강남구 신사동  580-5번지 로얄빌딩 2층",
+        "number": "02-518-6888"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "모제림성형외과",
+        "doctor_name": "송영찬",
+        "address": "서울 강남구 논현로 842 7층  (신사동, 압구정빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "목동고운세상피부과",
+        "doctor_name": "이남호",
+        "address": "서울 양천구 오목로 281 대성빌딩 1층  (목동)",
+        "number": "02-2607-4378"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "목동예인피부과 목동점",
+        "doctor_name": "최병익",
+        "address": "서울 양천구 목동동로 379 (목동) 4층 광장빌딩 서울 양천구 목동 907-17",
+        "number": "02-2643-4476"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "문상은피부과",
+        "doctor_name": "문상은",
+        "address": "서울 서초구 잠원로 94 3층 문상은피부과 (잠원동, 한신빌딩)",
+        "number": "02-595-0700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미드림피부과",
+        "doctor_name": "이태호",
+        "address": "서울 성동구 행당동  이스타빌 304호 미드림피부과",
+        "number": "02-2292-7700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미라인피부과",
+        "doctor_name": "방장석",
+        "address": "서울 서초구 서초대로78길 26 강남선인빌딩 4층 (서초동, 강남선인빌딩)",
+        "number": "02-1833-5375"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "미모던피부과",
+        "doctor_name": "우영준",
+        "address": "서울 강남구 광평로 280 2층 205호 (수서동, 로즈데일오피스텔)",
+        "number": "01027175238"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미모아피부과",
+        "doctor_name": "김은성",
+        "address": "서울 강동구 성내동  439-15 둔촌메디컬센터 301호",
+        "number": "02-484-3463"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미모아피부과의원",
+        "doctor_name": "고광진",
+        "address": "서울 강동구 양재대로 1325 (성내동) 3층 미모아피부과 서울 강동구 성내동 439-15",
+        "number": "02-484-3463"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미몽피부과 동대문점",
+        "doctor_name": "양재석",
+        "address": "서울 동대문구 이문로 30 3층  (휘경동)",
+        "number": "02-957-7537"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미소가인피부과",
+        "doctor_name": "강권수",
+        "address": "서울 서초구 방배동  908-10 유성빌딩 5층",
+        "number": "02-586-5100"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미소가인피부과",
+        "doctor_name": "임준희",
+        "address": "서울 서초구 방배1동 908-10 유성빌딩5층 미소가인피부과",
+        "number": "02-586-5100"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미소가인피부과 목동점",
+        "doctor_name": "김영진3",
+        "address": "서울 양천구 오목로 345 (목동) 슬로우스퀘어 5층 미소가인피부과 서울 양천구 목동 406-28",
+        "number": "02-2643-9900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미소가인피부과 은평점",
+        "doctor_name": "신정웅",
+        "address": "서울 은평구 통일로 1080 은평뉴타운솔하임 A동 202호  (진관동, 은평뉴타운솔하임)",
+        "number": "02-387-7579"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미소가인피부과(마포점)",
+        "doctor_name": "장대성",
+        "address": "서울 마포구 도화동  563번지  마포아크로타워 빌딩 6층 2호",
+        "number": "02-704-9077"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미소가인피부과의원 삼성점",
+        "doctor_name": "최지훈",
+        "address": "서울 강남구 영동대로 602 (삼성동, 삼성동 미켈란 107) 301호",
+        "number": "02-545-3324"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미소빛피부과",
+        "doctor_name": "김평수",
+        "address": "서울 서초구 서초대로 331 (서초동) 정우빌딩 4층 미소빛피부과 서울 서초구 서초동 1689-1",
+        "number": "02-6247-0907"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미소안피부과",
+        "doctor_name": "안광범",
+        "address": "서울 강남구 논현동 235-11 센트럴빌딩 4층 미소안피부과",
+        "number": "02-514-2561"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미엘피부과 강서점",
+        "doctor_name": "강교신",
+        "address": "서울특별시 강서구 강서로 242 강서힐스테이트상가 406호, 407호 (화곡동 1165-1,강서힐스테이트)",
+        "number": "02-2697-8900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미인피부과",
+        "doctor_name": "이수근",
+        "address": "서울특별시 강남구 청담동 118-17 네이처포엠 210호 미인피부과",
+        "number": "02-594-3375"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미파문 피부과",
+        "doctor_name": "문득곤",
+        "address": "서울 강남구 역삼동 808-5 충림빌딩 5층",
+        "number": "02-569-2063"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "미파문 피부과",
+        "doctor_name": "정유석2",
+        "address": "서울 강남구 강남대로 468 5층 미파문 피부과 (역삼동, 충림빌딩)",
+        "number": "02-564-2065"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "민피부과",
+        "doctor_name": "민병근",
+        "address": "서울 동대문구 전농로 134 설파빌딩 3층  (전농동)",
+        "number": "02-2212-5300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "바노바기피부과",
+        "doctor_name": "반재용",
+        "address": "서울 강남구 봉은사로 219 3층  (논현동, 두남빌딩)",
+        "number": "02-3288-3322"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "바노바기피부과",
+        "doctor_name": "김민석",
+        "address": "서울 강남구 봉은사로 219 3층  (논현동, 두남빌딩)",
+        "number": "02-3288-3322"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "바노바기피부과",
+        "doctor_name": "전희대",
+        "address": "서울 강남구 봉은사로 219 3층  (논현동, 두남빌딩)",
+        "number": "02-3288-3322"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "바노바기피부과",
+        "doctor_name": "권형일",
+        "address": "서울 강남구 봉은사로 219 3층  (논현동, 두남빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "박성주 조에피부과",
+        "doctor_name": "박성주",
+        "address": "서울 강남구 남부순환로 2732 (도곡동) 다나빌딩 3층 서울 강남구 도곡동 411-17",
+        "number": "02-20580730"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "박성현피부과",
+        "doctor_name": "박성현1",
+        "address": "서울 동작구 사당동  147-53 골든시네마타워 503호",
+        "number": "02-534-9991"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "박앤박피부과",
+        "doctor_name": "박세훈",
+        "address": "서울 관악구 신림동 1514 조홍빌딩 501호",
+        "number": "02-888-0750"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "박장환피부과",
+        "doctor_name": "박장환",
+        "address": "서울특별시 양천구 중앙로32길 55 ,305호(신정동 1022-9) (신정동 1022-9)",
+        "number": "02-2646-5535"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "박현철피부과",
+        "doctor_name": "박현철1",
+        "address": "서울 도봉구 노해로63길 78 박현철피부과 (창동)",
+        "number": "02-999-8481"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "반포비앤씨피부과",
+        "doctor_name": "정예진",
+        "address": "서울 서초구 반포3동 18-3 반포래미안퍼스티지중심상가 3층 333호 비앤씨피부과",
+        "number": "02-3477-4333"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "백피부과",
+        "doctor_name": "백혜승",
+        "address": "서울 마포구 동교동  147-3",
+        "number": "02-334-1484"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "베리굿피부과의원",
+        "doctor_name": "황도헌",
+        "address": "서울특별시 강남구 논현로 841, 306호 306호(신사동, 제이비미소빌딩) 베리굿피부과의원 (신사동 583-3,제이비 미소빌딩)",
+        "number": "02-514-3880"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "베스트웰피부과",
+        "doctor_name": "이정옥",
+        "address": "서울 강남구 신사동 고려빌딩 베스트웰클리닉",
+        "number": "02-511-3713"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "벤자민의원",
+        "doctor_name": "홍은선",
+        "address": "서울 강남구 도산대로 138 6층 (논현동)",
+        "number": "02-2296-7007"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "벤자민의원",
+        "doctor_name": "노성민",
+        "address": "서울 강남구 도산대로 138 6층  (논현동)",
+        "number": "02-2296-7007"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "벧엘피부과",
+        "doctor_name": "임숙희",
+        "address": "서울 강남구 봉은사로 310 (역삼동) 숨빌딩 5층",
+        "number": "02-532-3110"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "보람메트로피부과",
+        "doctor_name": "허동",
+        "address": "서울 동작구 신대방동 395-69 아카데미타워 512호",
+        "number": "02-6291-7575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "보스피부과",
+        "doctor_name": "김홍석2",
+        "address": "서울 강남구 언주로 806 1~4F (신사동, 선도빌딩)",
+        "number": "02-515-5515"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "본피부과",
+        "doctor_name": "안용섭",
+        "address": "서울 양천구 목동동로 293 (목동) 현대 41타워 5층 501호 본피부과 서울 양천구 목동 917-9",
+        "number": "02-2062-8700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "봄봄피부과",
+        "doctor_name": "김은진",
+        "address": "서울 송파구 송파대로 345 (가락동, 헬리오시티) 헬리오시티상가 a동 5층 512호 서울 송파구 가락동 479",
+        "number": "01050140109"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "봄스피부과",
+        "doctor_name": "김영진4",
+        "address": "서울 서초구 서초대로 356 10층  (서초동, 서초지웰타워)",
+        "number": "02-535-8055"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "봄스피부과",
+        "doctor_name": "인성일",
+        "address": "서울 서초구 서초대로 356 (서초동) 서초지웰타워 10층 서울 서초구 서초동 1678-4",
+        "number": "02-535-8055"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "봄여름가을겨울피부과",
+        "doctor_name": "김병균",
+        "address": "서울 영등포구 영등포동4가 타임스케어 지하1층 봄여름가을겨울피부과",
+        "number": "02-2638-2045"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "봄여름가을겨울피부과의원",
+        "doctor_name": "강승훈",
+        "address": "서울 강남구 신사동 532-12 리드빌딩 5층",
+        "number": "02-546-1112"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "봄피부과의원",
+        "doctor_name": "서용원",
+        "address": "서울 중랑구 신내로 211 210호 봄피부과의원 (신내동, 금강리빙스텔)",
+        "number": "02-3421-7585"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "분당 서울대학교 병원",
+        "doctor_name": "정의현",
+        "address": "서울특별시 강남구 개포4동 현대아파트 220동 203호",
+        "number": "025785559"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "브라이트피부과의원",
+        "doctor_name": "김태한",
+        "address": "서울 영등포구 당산로 118 6층 (당산동3가)",
+        "number": "02-6953-5730"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "브라이튼피부과의원",
+        "doctor_name": "신성식",
+        "address": "서울 서초구 반포대로 287  (반포동, 래미안퍼스티지 중심상가)",
+        "number": "02-6953-8480"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "블레싱피부과",
+        "doctor_name": "강진희",
+        "address": "서울 서초구 반포대로 291 5층 507호~510호 (반포동, 원베일리 스퀘어)",
+        "number": "02-532-9332"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "비스킨피부과",
+        "doctor_name": "정정원",
+        "address": "서울 도봉구 쌍문2동  653 삼환프라자307호",
+        "number": "02-903-9770"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "비앤씨피부과",
+        "doctor_name": "김상덕",
+        "address": "서울 마포구 만리재로 39 (신공덕동) 201",
+        "number": "02-3144-4333"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "비앤씨피부과",
+        "doctor_name": "한만희",
+        "address": "서울 광진구 아차산로 219 삼영빌딩 5층 (화양동, 삼영빌딩)",
+        "number": "02-469-4333"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "빛채운피부과",
+        "doctor_name": "김진섭",
+        "address": "서울 영등포구 국제금융로 39 3층  (여의도동, 브라이튼 여의도)",
+        "number": "02-6265-0108"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "빛채운피부과의원",
+        "doctor_name": "이동원2",
+        "address": "서울 영등포구 국제금융로 39 브라이튼여의도 3층 301호 빛채운피부과의원 (여의도동, 브라이튼 여의도)",
+        "number": "02-6265-0108"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "뽀얀피부과",
+        "doctor_name": "정상원",
+        "address": "서울 종로구 종로3가  130번지 화영빌딩 501호",
+        "number": "02-2273-5118"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "사랑의피부과의원",
+        "doctor_name": "차몽기",
+        "address": "서울 구로구 구로6동 91∼9998번지 대림오페라타워 304호",
+        "number": "02-855-3591"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "산소피부과",
+        "doctor_name": "권철욱",
+        "address": "서울특별시 강남구 압구정로50길 9 ,2층(신사동 661-17) (신사동 661-17)",
+        "number": "02-516-0202"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "삼성미소가인피부과",
+        "doctor_name": "고보경",
+        "address": "서울 강남구 영동대로 602 3층 (삼성동, 삼성동 미켈란 107)",
+        "number": "02-545-3324"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "삼성미소가인피부과",
+        "doctor_name": "조용세",
+        "address": "서울 강남구 영동대로 602 3층 삼성미소가인피부과 (삼성동, 삼성동 미켈란 107)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "삼성서울병원",
+        "doctor_name": "이종희",
+        "address": "서울특별시 강남구 일원로 81 삼성서울병원 피부과학교실 (일원동 50,삼성의료원)",
+        "number": "02-3410-3549"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "삼성화이트피부과",
+        "doctor_name": "박현정2",
+        "address": "서울 강남구 남부순환로 2917 2층 (대치동, 청실종합상가)",
+        "number": "025683364"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "삼육의료원(구 위생병원)",
+        "doctor_name": "조태호",
+        "address": "서울 동대문구 망우로 82 피부과 외래 (휘경동, 삼육서울병원, 삼육보건대학교)",
+        "number": "02-2210-3682"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "상계백병원",
+        "doctor_name": "이수경2",
+        "address": "서울 노원구 동일로 1342 (상계동) 상계백병원 3층 피부과 외래 서울 노원구 상계동 761-1",
+        "number": "02-950-1131"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "상계백병원",
+        "doctor_name": "김명신",
+        "address": "서울 노원구 동일로 1342 (상계동)  서울 노원구 상계동 761-1",
+        "number": "02-3010-3460"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "상아피부과의원",
+        "doctor_name": "변주현",
+        "address": "서울 서대문구 통일로 436 302호 (홍제동)",
+        "number": "02-722-5442"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "새오름피부과",
+        "doctor_name": "박아영",
+        "address": "서울 동작구 동작대로 89 301,301-1호 (사당동, 골든시네마타워)",
+        "number": "02-6265-5119"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "새하얀피부과",
+        "doctor_name": "배은영",
+        "address": "서울 서초구 방배동 445-5 도양빌딩3층",
+        "number": "02-583-2500"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "새하얀피부과(은평점)",
+        "doctor_name": "김명주",
+        "address": "서울 은평구 응암동 76-2 삼영빌딩 4층 새하얀피부과",
+        "number": "02-353-5600"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서대문우태하피부과",
+        "doctor_name": "최승재",
+        "address": "서울 서대문구 응암로 64 (북가좌동) 2층 서대문우태하피부과 서울 서대문구 북가좌동 306-20",
+        "number": "02-376-9962"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서대문우태하피부과",
+        "doctor_name": "고우태",
+        "address": "서울특별시 서대문구 응암로 64 서대문우태하피부과 (북가좌동 306-20)",
+        "number": "02-376-9962"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서아송피부과",
+        "doctor_name": "송경호",
+        "address": "서울 서초구 서초2동  1362번지 두산위브 2층 서아송피부과",
+        "number": "02-571-6339"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서아송피부과",
+        "doctor_name": "서석배",
+        "address": "서울 송파구 올림픽로 106 상록 빌딩 7층 서아송피부과 (잠실동, 상록빌딩)",
+        "number": "02-425-3133"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울 새로운 피부과",
+        "doctor_name": "도은진",
+        "address": "서울 양천구 오목로 279 401호 (목동, 현대프라자)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울 진 피부과",
+        "doctor_name": "최혜진",
+        "address": "서울 노원구 상계동 727-3 기업빌딩 3층 서울진피부과",
+        "number": "02-931-7075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울 피부과의원",
+        "doctor_name": "이근우",
+        "address": "강원 속초시 금호동 장안갤러리2층 서울피부과의원",
+        "number": "033-638-3888"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울내외의원",
+        "doctor_name": "이나영1",
+        "address": "서울 광진구 구의3동 213-3",
+        "number": "02-450-0366"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울대병원",
+        "doctor_name": "이시형",
+        "address": "서울 종로구 대학로 101 (연건동) 서울대학교병원 6층 6607호",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울대학교병원",
+        "doctor_name": "서중헌",
+        "address": "서울 종로구 대학로 51 CMI 3층 (연건동)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울대학교병원",
+        "doctor_name": "문제호",
+        "address": "서울 종로구 대학로 101 (연건동) 서울대학교병원 본관 6층 피부과 의국",
+        "number": "02-2072-3274"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울대학교병원",
+        "doctor_name": "최종원",
+        "address": "서울 종로구 연건동 서울대학교병원  6층 피부과 의국",
+        "number": "02-6264-3974"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울대학교병원",
+        "doctor_name": "이동훈2",
+        "address": "서울특별시 종로구 대학로 101 서울대병원 6607호 (연건동 28-21,서울대학교병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울더맑은피부과의원",
+        "doctor_name": "이형민",
+        "address": "서울 광진구 아차산로 480 (구의동) 2층 201호 서울 광진구 구의동 199-8",
+        "number": "02-446-0100"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울레전드피부과",
+        "doctor_name": "나선재",
+        "address": "서울 강남구 선릉로 660 (삼성동, 브라운스톤 레전드) 2층 205호 서울 강남구 삼성동 8-2",
+        "number": "02-542-3599"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울리거 피부과 의원",
+        "doctor_name": "이정훈2",
+        "address": "서울 강남구 논현로 847 서울리거피부과 (신사동)",
+        "number": "02-548-2288"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울리거피부과",
+        "doctor_name": "김성욱",
+        "address": "서울 강남구 논현로 847 (신사동) 2,3,4층 서울 강남구 신사동 582-6",
+        "number": "02-548-2288"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울림피부과",
+        "doctor_name": "최윤림",
+        "address": "경기 남양주시 와부읍 덕소리 476-3 일신프라자 2층 서울림피부과",
+        "number": "031-521-3636"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울맥스웰피부과",
+        "doctor_name": "노윤우",
+        "address": "서울 강남구 테헤란로 120 (역삼동) 상경빌딩 11층",
+        "number": "02-566-5824"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울바른내과피부과",
+        "doctor_name": "이숙영",
+        "address": "서울 강북구 삼양로 502 3,4층  (수유동)",
+        "number": "02-995-5000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울성모병원",
+        "doctor_name": "이지현2",
+        "address": "서울 서초구 반포동  505번지 가톨릭대학교",
+        "number": "02-2258-0114"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울성모병원",
+        "doctor_name": "방철환",
+        "address": "서울 서초구 반포대로 222 (반포동) 서울성모병원 3층 피부과 외래",
+        "number": "02-2258-1386"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울성모병원",
+        "doctor_name": "이현지1",
+        "address": "서울 서초구 반포대로 222 (반포동) 서울성모병원 피부과",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울성모병원",
+        "doctor_name": "육화정",
+        "address": "서울 서초구 반포대로 222  (반포동, 가톨릭중앙의료원 새병원 및 성의회관)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울성모병원",
+        "doctor_name": "한주희",
+        "address": "서울 서초구 반포대로 222  (반포동, 가톨릭중앙의료원 새병원 및 성의회관)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울성모병원",
+        "doctor_name": "김영호2",
+        "address": "서울 서초구 반포대로 222 (반포동) 가톨릭대학교 서울성모병원 본관3층 피부과외래",
+        "number": "1588-1511"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울성애병원",
+        "doctor_name": "이혜영2",
+        "address": "서울 영등포구 신길1동 성애병원 피부과 외래",
+        "number": "02-840-7208"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울아산병원",
+        "doctor_name": "양희주",
+        "address": "서울 송파구 올림픽로43길 88  (풍납동, 서울아산병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울아산병원",
+        "doctor_name": "문익준",
+        "address": "서울 송파구 강동대로 13 (풍납동, 서울아산병원) 서울아산병원 피부과 서울 송파구 풍납동 388",
+        "number": "0230100319"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울아트피부과의원",
+        "doctor_name": "강홍규",
+        "address": "서울 동대문구 휘경로 6 4층 서울아트피부과의원 (이문동, 사이버한국외국어대학교 제2교사)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울에스와이피부과",
+        "doctor_name": "김수영2",
+        "address": "서울 강남구 논현로171길 11 5층 501호  (신사동)",
+        "number": "02-517-2696"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울에이치피부과의원",
+        "doctor_name": "김형수",
+        "address": "서울 강남구 선릉로 669 (논현동) 상경빌딩 6층 서울에이치피부과의원 서울 강남구 논현동 241-7",
+        "number": "02-2135-3501"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울올업피부과",
+        "doctor_name": "김병욱",
+        "address": "서울 성동구 아차산로 92 10층 (성수동2가, S TOWER)",
+        "number": "02-466-3669"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울원(ONE)피부과",
+        "doctor_name": "염꽃보라",
+        "address": "서울 서초구 고무래로 14 (반포동) 3층",
+        "number": "02-6956-4700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울원피부과 도곡점",
+        "doctor_name": "김성범2",
+        "address": "서울 강남구 도곡로 317 한티프라자 5층  (역삼동)",
+        "number": "02-566-2701"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울원피부과의원",
+        "doctor_name": "백승환",
+        "address": "서울 서초구 고무래로 14 (반포동) 3층",
+        "number": "02-6956-4700"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "서울의원",
+        "doctor_name": "한은실",
+        "address": "경기 동두천시 중앙동 611번지 재단법인 서울의원",
+        "number": "02-865-2380"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울참피부과",
+        "doctor_name": "성환태",
+        "address": "서울 중구 청구로 70 4층 서울참피부과 (신당동, 신진빌딩)",
+        "number": "02-2232-8277"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울참피부과",
+        "doctor_name": "문승현1",
+        "address": "경기 안산시 고잔동768번지 월드타운 B동 504호 서울참피부과",
+        "number": "031-414-0075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울톤피부과",
+        "doctor_name": "김진용",
+        "address": "서울 강남구 선릉로 48 2~4층  (개포동)",
+        "number": "02-576-5502"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울톤피부과의원",
+        "doctor_name": "온정윤",
+        "address": "서울 강남구 선릉로 48 2층 (개포동)",
+        "number": "02-576-5502"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울특별시보라매병원",
+        "doctor_name": "윤현선",
+        "address": "서울 동작구 보라매로5길 20 28층 교수의국 (신대방동, 서울특별시보라매병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울프라임 피부과의원",
+        "doctor_name": "김현수",
+        "address": "부산 부산진 양정1동 369-6 양정메디컬 4층 서울프라임 피부과 의원",
+        "number": "051-862-2700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울피부과",
+        "doctor_name": "서치우",
+        "address": "경남 김해시 내동 1144-2 삼성플라자 2층 서울피부과",
+        "number": "055-324-0866"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울피부과",
+        "doctor_name": "서판교",
+        "address": "인천 남동구 간석4동 616-4   홈플러서 2층 서울피부과",
+        "number": "032-874-0983"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울피부과",
+        "doctor_name": "정석준",
+        "address": "충북 진천군 진천읍 읍내리 101번지 2층 서울피부과",
+        "number": "043-535-1951"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서울피부과",
+        "doctor_name": "박기범",
+        "address": "서울 강남구 언주로154길 16 3층 서울피부과의원 (신사동, 서울레이저빌딩)",
+        "number": "02-512-4343"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서원필피부과의원",
+        "doctor_name": "서원필",
+        "address": "서울 영등포구 선유로 70 우리벤처타운2 206호 (문래동3가, 우리벤처타운2)",
+        "number": "02-853-9204"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서정피부과",
+        "doctor_name": "이지영1",
+        "address": "서울 서초구 서초중앙로 188 아크로비스타 L층 B-123호 (서초동, 아크로비스타)",
+        "number": "02-533-9300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "서피부과의원",
+        "doctor_name": "서웅석",
+        "address": "서울 마포구 양화로 128 2층  (서교동)",
+        "number": "02-334-2898"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "선 피부과",
+        "doctor_name": "이우선",
+        "address": "서울 강남구 도곡2동 411-17번지 다나빌딩 3층  선피부과",
+        "number": "02-2058-0730"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "설피부과의원",
+        "doctor_name": "설경덕",
+        "address": "서울 양천구 목1동 목동현대하이페리온II 206-309",
+        "number": "02-2646-7577"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "성경제피부과",
+        "doctor_name": "성경제",
+        "address": "서울 광진구 아차산로 229 한림타워 4층 성경제피부과 (화양동, 한림타워)",
+        "number": "02-2115-6222"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "성균관의대 강북삼성병원",
+        "doctor_name": "최영준",
+        "address": "서울 종로구 새문안로 29 C관 9층 피부과 외래 (평동, 강북삼성병원)",
+        "number": "02-2001-2227"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "성애병원",
+        "doctor_name": "김석호",
+        "address": "서울 영등포구 여의대방로53길 22  (신길동, 성애병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "세련피부과",
+        "doctor_name": "최은선",
+        "address": "서울 강남구 논현동  241-1 강남피라곤 S동 201호 세련피부과",
+        "number": "02-515-5158"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "세브란스 병원",
+        "doctor_name": "김도영",
+        "address": "서울 서대문 신촌동 연세의료원건물 의과대학 5층 피부과학교실",
+        "number": "02-723-2737"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "세브란스병원 피부과",
+        "doctor_name": "정진웅",
+        "address": "서울 서대문구 연세로 50-1 5층 피부과외래  (신촌동, 세브란스병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "세진피부과",
+        "doctor_name": "김세희",
+        "address": "서울 강남구 언주로172길 30 (신사동) 4층 서울 강남구 신사동 643-11",
+        "number": "02-515-2741"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "센스피부과",
+        "doctor_name": "이상협",
+        "address": "서울 송파구 신천동7번지 장미상가 B동 5층",
+        "number": "02-414-0058"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "셀린피부과의원",
+        "doctor_name": "김영훈2",
+        "address": "서울 강남구 학동로 215 CL타워 6층 셀린피부과의원 (논현동)",
+        "number": "02-516-1211"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "셀린피부과의원",
+        "doctor_name": "유현주",
+        "address": "서울 강남구 학동로 215 6층 셀린피부과의원 (CL타워) (논현동)",
+        "number": "02-516-1211"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "셀파크피부과",
+        "doctor_name": "박병순",
+        "address": "서울 강남구 압구정로14길 22 (신사동) 도우빌딩 302호 서울 강남구 신사동 547-9",
+        "number": "02-515-2070"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "소솜피부과",
+        "doctor_name": "김협",
+        "address": "서울특별시 송파구 석촌호수로 61 401호 (잠실동 35-2,트리지움)",
+        "number": "02-420-3234"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "송파미소피부과",
+        "doctor_name": "천보미",
+        "address": "서울 송파구 가락로 211 (송파동) 충북빌딩 2층 송파미소피부과 서울 송파구 송파동 142-9",
+        "number": "02-419-6782"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "송파오라클피부과",
+        "doctor_name": "김성한",
+        "address": "서울 송파구 법원로 128 C동 304호 (문정동, 문정에스케이브이원지엘메트로시티)",
+        "number": "02-431-6789"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "송피부과의원",
+        "doctor_name": "송도식",
+        "address": "서울 서초구 방배로 115 방배메디칼5층 (방배동, 방배병원)",
+        "number": "02-588-6686"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "수도방위사령부",
+        "doctor_name": "구태한",
+        "address": "서울 관악구 남현동 산 100-34 수도방위사령부",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "수아로피부과의원",
+        "doctor_name": "김석림",
+        "address": "서울 강남구 헌릉로 569 (세곡동) 강남리더스프라자 303, 304호 수아로피부과 서울 강남구 세곡동 581",
+        "number": "0106567693"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "수유우태하피부과",
+        "doctor_name": "안형진",
+        "address": "서울 강북구 도봉로 329 4층 (수유동, 동오빌딩)",
+        "number": "02-900-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "수피부과",
+        "doctor_name": "홍연주",
+        "address": "서울 구로구 개봉로 49 (개봉동) 5층 수피부과 서울 구로구 개봉동 403-108",
+        "number": "02-2613-9075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "수피부과",
+        "doctor_name": "신현주",
+        "address": "서울 강남구 역삼동  641-7",
+        "number": "02-555-7472"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "순수  피부과 의원",
+        "doctor_name": "임연순",
+        "address": "서울 강남구 대치동 511 미도아파트 내 미도상가 2층 순수 피부과 (우리은행 옆)",
+        "number": "02-575-8008"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "순수안피부과의원",
+        "doctor_name": "김민호",
+        "address": "서울 서초구 사임당로 157 4층 407호 순수안피부과의원 (서초동, 릿타워)",
+        "number": "02-522-8975"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "순천향대학교 부속 서울병원",
+        "doctor_name": "배유인",
+        "address": "서울 용산구 대사관로 59 순천향대학교 부속 서울병원 피부과 (한남동, 순천향대학병원)",
+        "number": "02-709-9368"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "순천향대학교 서울병원",
+        "doctor_name": "최유성",
+        "address": "서울 용산구 대사관로 59   (한남동, 순천향대학병원)",
+        "number": "02-709-9000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "쉬즈애비뉴피부과",
+        "doctor_name": "유상희",
+        "address": "서울 강남구 신사동  621-2 쉬즈애비뉴 빌딩 3층",
+        "number": "02-3447-5124"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "슈퍼스타피부과",
+        "doctor_name": "차상희",
+        "address": "서울 구로구 구로동 1124-72번지 조영빌딩 6층 (구로호텔 맞은편 KFC 건물)",
+        "number": "02-859-7579"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스누피부과",
+        "doctor_name": "민성욱",
+        "address": "서울 성동구 아차산로 42 (성수동1가) 7층 스누피부과 서울 성동구 성수동1가 14-33",
+        "number": "02-499-6008"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스위츠피부과",
+        "doctor_name": "권현정1",
+        "address": "서울 강남구 언주로 815   (신사동, 형 빌딩)",
+        "number": "02-511-1030"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스위츠피부과의원",
+        "doctor_name": "김인용",
+        "address": "서울 강남구 언주로 815 스위츠피부과의원 (신사동, 형 빌딩)",
+        "number": "02-511-1030"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "스카이피부과",
+        "doctor_name": "신동헌",
+        "address": "서울 은평구 신사동  20-8신창메디칼센터302호",
+        "number": "02-351-3001"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스카치피부과",
+        "doctor_name": "전진곤",
+        "address": "서울 서초구 동작대로 140 4층 (방배동, 송언빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스킨메디피부과",
+        "doctor_name": "양지훈",
+        "address": "서울 강남구 학동로 413 청담빌딩 5층 (청담동)",
+        "number": "02-6953-7654"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스킨메디피부과의원",
+        "doctor_name": "홍광철",
+        "address": "서울 강남구 학동로 413 청담빌딩5층 (청담동)",
+        "number": "02-6953-7654"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "스테이영피부과의원",
+        "doctor_name": "김성민1",
+        "address": "서울 강남구 언주로 702 (논현동) 라이브플렉스타워 3층 스테이영피부과의원 서울 강남구 논현동 115-13",
+        "number": "02-514-7574"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스토리피부과",
+        "doctor_name": "김서완",
+        "address": "서울 강남구 테헤란로 231 센터필드 west동 2층 w222호",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스토리피부과",
+        "doctor_name": "김주하",
+        "address": "서울 강남구 테헤란로 231 (역삼동) 센터필드 west동 2층 w222호 서울 강남구 역삼동 676",
+        "number": "02-545-7737"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스토리피부과",
+        "doctor_name": "김현우",
+        "address": "서울 강남구 테헤란로 231 센터필드 west동 2층 w222호  (역삼동, 센터필드)",
+        "number": "02-545-7737"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "스페이스피부과",
+        "doctor_name": "박정태",
+        "address": "서울 성동구 독서당로 202 2층 203, 204호 (옥수동)",
+        "number": "02-2298-8280"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "시그니처피부과",
+        "doctor_name": "고종현",
+        "address": "서울 강남구 테헤란로 139-1 4층 시그니처피부과의원 (역삼동)",
+        "number": "02-556-3661"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "시크릿성형외과의원",
+        "doctor_name": "송승현",
+        "address": "서울 강남구 강남대로 372 (역삼동) 4층 시크릿성형외과의원",
+        "number": "0216888538"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "신사에스앤유피부과",
+        "doctor_name": "장승호",
+        "address": "서울특별시 강서구 방화대로 294  4층 (마곡동 739-1,마곡더블유타워)",
+        "number": "02-567-5050"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "신사인피부과",
+        "doctor_name": "주혜영",
+        "address": "서울 강남구 도산대로 107 (신사동) 신용호타워 11층 서울 강남구 신사동 501-2",
+        "number": "025412555"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "신세계안피부과",
+        "doctor_name": "안지수",
+        "address": "서울 서초구 신반포로 176 신세계백화점 강남점 하우스오브신세계 1M층  (반포동, 센트럴시티)",
+        "number": "02-532-5565"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "신촌세브란스병원",
+        "doctor_name": "김지희",
+        "address": "서울특별시 서대문구 연세로 50-1 피부과학교실 (신촌동 134,연세의료원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "신촌세브란스병원",
+        "doctor_name": "오병호",
+        "address": "서울 서대문구 신촌동 연세의료원건물 신촌세브란스병원 피부과",
+        "number": "02-2030-5170"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "신촌오라클피부과",
+        "doctor_name": "조완익",
+        "address": "서울 서대문구 신촌로 79 (창천동) 성광빌딩 5층 서울 서대문구 창천동 72-2",
+        "number": "02-322-2009"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "신학철피부과의원",
+        "doctor_name": "신학철",
+        "address": "서울 강남구 삼성로 418 (대치동) 1-4층(신학철피부과의원) 서울 강남구 대치동 959-3",
+        "number": "02-501-7575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아로하피부과",
+        "doctor_name": "권혁선",
+        "address": "서울 마포구 신촌로 262 5층 아로하피부과 (아현동, 아르띠타워)",
+        "number": "02-6952-4880"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아로하피부과의원",
+        "doctor_name": "이일재",
+        "address": "서울 마포구 신촌로 262 5층 아로하피부과 (아현동, 아르띠타워)",
+        "number": "02-6952-4880"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아로하피부과의원",
+        "doctor_name": "황세원",
+        "address": "서울 마포구 신촌로 262 아르띠 5층 아로하피부과의원 (아현동)",
+        "number": "02-6952-4480"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아로하피부과의원",
+        "doctor_name": "강민지2",
+        "address": "서울 마포구 신촌로 262 5층 아로하피부과 (아현동)",
+        "number": "02-6952-4480"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아르노피부과",
+        "doctor_name": "서현이",
+        "address": "서울 강남구 언주로 807 4층  (신사동, 소촌빌딩)",
+        "number": "02-542-2429"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아름다운나라 명동점",
+        "doctor_name": "류지호",
+        "address": "서울 중구 명동8나길 6 에세스빌딩4층 (충무로1가)",
+        "number": "02-755-2105"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아름다운나라 피부과",
+        "doctor_name": "이상준",
+        "address": "서울 강남구 역삼동  825번지 미진프라자 12층",
+        "number": "02-3420-2201"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아름다운나라 피부과",
+        "doctor_name": "김형섭1",
+        "address": "서울특별시 강남구 강남대로 390 12층 아름다운나라피부과 (역삼동 825,미진프라자)",
+        "number": "031-707-0545"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아름다운나라피부과",
+        "doctor_name": "조흔정",
+        "address": "서울 강남구 강남대로 390 12층 (역삼동, 미진프라자)",
+        "number": "02-3420-2201"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아름다운피부과 반포점",
+        "doctor_name": "이민중",
+        "address": "서울 서초구 서초중앙로 229 (반포동) 대영빌딩 2층 아름다운피부과의원 서울 서초구 반포동 52-8",
+        "number": "02-532-2235"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아름다운피부과의원",
+        "doctor_name": "김은정2",
+        "address": "서울 강북구 번동 446-50 영광빌딩 501호  5층 아름다운피부과의원",
+        "number": "02-990-0073"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아벨피부과",
+        "doctor_name": "최원준2",
+        "address": "서울특별시 은평구 진관2로 15-46 6층 602호 (진관동 70,메트로프라자)",
+        "number": "0234747779"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아벨피부과의원",
+        "doctor_name": "최국주",
+        "address": "서울특별시 은평구 진관2로 15-46  6층 602호 (진관동, 메트로프라자)",
+        "number": "02-3474-7779"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아이디피부과",
+        "doctor_name": "안제민",
+        "address": "서울 강남구 도산대로12길 13   (논현동)",
+        "number": "02-543-7114"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "아이디피부과",
+        "doctor_name": "박희재",
+        "address": "서울 강남구 도산대로12길 13   (논현동)",
+        "number": "02-543-7114"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아이디피부과",
+        "doctor_name": "허규",
+        "address": "서울 강남구 도산대로12길 13 아이디피부과 (논현동)",
+        "number": "02-543-7114"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아이러브피부과",
+        "doctor_name": "이상민1",
+        "address": "서울 서초구 강남대로 423  한승빌딩 5층",
+        "number": "02-553-3100"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아이리스피부과",
+        "doctor_name": "최주연",
+        "address": "서울 성동구 상원길 26 2층 (성수동1가, MILK)",
+        "number": "02-2138-0544"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아이피부과",
+        "doctor_name": "한승석",
+        "address": "서울 양천구 신정1동 323-16 대영프라자 3층 아이피부과",
+        "number": "02-2647-7588"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아트인휴먼피부과",
+        "doctor_name": "박주희",
+        "address": "서울 강남구 언주로 337  1층 아트인피부과",
+        "number": "070-4107-7841"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "아트인휴먼피부과",
+        "doctor_name": "이혜인",
+        "address": "서울특별시 강남구 언주로 337 1층(역삼동,동영문화센터) (역삼동 772,동영문화센터)",
+        "number": "02-558-7275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "안진균피부과",
+        "doctor_name": "안진균",
+        "address": "서울 성동구 금호동4가548-1 혜성빌딩 3층 303호 안진균피부과",
+        "number": "02-2292-7005"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "안창헌피부과의원",
+        "doctor_name": "안창헌",
+        "address": "서울 동대문구 왕산로 207 3층  (청량리동)",
+        "number": "02-966-6176"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "양피부과의원",
+        "doctor_name": "양순균",
+        "address": "서울 강서구 공항대로 426 (화곡동) 1107번지408호 양피부과의원 서울 강서구 화곡동 1107",
+        "number": "02-2695-6368"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "어바인피부과",
+        "doctor_name": "유동기",
+        "address": "서울 영등포구 의사당대로 97 (여의도동) 교보증권빌딩 4층 어바인피부과 서울 영등포구 여의도동 26-4",
+        "number": "02-780-3330"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "어바인피부과",
+        "doctor_name": "박수정2",
+        "address": "서울 영등포구 의사당대로 97 4층  (여의도동, 교보증권빌딩)",
+        "number": "02-780-3330"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "어바인피부과",
+        "doctor_name": "이선복",
+        "address": "서울 영등포구 의사당대로 97 4층  (여의도동, 교보증권빌딩)",
+        "number": "02-780-3330"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "어수동피부과",
+        "doctor_name": "어수동",
+        "address": "서울 도봉구 방학동  703-61",
+        "number": "02-3492-1771"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "어썸피부과의원",
+        "doctor_name": "황유정",
+        "address": "서울 마포구 신촌로 156 1층 (노고산동)",
+        "number": "027171525"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에버그린 피부과 의원",
+        "doctor_name": "김정원",
+        "address": "서울 강남구 도곡동467-6 대림 아크로텔 2층 201호 에버그린 피부과",
+        "number": "02-2187-7377"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "에버피부과",
+        "doctor_name": "김지은3",
+        "address": "서울 강남구 압구정로 222 3층  (신사동)",
+        "number": "02-795-9553"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에버피부과",
+        "doctor_name": "장현준",
+        "address": "서울 강남구 압구정로 222 3층 에버피부과 (신사동)",
+        "number": "02-795-9553"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에버피부과",
+        "doctor_name": "조은별",
+        "address": "서울 강남구 압구정로 222 3층 (신사동)",
+        "number": "02-795-9553"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에세이(Essay)피부과",
+        "doctor_name": "황미란",
+        "address": "서울 서초구 서초4동  1691-8 건원빌딩 5층",
+        "number": "02-3477-3376"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에스디피부과",
+        "doctor_name": "이용석",
+        "address": "서울 강남구 압구정로 226 성수빌딩3층 에스디피부과 (신사동, 성수빌딩)",
+        "number": "02-549-7574"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에스비피부과",
+        "doctor_name": "김성범1",
+        "address": "서울 송파구 풍납2동 400∼510J빌딩 4층 SB지앤미피부과",
+        "number": "02-487-0075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에스앤유 피부과",
+        "doctor_name": "김방순",
+        "address": "서울특별시 강남구 압구정로 314 ,4층(신사동 639,YOHAN빌딩) (신사동 639,YOHAN빌딩)",
+        "number": "02-3444-3939"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에스앤유 피부과",
+        "doctor_name": "정승용",
+        "address": "서울 마포구 공덕동 461 신영지웰 2층",
+        "number": "02-706-5252"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에스앤유피부과",
+        "doctor_name": "박선용",
+        "address": "서울 마포구 백범로 178 (공덕동) 2층 에스앤유피부과 서울 마포구 공덕동 461",
+        "number": "02-706-5252"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에스앤유피부과",
+        "doctor_name": "함지은",
+        "address": "서울 마포구 백범로 178 2층 에스앤유피부과 (공덕동, 마포신영지웰)",
+        "number": "02-706-5252"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에스앤유피부과",
+        "doctor_name": "조미경",
+        "address": "서울 강남구 논현로97길 38 (역삼동) 단독주택 서울 강남구 역삼동 630-5",
+        "number": "02-3444-6033"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "에젤피부과의원",
+        "doctor_name": "박지혜1",
+        "address": "서울 강남구 압구정로12길 11 (신사동) 한림빌딩 4층 서울 강남구 신사동 547-1",
+        "number": "02-544-5300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세 A&B 피부과",
+        "doctor_name": "윤소영2",
+        "address": "서울 송파구 백제고분로 365 (석촌동) 3층 서울 송파구 석촌동 174-2",
+        "number": "02-417-7500"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세 탱탱 피부과",
+        "doctor_name": "전우형",
+        "address": "서울 관악구 남부순환로 1925 7층 (봉천동, 호전 크리닉스 타워)",
+        "number": "02-6083-3927"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세41피부과",
+        "doctor_name": "정원순",
+        "address": "서울 양천구 목동동로 293 (목동) 205호 연세 41피부과 서울 양천구 목동 917-9",
+        "number": "02-2655-2000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세고운피부과",
+        "doctor_name": "윤나영",
+        "address": "서울특별시 관악구 난곡로 197  3층 (신림동 706-22,남강빌딩)",
+        "number": "02-837-2300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세늘봄피부과의원",
+        "doctor_name": "이누리",
+        "address": "서울 도봉구 도봉로 669 (방학동) 이정빌딩 3층",
+        "number": "02-955-9923"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세로마피부과",
+        "doctor_name": "이호정",
+        "address": "서울 강서구 공항대로 525 2층 202호 (등촌동, 비원오피스텔)",
+        "number": "02-3664-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세리앤피부과",
+        "doctor_name": "이세원",
+        "address": "서울특별시 영등포구 영중로 18 금강제화빌딩 4층 (영등포동3가 9-2)",
+        "number": "02-2671-9300"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세모네피부과",
+        "doctor_name": "문태기",
+        "address": "서울 송파구 잠실본동  181-9 연세모네피부과",
+        "number": "031-709-6354"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세모던피부과의원",
+        "doctor_name": "홍경태",
+        "address": "서울 광진구 중곡2동  116-6 백철빌딩 2층 3층 연세 모던 피부과의원  구)홍피부과",
+        "number": "02-455-0063"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세미타임 피부과",
+        "doctor_name": "정우길",
+        "address": "서울 강남구 역삼동  825-9 준빌딩 5층 연세미타임 피부과",
+        "number": "02-508-5881"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세밝은피부과의원",
+        "doctor_name": "장재용",
+        "address": "서울 송파구 올림픽로37길 130 파크리오A상가 5층 508호 (신천동, 파크리오)",
+        "number": "02-422-7020"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세봄빛피부과",
+        "doctor_name": "이주한",
+        "address": "서울 구로구 시흥대로 551 4층  (구로동, 광희빌딩)",
+        "number": "02-837-8275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세봄빛피부과",
+        "doctor_name": "조수현",
+        "address": "서울 구로구 시흥대로 551 (구로동) 광희빌딩 4층",
+        "number": "02-837-8275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세봄빛피부과",
+        "doctor_name": "최윤진1",
+        "address": "서울 구로구 시흥대로 551 (구로동) 광희빌딩 4층",
+        "number": "02-837-8275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세세란피부과",
+        "doctor_name": "조성빈",
+        "address": "서울 금천구 시흥대로 224 (시흥동) 금천리메인시티 6층 연세세란피부과",
+        "number": "02-2135-1375"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세스타 피부과",
+        "doctor_name": "이상주",
+        "address": "서울 서대문구 신촌로 73 6층 (창천동, 테라운드)",
+        "number": "02-332-0023"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세스타피부과",
+        "doctor_name": "정지인",
+        "address": "서울 서대문구 신촌로 73 (창천동) 거화빌딩 6층 서울 서대문구 창천동 72-14",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세스타피부과",
+        "doctor_name": "조미연",
+        "address": "서울 서대문구 신촌로 73 6층 (창천동, 테라운드)",
+        "number": "02-332-0023"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세스타피부과",
+        "doctor_name": "강진문",
+        "address": "서울 서대문구 창천동  72-14 거화빌딩 7층",
+        "number": "02-332-0023"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세스타피부과",
+        "doctor_name": "곡원호",
+        "address": "서울 서대문구 신촌로 73 (창천동) 6층(거화빌딩)",
+        "number": "02-332-0023"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세스타피부과 강남점",
+        "doctor_name": "김영구",
+        "address": "서울 서초구 방배로 83 7층 연세스타피부과 강남점   (방배동, 방배센트럴빌딩)",
+        "number": "02-332-0023"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세아름다운피부과의원",
+        "doctor_name": "이일주",
+        "address": "서울 중랑구 사가정로 398 3층 (면목동, JS빌딩)",
+        "number": "02-435-7585"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세애드미피부과",
+        "doctor_name": "김형섭2",
+        "address": "서울 도봉구 도봉로 496 2층  (창동)",
+        "number": "02-906-1400"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "연세에스웰피부과",
+        "doctor_name": "황성원",
+        "address": "서울 종로구 청진동  르메이에르 종로타운 404호",
+        "number": "02-2075-7500"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세에이앤비피부과",
+        "doctor_name": "이해진",
+        "address": "서울 송파구 백제고분로 365 (석촌동) 3층 연세에이앤비피부과의원",
+        "number": "02-417-7500"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세에이앤비피부과",
+        "doctor_name": "이승헌",
+        "address": "서울 송파구 백제고분로 365 (석촌동) 태문빌딩 3층 연세에이앤비피부과의원",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세영피부과",
+        "doctor_name": "김대석",
+        "address": "서울 은평구 응암로 323 (응암동) 2층 연세영피부과 서울 은평구 응암동 109-1",
+        "number": "02-355-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세우리피부과의원",
+        "doctor_name": "홍한나",
+        "address": "서울 은평구 통일로 626 유림빌딩4층 (녹번동, 유림빌딩)",
+        "number": "02-382-7555"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세조은피부과",
+        "doctor_name": "박화영",
+        "address": "서울 금천구 독산로 136 (시흥동) 2층 연세조은피부과 서울 금천구 시흥동 803-3",
+        "number": "02-6012-4000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세지움피부과",
+        "doctor_name": "김상은",
+        "address": "서울특별시 마포구 노고산동 107-1 동인빌딩 9층 연세지움피부과",
+        "number": "02-333-0606"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세큐원피부과의원",
+        "doctor_name": "강태원",
+        "address": "서울 동작구 상도로 58 (대방동, 올리브빌딩) 2층 202호, 연세큐원피부과 서울 동작구 대방동 405-8",
+        "number": "02-6264-0064"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세피부과",
+        "doctor_name": "이융재",
+        "address": "서울 노원구 상계동  651-7",
+        "number": "02-934-0998"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세피부과의원",
+        "doctor_name": "한신원",
+        "address": "서울 관악구 남부순환로 1942 (봉천동) 연세피부과",
+        "number": "02-883-1338"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세피부과의원",
+        "doctor_name": "황선영",
+        "address": "서울 동작구 시흥대로 664-1 3층  연세피부과의원 (신대방동, 성훈빌딩)",
+        "number": "02-843-4414"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세희망피부과",
+        "doctor_name": "김희성",
+        "address": "서울 송파구 송파대로 167 (문정동) 테라타워 A동 213호 서울 송파구 문정동 651",
+        "number": "02-406-0997"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연세힐피부과",
+        "doctor_name": "강동승",
+        "address": "서울 송파구 잠실동 22-6 리센츠상가 3층 28호",
+        "number": "02-423-5151"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연피부과",
+        "doctor_name": "김기연1",
+        "address": "서울 송파구 올림픽로 240 롯데마트 잠실점 5층  (잠실동, 롯데월드)",
+        "number": "02-415-3274"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "연한풀피부과",
+        "doctor_name": "홍성호",
+        "address": "서울 송파구 석촌호수로 61 트리지움상가 410호 연한풀피부과 (잠실동, 트리지움)",
+        "number": "02-412-9229"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예.지.인 피부과",
+        "doctor_name": "최수병",
+        "address": "서울 강남구 역삼동696-43 비젼빌딩 4층",
+        "number": "02-501-6885"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예담피부과의원",
+        "doctor_name": "김종혁",
+        "address": "서울 용산구 이촌로 276-1 (이촌동) 하나빌딩 4층 예담피부과 서울 용산구 이촌동 300-58",
+        "number": "02-793-3440"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예미고피부과",
+        "doctor_name": "양진석",
+        "address": "서울 송파구 잠실동 19-9 잠실파인애플상가 4B-25 예미고피부과",
+        "number": "02-425-0044"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예미원피부과",
+        "doctor_name": "안희태",
+        "address": "서울특별시 강남구 남부순환로 2909  ,7층 (대치동 651,여천빌딩)",
+        "number": "02-555-7277"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예미원피부과",
+        "doctor_name": "윤춘식",
+        "address": "서울특별시 강남구 남부순환로 2909  ,7층(대치동 651,여천빌딩)",
+        "number": "02-555-7277"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예사랑피부과",
+        "doctor_name": "박진우3",
+        "address": "서울 강서구 양천로57길 9-7 청계빌딩 2층 예사랑피부과 (가양동)",
+        "number": "02-3662-7975"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예사랑피부과",
+        "doctor_name": "장홍준",
+        "address": "서울 강남구 개포동12-4석탑프라자202",
+        "number": "02-445-7075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예안피부과의원",
+        "doctor_name": "권혁",
+        "address": "서울 송파구 오금로 91 (방이동) 태원빌딩 2층",
+        "number": "02-424-4242"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예인피부과",
+        "doctor_name": "탁우정",
+        "address": "서울 광진구 중곡동 천호대로 561 157-4 영창빌딩 3층",
+        "number": "02-3436-4476"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "예인피부과",
+        "doctor_name": "김유진1",
+        "address": "서울 강남구 신사동 627-8 코리아나아트빌딩 3,4층 예인피부과",
+        "number": "02-3446-4476"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예인피부과(선릉)",
+        "doctor_name": "문경원",
+        "address": "서울 강남구 삼성동  141-19 오성빌딩 7층 예인피부과",
+        "number": "02-557-4476"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예지미 피부과",
+        "doctor_name": "이상원1",
+        "address": "서울 강서구 화곡동  341-65. 화곡 판타지아 502호",
+        "number": "02-2601-9484"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예지원피부과",
+        "doctor_name": "이혜진1",
+        "address": "서울 서초구 반포대로 287 415호  (반포동, 래미안퍼스티지 중심상가)",
+        "number": "02-536-8275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예지인피부과",
+        "doctor_name": "권윤희",
+        "address": "서울 강남구 역삼동  696-43 비젼빌딩 4층",
+        "number": "02-501-6885"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "예피부과의원",
+        "doctor_name": "윤상노",
+        "address": "서울 서대문 홍제동  서울 서대문 홍제동 253-3",
+        "number": "02-395-9513"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 동대문점",
+        "doctor_name": "홍지혁",
+        "address": "서울 동대문구 답십리로 9 시대빌딩 2,3층  (전농동)",
+        "number": "02-2038-3275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 동대문점",
+        "doctor_name": "조영아",
+        "address": "서울 동대문구 답십리로 9 시대빌딩 3층  (전농동)",
+        "number": "02-2038-3275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 잠실점",
+        "doctor_name": "임재윤",
+        "address": "서울 송파구 올림픽로 300 11층  (신천동, 롯데월드타워앤드롯데월드몰)",
+        "number": "02-6959-5955"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 잠실점",
+        "doctor_name": "이현수",
+        "address": "서울 송파구 올림픽로 300 롯데월드타워 11층 (신천동, 롯데월드타워앤드롯데월드몰)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 청담본점",
+        "doctor_name": "장희원",
+        "address": "서울 강남구 도산대로 420 (청담동) 청담스퀘어 2층 오가나셀피부과",
+        "number": "02-542-8885"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 청담점",
+        "doctor_name": "권승휘",
+        "address": "서울 강남구 도산대로 420 2층 (청담동, 청담스퀘어)",
+        "number": "02-542-8885"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 청담점",
+        "doctor_name": "김대연2",
+        "address": "서울 강남구 도산대로 420 2층 211호 (청담동, 청담스퀘어)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오가나셀피부과 청담점",
+        "doctor_name": "박태준",
+        "address": "서울 강남구 도산대로 420 2층  (청담동, 청담스퀘어)",
+        "number": "02-542-8885"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 청담점",
+        "doctor_name": "서지윤",
+        "address": "서울 강남구 도산대로 420 2층 211호 (청담동, 청담스퀘어)",
+        "number": "02-542-8885"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과 청담점",
+        "doctor_name": "이동원3",
+        "address": "서울 강남구 도산대로 420 2층  (청담동, 청담스퀘어)",
+        "number": "02-542-8885"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과의원",
+        "doctor_name": "오가나",
+        "address": "서울 강남구 도산대로 420 (청담동) 2층 211호",
+        "number": "02-542-8885"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과의원 동대문",
+        "doctor_name": "권보람",
+        "address": "서울 동대문구 전농동 622-1 시대빌딩 2,3층 오가나셀 피부과의원",
+        "number": "02-2038-3275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과의원 동대문점",
+        "doctor_name": "권인혁",
+        "address": "서울 동대문구 답십리로 9 시대빌딩 3층 (전농동)",
+        "number": "02-2038-3275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과의원 동대문점",
+        "doctor_name": "박재범",
+        "address": "서울 동대문구 전농동 622-1 시대빌딩 3층 오가나셀피부과의원 동대문점",
+        "number": "02-2038-3275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오가나셀피부과의원 잠실점",
+        "doctor_name": "김상진2",
+        "address": "서울 송파구 올림픽로 300 롯데월드타워 11층 (신천동, 롯데월드타워앤드롯데월드몰)",
+        "number": "02-6959-5955"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오늘 강한피부과",
+        "doctor_name": "강진수1",
+        "address": "서울 서초구 서초대로 304  (서초동, 강한미크리닉빌딩)",
+        "number": "02-584-9007"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오늘안피부과",
+        "doctor_name": "박정환",
+        "address": "서울 강남구 도산대로49길 17 (신사동) 산딸기빌딩 3층",
+        "number": "02-517-9881"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과",
+        "doctor_name": "노경현",
+        "address": "서울 서초구 서초동  1603-8 준영빌딩 6층",
+        "number": "02-522-3773"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오라클피부과 청담점",
+        "doctor_name": "신혜원",
+        "address": "서울 강남구 선릉로 612 (삼성동) 한일빌딩 1층",
+        "number": "18007588"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[강변점]",
+        "doctor_name": "김용준",
+        "address": "서울 광진구 구의동 631-1 프라임프라자 3층 309호",
+        "number": "02-3437-2077"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[강변점]",
+        "doctor_name": "안승원",
+        "address": "서울 광진구 구의동  631-1 프라임프라자 3층",
+        "number": "02-3437-2077"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[대치점]",
+        "doctor_name": "유동오",
+        "address": "서울특별시 강남구 선릉로 319 2층 오라클피부과 (역삼동 756-16)",
+        "number": "02-501-4818"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[서울대입구점]",
+        "doctor_name": "최희창",
+        "address": "서울 관악구 중앙동  32-8 동진빌딩 5층",
+        "number": "02-871-8301"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[압구정점]",
+        "doctor_name": "박제영",
+        "address": "서울 강남구 압구정로30길 23 미승빌딩 4층  (신사동)",
+        "number": "02-544-2777"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오라클피부과[압구정점]",
+        "doctor_name": "주영현",
+        "address": "서울 강남구 신사동  609-1 미승빌딩 4층",
+        "number": "02-544-2777"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[양재점]",
+        "doctor_name": "윤정빈",
+        "address": "서울 강남구 도곡동 957-14 하늘빌딩5층",
+        "number": "02-553-4700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[연신내점]",
+        "doctor_name": "윤경한",
+        "address": "서울 은평구 갈현동  396-1 범일빌딩 5층",
+        "number": "02-352-2100"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[잠실점]",
+        "doctor_name": "정유석1",
+        "address": "서울 송파구 백제고분로7길 53 13층 오라클피부과의원 (잠실동, AW TOWER)",
+        "number": "02-416-2750"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오라클피부과[화곡점]",
+        "doctor_name": "김완수",
+        "address": "서울 강서구 화곡동  1076-1 화곡메디칼프라자 7층",
+        "number": "02-2605-1175"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오수진피부과",
+        "doctor_name": "박병진",
+        "address": "서울 강남구 도산대로 120 13층  (논현동, 청호빌딩)",
+        "number": "02-3446-7795"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오수진피부과의원",
+        "doctor_name": "오수진",
+        "address": "서울 강남구 도산대로 120 (논현동) 13층 청호빌딩 서울 강남구 논현동 3-2",
+        "number": "02-3446-7795"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오아로피부과",
+        "doctor_name": "정재윤",
+        "address": "서울특별시 노원구 노해로 507 와우쇼핑몰 4층 (상계동 292-1,와우쇼핑몰)",
+        "number": "02-930-1500"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오아로피부과",
+        "doctor_name": "최재우",
+        "address": "서울 동작구 사당로 300 (사당동, 이수자이) 이수자이 상가 2층 217호",
+        "number": "02-6951-0370"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오아로피부과 신사점",
+        "doctor_name": "김준환",
+        "address": "서울 서초구 강남대로 621 7층, 오아로피부과의원 신사점 (잠원동, 잠원동 K-TOWER)",
+        "number": "07086570783"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오아로피부과 청량리점",
+        "doctor_name": "이미영",
+        "address": "서울 동대문구 왕산로 200 5층  (전농동)",
+        "number": "02-967-1064"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오아로피부과 청량리점",
+        "doctor_name": "조민결",
+        "address": "서울 동대문구 왕산로 200 롯데캐슬 L65 랜드마크타워 5층 (전농동)",
+        "number": "02-967-1064"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오아로피부과 청량리점",
+        "doctor_name": "김태은2",
+        "address": "서울 동대문구 왕산로 200 5층  (전농동)",
+        "number": "02-967-1064"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오아로피부과의원",
+        "doctor_name": "이동훈3",
+        "address": "서울 노원구 노해로 507  (상계동, 와우쇼핑몰)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오아로피부과의원",
+        "doctor_name": "이준",
+        "address": "서울 용산구 한강대로 95 (한강로2가, 래미안용산 더 센트럴) 상가 A동 2층 서울 용산구 한강로2가 422",
+        "number": "02-6925-0409"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오아시스피부과",
+        "doctor_name": "손수빈",
+        "address": "서울 서초구 신반포로33길 27 (잠원동) 303호 서울 서초구 잠원동 66-2",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오용섭피부과",
+        "doctor_name": "오용섭",
+        "address": "서울 양천구 신정3동  1190-4 한경빌딩 6층",
+        "number": "02-2693-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오체안피부과",
+        "doctor_name": "박정민",
+        "address": "서울특별시 강남구 광평로 281 오체안피부과의원 (수서동 715,수서빌딩)",
+        "number": "02-445-8272"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "오체안피부과 강남점",
+        "doctor_name": "김예슬",
+        "address": "서울 강남구 광평로 281 2층 오체안피부과 (수서동, 수서빌딩)",
+        "number": "02-445-8272"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오체안피부과의원",
+        "doctor_name": "박지윤",
+        "address": "서울 강남구 광평로 281 2층 오체안피부과의원 (수서동, 수서빌딩)",
+        "number": "02-445-8272"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오체안피부과의원 강남점",
+        "doctor_name": "임정민",
+        "address": "서울 강남구 광평로 281 효성노틸러스 2층 (수서동, 수서빌딩)",
+        "number": "024458272"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오킴스피부과",
+        "doctor_name": "조수익",
+        "address": "서울 중랑구 면목로 490 (상봉동, 상봉타워) 3층",
+        "number": "02-439-7524"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오킴스피부과",
+        "doctor_name": "박현정1",
+        "address": "서울 중랑구 면목로 490 (상봉동, 상봉타워) 상봉타워 3,4층",
+        "number": "02-439-7524"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오킴스피부과",
+        "doctor_name": "이강석",
+        "address": "서울 중랑구 면목로 490 (상봉동, 상봉타워) 3층  아름다운오늘 오킴스피부과 서울 중랑구 상봉동 102-57",
+        "number": "02-439-7524"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "오투피부과의원",
+        "doctor_name": "오유진",
+        "address": "서울특별시 강북구 삼양로27길 43  ,401호(미아동 811-9,위브 테라스 파크)",
+        "number": "02-945-3440"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "온누리피부과",
+        "doctor_name": "한성수",
+        "address": "서울 강동구 양재대로 1661 시온캐슬7층  (명일동)",
+        "number": "02-3426-7975"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "온누리피부과",
+        "doctor_name": "오대헌",
+        "address": "서울 강동구 명일동 306-1 시온캐슬빌딩 7층  온누리피부과",
+        "number": "02-3426-7975"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "올리브피부과",
+        "doctor_name": "우민정",
+        "address": "서울 강남구 도곡동 527-3 도곡렉슬상가 306호 올리브피부과",
+        "number": "02-3462-5317"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "용산휴먼피부과의원",
+        "doctor_name": "변상영",
+        "address": "서울 용산구 서빙고로 17 (한강로3가) 용산해링턴 E몰 2층 8호",
+        "number": "02-792-8555"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "용피부과의원",
+        "doctor_name": "김원용",
+        "address": "서울 영등포구 의사당대로 108 아일렉스 302호 용피부과 의원 (여의도동, 아일렉스)",
+        "number": "02-786-3779"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "우리들의 피부과",
+        "doctor_name": "박경태",
+        "address": "서울 동대문구 용두동 40-13 동양프라자 201호",
+        "number": "02-957-7702"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "우태하.한승경피부과",
+        "doctor_name": "조무연",
+        "address": "서울 용산구 한강대로 312   (갈월동, 하나은행, 우태하피부과, 서울약국)",
+        "number": "02-754-2590"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "우태하.한승경피부과",
+        "doctor_name": "한승경",
+        "address": "서울 용산구 갈월동 15-3",
+        "number": "02-754-2590"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "우태하피부과 은평점",
+        "doctor_name": "권은선",
+        "address": "서울 은평구 연서로 246 5층  (불광동, 타워크리닉)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "우태하피부과의원 동대문점",
+        "doctor_name": "임원석",
+        "address": "서울 동대문구 왕산로 151 (제기동) 왕산빌딩 3층 우태하피부과 동대문점",
+        "number": "02-966-3141"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "우태하한승경 피부과",
+        "doctor_name": "권원주",
+        "address": "서울 용산구 한강대로 312 우태하한승경 피부과 (갈월동, 하나은행, 우태하피부과, 서울약국)",
+        "number": "027562590"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "우태하한승경피부과",
+        "doctor_name": "박지훈",
+        "address": "서울 용산구 갈월동  서울시 용산구 한강대로 312",
+        "number": "02-777-2991"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "우태하한승경피부과",
+        "doctor_name": "천은영",
+        "address": "서울 용산구 한강대로 312 (갈월동) 우태하한승경피부과 서울 용산구 갈월동 15-3",
+        "number": "027562590"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "우태하한승경피부과",
+        "doctor_name": "이근수",
+        "address": "서울 용산구 갈월동  15-3",
+        "number": "02-754-2590"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "원문섭피부과",
+        "doctor_name": "원문섭",
+        "address": "서울 강동구 양재대로 1655(명일동) 3층 (명일빌딩)",
+        "number": "02-3426-8182"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "원피부과의원",
+        "doctor_name": "최준용",
+        "address": "서울 중랑구 면목로 415  126-39",
+        "number": "02-434-4363"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "웰라스피부과",
+        "doctor_name": "박명진",
+        "address": "서울 강남구 삼성로 155 2층 웰라스피부과 (대치동, 대치퍼스트빌딩)",
+        "number": "02-556-2556"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "웰라스피부과의원",
+        "doctor_name": "배주윤",
+        "address": "서울 강남구 삼성로 155 2층 웰라스피부과의원 (대치동, 대치퍼스트빌딩)",
+        "number": "02-556-2556"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "웰스피부과",
+        "doctor_name": "임지수",
+        "address": "서울 강남구 논현로 842 8층 (신사동, 압구정빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "웰스피부과",
+        "doctor_name": "이원신",
+        "address": "서울 강남구 논현로 842 8층 웰스피부과  (신사동, 압구정빌딩)",
+        "number": "02-542-2372"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "웰스피부과",
+        "doctor_name": "최원우",
+        "address": "서울 강남구 논현로 842 8층  (신사동, 압구정빌딩)",
+        "number": "02-542-2372"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "웰스피부과 마곡점",
+        "doctor_name": "최준석",
+        "address": "서울 강서구 마곡중앙로 161-17 (마곡동) 4층 서울 강서구 마곡동 759-3",
+        "number": "02-3664-2370"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "웰스피부과 압구정점",
+        "doctor_name": "유효섭",
+        "address": "서울 강남구 논현로 842 8층 웰스피부과 (신사동, 압구정빌딩)",
+        "number": "02-542-2372"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "위드 피부과",
+        "doctor_name": "이호중",
+        "address": "서울 강동구 고덕로 133 강동롯데캐슬퍼스트아파트 상가동 507호 (암사동, 강동롯데캐슬퍼스트아파트)",
+        "number": "02-428-0990"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "위드윈피부과",
+        "doctor_name": "이재봉",
+        "address": "서울특별시 강남구 압구정로30길 51 4층 (신사동 600,I.S.A 빌딩)",
+        "number": "025476600"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유니서울피부과",
+        "doctor_name": "방형돈",
+        "address": "서울 강남구 신사동 651∼666신사동 660-5 효정빌딩 4층 유니서울피부과 4증 유니서울피부과",
+        "number": "02-1577-7552"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "유니스피부과",
+        "doctor_name": "박현수",
+        "address": "서울 은평구 진관2로 29-21 (진관동) 드림스퀘어 306호 서울 은평구 진관동 72",
+        "number": "02-352-1199"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유레카피부과",
+        "doctor_name": "김동석",
+        "address": "서울 강남구 테헤란로 101 (역삼동) 이즈타워 8층 유레카피부과",
+        "number": "02-3446-7515"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "유로성형외과피부과",
+        "doctor_name": "최지영2",
+        "address": "서울 강남구 도산대로 420 . (청담동, 청담스퀘어)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "유스피부과의원",
+        "doctor_name": "강현영",
+        "address": "서울특별시 강남구 도산대로 427  ,2층(청담동 91-9,파모소빌딩)",
+        "number": "02-517-7763"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "유앤아이피부과 의원",
+        "doctor_name": "강부경",
+        "address": "서울 성동구 왕십리로 315 (행당동)  서울 성동구 행당동 286-5",
+        "number": "02-2295-6020"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유앤영피부과",
+        "doctor_name": "정지윤",
+        "address": "서울 노원구 노해로 480 (상계동) 8층 유앤영피부과 서울 노원구 상계동 727-1",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유앤영피부과 노원점",
+        "doctor_name": "류정호",
+        "address": "서울 노원구 상계동  727-1 조광빌딩 8층",
+        "number": "02-930-8288"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유앤영피부과 노원점",
+        "doctor_name": "양지영",
+        "address": "서울 노원구 노해로 480 8층 유앤영피부과 노원점 (상계동, 조광빌딩)",
+        "number": "02-930-8288"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유앤영피부과 노원점",
+        "doctor_name": "윤소연",
+        "address": "서울 노원구 노해로 480 8층  (상계동, 조광빌딩)",
+        "number": "02-930-8288"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유앤영피부과 명동점",
+        "doctor_name": "김지영1",
+        "address": "서울 중구 남산동1가 1-2 영창빌딩 3층 유앤영피부과",
+        "number": "02-318-7533"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유앤정피부과",
+        "doctor_name": "정운경",
+        "address": "서울 강남구 도산대로 456 (청담동) 3F 유앤정피부과의원 서울 강남구 청담동 6",
+        "number": "02-514-0203"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유앤피부과",
+        "doctor_name": "유한동",
+        "address": "서울특별시 송파구 백제고분로 276 ,201호(석촌동 210,공익빌딩) (석촌동 210,공익빌딩)",
+        "number": "070-4416-5458"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "유피부과의원",
+        "doctor_name": "유경",
+        "address": "서울 노원구 상계9동  649-7 다모아빌딩 205호",
+        "number": "02-939-4419"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "유피부과의원",
+        "doctor_name": "유충의",
+        "address": "서울 강서구 내발산동  653번지 솔레드림 501호",
+        "number": "02-3665-7525"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "윤스피부과의원",
+        "doctor_name": "윤정희",
+        "address": "서울 송파구 동남로 141 (가락동) 3층 윤스피부과의원",
+        "number": "02)407-1227"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "윤피부과",
+        "doctor_name": "윤종성",
+        "address": "서울 서대문 홍제동330-61",
+        "number": "02-391-7551"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "윤피부과 중랑구",
+        "doctor_name": "윤홍석",
+        "address": "서울 중랑구 중화2동  대신빌딩 3층(7호선 중화역 2번출구)",
+        "number": "02-495-1974"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "은평 좋은날피부과의원",
+        "doctor_name": "정세영",
+        "address": "서울 은평구 신사동 신창메디컬빌딩 3층  좋은날피부과",
+        "number": "02-351-3001"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "은평우태하피부과",
+        "doctor_name": "이용환",
+        "address": "서울 은평구 불광동 308-10 타워클리닉 501호 은평우태하피부과  501호",
+        "number": "02-352-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "은평우태하피부과",
+        "doctor_name": "강재원",
+        "address": "서울 은평구 연서로 246 5층 (불광동, 타워크리닉)",
+        "number": "02-352-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "은평우태하피부과",
+        "doctor_name": "윤미라",
+        "address": "서울 은평구 연서로 246 5층  (불광동, 타워크리닉)",
+        "number": "02-352-1675"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "은평우태하피부과",
+        "doctor_name": "박상우",
+        "address": "서울 은평구 연서로 246  (불광동, 타워크리닉)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "을지병원",
+        "doctor_name": "한태영",
+        "address": "서울 동작구 흑석동  중앙대병원 피부과",
+        "number": "02-6299-1525"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이고은피부과",
+        "doctor_name": "박정훈1",
+        "address": "서울 강서구 화곡7동1075번지 화곡빌딩 3층",
+        "number": "02-2606-0075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이길주피부과의원",
+        "doctor_name": "이길주",
+        "address": "서울 송파구 문정동 150-2 GS문정프라자3층 하얀나라이길주피부과의원",
+        "number": "02-430-6692"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이나영피부과의원",
+        "doctor_name": "이나영2",
+        "address": "서울 서초구 서초대로 6 미송타워 4층 (방배동)",
+        "number": "02-593-8889"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "이대목동병원",
+        "doctor_name": "이희라",
+        "address": "서울 양천구 안양천로 1071  (목동, 이화여대목동병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "이대서울병원",
+        "doctor_name": "노주영",
+        "address": "서울 강서구 공항대로 260 이대서울병원 피부과  (마곡동, 이화의대부속서울병원)",
+        "number": "032-460-2763"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이든피부과의원",
+        "doctor_name": "강호송",
+        "address": "서울 성북구 도봉로 1 (길음동) 1층 이든피부과의원",
+        "number": "02-980-8731"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이레피부과의원",
+        "doctor_name": "박경혜",
+        "address": "서울 용산구 서빙고로 17 (한강로3가) 판매시설동 104동 2층 36호 이레피부과의원",
+        "number": "02-6949-3705"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이상배피부과",
+        "doctor_name": "이상배",
+        "address": "서울 강북구 번1동 가든타워빌딩 307호 이상배피부과",
+        "number": "02-991-6231"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이상피부과의원",
+        "doctor_name": "이상우",
+        "address": "서울 강남구 개포로 504 (개포동) 6층 서울 강남구 개포동 186-13",
+        "number": "02-451-2301"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이수 오아로 피부과",
+        "doctor_name": "조성문",
+        "address": "서울 동작구 사당로 300 (사당동, 이수자이) 2층 오아로피부과",
+        "number": "02-6951-0370"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이승한 피부과의원",
+        "doctor_name": "이승한",
+        "address": "서울 강서구 화곡1동 343-58 오거닉스타워 302호",
+        "number": "02-2690-8869"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이연복피부과",
+        "doctor_name": "이연복",
+        "address": "서울 서초구 잠원동  72-2",
+        "number": "02-537-7017"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이연복피부과의원",
+        "doctor_name": "주은희",
+        "address": "서울 서초구 신반포로23길 30 (잠원동) 반원상가 2층 서울 서초구 잠원동 72-2",
+        "number": "02-3211-9911"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이은피부과",
+        "doctor_name": "이은",
+        "address": "서울 서초구 방배로36길 3 알렌빌딩 3층 이은피부과 (방배동)",
+        "number": "02-592-5900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이을성형외과 의원",
+        "doctor_name": "윤종현",
+        "address": "서울 서초구 서래로 49 1층 이을성형외과 의원 (피부과) (반포동)",
+        "number": "02-596-0102"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이주협피부과의원",
+        "doctor_name": "이주협",
+        "address": "서울특별시 양천구 신목로 102 대경프라자403호 이주협피부과의원 (목동 404-156,대경프라자)",
+        "number": "02-2652-6096"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이지함피부과",
+        "doctor_name": "강명승",
+        "address": "서울특별시 마포구 신촌로 170  2층(대흥동 12-27,이대역푸르지오시티)",
+        "number": "02-706-7600"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이지함피부과",
+        "doctor_name": "유서례",
+        "address": "서울특별시 마포구 신촌로 170  (대흥동 12-27,이대역푸르지오시티)",
+        "number": "02-706-7600"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이지함피부과  천호점",
+        "doctor_name": "이상훈1",
+        "address": "서울특별시 강동구 천호대로 1006 브라운스톤천호 1층, 106호 (성내동 64-13,브라운스톤천호)",
+        "number": "02-485-9700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이지함피부과 강남점",
+        "doctor_name": "이유득",
+        "address": "서울 서초구 강남대로 429 동일빌딩 5층 502호  (서초동)",
+        "number": "02-567-5900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이지함피부과 망우점",
+        "doctor_name": "정승준",
+        "address": "서울 중랑구 망우로 421 대옥빌딩 3층 (망우동)",
+        "number": "02-6367-6700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이지함피부과 여의도점",
+        "doctor_name": "이미정",
+        "address": "서울 영등포구 여의나루로 42  여의도종합상가 5층",
+        "number": "02-780-3733"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이춘봉피부과",
+        "doctor_name": "이춘봉",
+        "address": "서울 서초구 반포동 서초중앙로 230 동화프라자 301호",
+        "number": "02-594-0338"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이피부과",
+        "doctor_name": "이대성1",
+        "address": "서울 노원구 한글비석로 474  보람상가 203호 이피부과의원",
+        "number": "02-937-2345"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이피부과",
+        "doctor_name": "이정수1",
+        "address": "서울 은평구 대조동  186-1",
+        "number": "02-384-5758"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이피부과의원",
+        "doctor_name": "이종승",
+        "address": "서울 동작구 신대방1동  686",
+        "number": "02-842-0439"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이호표피부과의원",
+        "doctor_name": "이호표",
+        "address": "서울 강남구 압구정로8길 20 호암빌딩 3층 (신사동, 푸드바이오테크)",
+        "number": "02-512-8600"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "이화사랑피부과",
+        "doctor_name": "조창근",
+        "address": "서울 동작구 양녕로38길 2 2층  (상도1동, 이화약국)",
+        "number": "031-711-1357"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이화사랑피부과",
+        "doctor_name": "임종현",
+        "address": "서울 동작구 양녕로38길 2 2층 (상도1동, 이화약국)",
+        "number": "02-824-7500"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "이화사랑피부과",
+        "doctor_name": "우승만",
+        "address": "서울 동작구 상도1동 593-1",
+        "number": "02-824-7500"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "이화사랑피부과의원",
+        "doctor_name": "정성녀",
+        "address": "서울 동작구 상도동상도1동 593-1",
+        "number": "02-824-7500"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "이화샘피부과",
+        "doctor_name": "이주은",
+        "address": "서울 송파구 가락동 167-3번지 봉규빌딩 3층",
+        "number": "02-409-3275"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "이화여대목동병원",
+        "doctor_name": "변지연",
+        "address": "서울 양천구 안양천로 1071 (목동)",
+        "number": "02-3410-3549"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "이화피부과",
+        "doctor_name": "이기홍",
+        "address": "서울 서초구 반포동  19-3 강남신세계백화점 9F",
+        "number": "02-3479-6275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "인샤인 피부과",
+        "doctor_name": "윤성환",
+        "address": "서울 강남구 봉은사로 204 남곡빌딩 5층 (역삼동, 남곡빌딩)",
+        "number": "02-2138-8279"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "인제대학교 상계백병원",
+        "doctor_name": "이운하",
+        "address": "서울 노원구 상계동 인제대학교 상계백병원",
+        "number": "02-950-1131"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "인현피부과의원",
+        "doctor_name": "홍중환",
+        "address": "서울 서초구 서운로 216 (서초동) 3층",
+        "number": "02-3482-1952"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임마누엘피부과",
+        "doctor_name": "최진우",
+        "address": "서울특별시 마포구 백범로 152 102동 2203호 (공덕동 476,공덕파크자이)",
+        "number": "031-973-7711"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임성균피부과의원",
+        "doctor_name": "임성균",
+        "address": "서울 송파구 올림픽로35길 112 (신천동) 장미B상가 1동 314호 서울 송파구 신천동 7",
+        "number": "02-416-0443"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임이석테마피부과",
+        "doctor_name": "권현정2",
+        "address": "서울 서초구 나루터로 78   (잠원동, 임이석 테마피부과)",
+        "number": "02-3446-1110"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임이석테마피부과",
+        "doctor_name": "서준혁",
+        "address": "서울 서초구 나루터로 78  (잠원동, 임이석 테마피부과)",
+        "number": "02-3446-1110"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임이석테마피부과",
+        "doctor_name": "이동헌",
+        "address": "서울 서초구 나루터로 78 임이석테마피부과 (잠원동, 임이석 테마피부과)",
+        "number": "02-3446-1110"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임이석테마피부과",
+        "doctor_name": "김예은",
+        "address": "서울 서초구 나루터로 78  (잠원동, 임이석 테마피부과)",
+        "number": "02-3446-1110"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임이석테마피부과",
+        "doctor_name": "김태권",
+        "address": "서울 서초구 나루터로 78 1층 (잠원동, 임이석 테마피부과)",
+        "number": "02-3446-1110"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임이석테마피부과(신사역)",
+        "doctor_name": "임이석",
+        "address": "서울 서초구 나루터로 78 임이석테마피부과 (잠원동, 임이석 테마피부과)",
+        "number": "02-3446-1110"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "임피부과",
+        "doctor_name": "임재훈",
+        "address": "서울 서초구 태봉로 70 우면프라자1, 302호  (우면동, 우면프라자)",
+        "number": "02-566-7698"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "자스민피부과의원",
+        "doctor_name": "김윤석",
+        "address": "서울 서초구 잠원동  58-24번지 뉴타운빌딩 4층 자스민피부과의원",
+        "number": "02-3481-2114"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "자이안피부과의원",
+        "doctor_name": "김민중",
+        "address": "서울 중랑구 동일로 932 (묵동, 묵동자이아파트) 묵동자이상가 3층 자이안피부과 서울 중랑구 묵동 170-1",
+        "number": "02-973-6100"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "전수일피부과",
+        "doctor_name": "전수일",
+        "address": "서울 강서구 금낭화로 91-2 대승프라자 303호 (방화동, 대승프라자)",
+        "number": "02-2664-2122"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "전장원피부과",
+        "doctor_name": "전장원",
+        "address": "서울 강동구 길동 459-2",
+        "number": "02-488-5969"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "전혜주피부과의원",
+        "doctor_name": "전혜주",
+        "address": "서울 서초구 방배로 108 휴먼빌딩 2층 (방배동)",
+        "number": "02-525-0567"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "정영철 피부과의원",
+        "doctor_name": "정영철",
+        "address": "서울 양천구 신정5동  900-14",
+        "number": "02-2699-0844"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "정은정피부과",
+        "doctor_name": "정은정",
+        "address": "서울 강남구 역삼동  798-11번지 남일빌딩 302호",
+        "number": "02-569-4506"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "정피부과의원",
+        "doctor_name": "정휘정",
+        "address": "서울특별시 광진구 광나루로 614  (구의동 199-1,만택빌딩)",
+        "number": "02-456-0745"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "정피부과의원 중랑구점",
+        "doctor_name": "정승호",
+        "address": "서울 중랑구 망우로 214 우도빌딩  (상봉동, 우도빌딩)",
+        "number": "02-495-1942"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "제로피부과",
+        "doctor_name": "오의현",
+        "address": "서울 서초구 강남대로 421 7층  (서초동, 삼영빌딩)",
+        "number": "02-535-4988"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "제스타 성형외과",
+        "doctor_name": "양보희",
+        "address": "서울 강남구 논현로 832 (신사동) 제스타성형외과빌딩 6층 피부과 서울 강남구 신사동 592-1",
+        "number": "02-545-5088"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "제오피부과",
+        "doctor_name": "최형욱",
+        "address": "서울 관악구 낙성대동  853-4(남부순환로 1832)  삼한빌딩 7층",
+        "number": "02-883-8700"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "제이나피부과",
+        "doctor_name": "박상훈1",
+        "address": "서울 강동구 양재대로 1629 한미빌딩 3층 (명일동)",
+        "number": "02-441-4490"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "제이엘피부과",
+        "doctor_name": "이혜정",
+        "address": "서울 송파구 올림픽로 212 A동 201호  (잠실동, 갤러리아팰리스)",
+        "number": "02-417-0075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "제이엘피부과",
+        "doctor_name": "정예리",
+        "address": "서울 송파구 올림픽로 212 A-201호  (잠실동, 갤러리아팰리스)",
+        "number": "02-417-0075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "제이유피부과",
+        "doctor_name": "정재욱",
+        "address": "서울 강남구 남부순환로 2912 (대치동) 그랑프리엔 301-1호 서울 강남구 대치동 500",
+        "number": "02-568-3348"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "제이준피부과",
+        "doctor_name": "심준호",
+        "address": "서울 강남구 논현로 530 제이준성형외과 (역삼동, 제이준성형외과의원)",
+        "number": "02-563-0530"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "제이준피부과",
+        "doctor_name": "강민지",
+        "address": "서울 강남구 논현로 530 (역삼동) 5층 피부과 서울 강남구 역삼동 667-15",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "제일병원 피부과",
+        "doctor_name": "김은형",
+        "address": "서울 중구 서애로1길 17 (묵정동) 외래센터4층",
+        "number": "031-219-5190"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "조피부과의원",
+        "doctor_name": "조낙준",
+        "address": "서울 은평구 은평로 136 (응암동) 은경빌딩302호 서울 은평구 응암동 98-65",
+        "number": "02-354-6382"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "종로보령피부과",
+        "doctor_name": "신문석",
+        "address": "서울 종로구 종로 241-1 2층  (종로5가)",
+        "number": "02-762-9007"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "종로에스앤유피부과",
+        "doctor_name": "여운철",
+        "address": "서울 종로구 관철동 코아빌딩 6층 에스앤유피부과",
+        "number": "02-720-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "종로에스앤유피부과",
+        "doctor_name": "이두락",
+        "address": "서울특별시 종로구 종로12길 15  6층 (관철동 13-13,코아빌딩1)",
+        "number": "02-720-7582"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "중앙대병원",
+        "doctor_name": "박귀영",
+        "address": "서울 동작구 흑석동  224-1 중앙대병원",
+        "number": "02-6334-0223"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "중앙대학교병원",
+        "doctor_name": "홍지연",
+        "address": "서울 동작구 흑석로 102  (흑석동, 중앙대학교병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "중앙대학교병원",
+        "doctor_name": "석준",
+        "address": "서울 동작구 흑석로 102 중앙대학교병원 2층 피부과 외래 (흑석동, 중앙대학교병원)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "중앙병역판정검사소",
+        "doctor_name": "최연구",
+        "address": "서울 강남구 삼성로 651 래미안 라클래시 102-801 (삼성동, 래미안 라클래시)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "중앙보훈병원",
+        "doctor_name": "강현지",
+        "address": "서울 강동구 진황도로61길 53   (둔촌동, 중앙보훈병원)",
+        "number": "02-3010-3460"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "중앙보훈병원",
+        "doctor_name": "임영경",
+        "address": "서울시 강동구 진황도로 61길 53 중앙보훈병원 피부과",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "지앤미피부과",
+        "doctor_name": "지두현",
+        "address": "서울특별시 송파구 올림픽로 116 2층 (잠실동, 메디시티) (잠실동 184-1,메디씨티 빌딩)",
+        "number": "02-414-0087"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "지앤영피부과",
+        "doctor_name": "박지영",
+        "address": "서울 서초구 서초동 1329-8 삼원빌딩 4층",
+        "number": "02-3486-2420"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "차앤박 피부과 양재점",
+        "doctor_name": "김지은1",
+        "address": "서울 강남구 강남대로 240 (도곡동) 3층 차앤박 피부과 서울 강남구 도곡동 953-1",
+        "number": "02-3463-2400"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "차앤박피부과",
+        "doctor_name": "이재인",
+        "address": "서울 강남구 신사동  압구정빌딩 3층",
+        "number": "02-3416-0707"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "차앤박피부과 도곡양재점",
+        "doctor_name": "이하린",
+        "address": "서울 강남구 강남대로 248 3층 (도곡동, 목원빌딩)",
+        "number": "02-3463-1140"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "차움",
+        "doctor_name": "최유진",
+        "address": "서울 강남구 도산대로 442 (청담동) 피엔폴루스 2층 차움 피부성형센터 피부과",
+        "number": "02-3015-5371"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "참조은 피부과",
+        "doctor_name": "최석진",
+        "address": "서울 영등포구 당산로 214 삼성래미안상가 209호 (당산동5가, 당산 삼성 래미안)",
+        "number": "02-3442-0600"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "창피부과",
+        "doctor_name": "정유진2",
+        "address": "서울 강남구 테헤란로87길 51 3층  (삼성동, 여송빌딩)",
+        "number": "02-538-3575"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "창피부과",
+        "doctor_name": "김기연2",
+        "address": "서울 강남구 테헤란로87길 51 3층  (삼성동, 여송빌딩)",
+        "number": "02-538-3575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "창피부과의원",
+        "doctor_name": "김창식",
+        "address": "서울 강남구 테헤란로87길 51 3층 창피부과 (삼성동, 여송빌딩)",
+        "number": "02-538-3575"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "채희재피부과의원",
+        "doctor_name": "채희재",
+        "address": "서울 은평구 서오릉로 140 선진빌딩 2층 (대조동)",
+        "number": "02-385-3330"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담 스킨다피부과",
+        "doctor_name": "한유진2",
+        "address": "서울 강남구 학동로 413 청담빌딩 5층 (청담동)",
+        "number": "02-6953-7654"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "청담고운세상피부과",
+        "doctor_name": "안건영",
+        "address": "서울 강남구 도산대로 326 (논현동) 5층 서울 강남구 논현동 93",
+        "number": "02-541-8547"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담고운세상피부과",
+        "doctor_name": "이창균",
+        "address": "서울 강남구 도산대로 326 (논현동) 대동타워 5층 서울 강남구 논현동 93",
+        "number": "02-541-8547"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담고운세상피부과",
+        "doctor_name": "도미옥",
+        "address": "서울 강남구 도산대로 326 (논현동) 5층 서울 강남구 논현동 93",
+        "number": "02-541-8547"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담고운세상피부과",
+        "doctor_name": "김은지",
+        "address": "서울 강남구 도산대로 326 5층 (논현동, 대동타워)",
+        "number": "02-541-8547"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담공드림피부과",
+        "doctor_name": "공태석",
+        "address": "서울 강남구 삼성로119길 8 3층  (삼성동, 강남대학교 청담 카이로스 빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담글래시피부과의원",
+        "doctor_name": "주홍진",
+        "address": "서울 강남구 도산대로81길 51 5층 청담 글래시피부과의원 (청담동, 루미안빌)",
+        "number": "02-515-5255"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담아이스피부과",
+        "doctor_name": "김산",
+        "address": "서울 강남구 청담동  63-18번지 경원빌딩2층",
+        "number": "02-517-4477"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담안즈피부과",
+        "doctor_name": "조영민",
+        "address": "서울 강남구 학동로53길 3-2 9층 청담안즈피부과 (논현동)",
+        "number": "02-511-7900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담엔케이피부과",
+        "doctor_name": "노남경",
+        "address": "서울 강서구 마곡중앙5로 81 (마곡동) 5층 청담엔케이피부과의원 서울 강서구 마곡동 739-3",
+        "number": "02-2135-5004"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담연세피부과",
+        "doctor_name": "이한승",
+        "address": "서울 강남구 논현동  241-3 SK HUB빌딩 309호",
+        "number": "02-547-0041"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담오라클피부과",
+        "doctor_name": "김재화",
+        "address": "서울 강남구 선릉로 612 (삼성동) 한일빌딩 1층",
+        "number": "18007588"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담오아로피부과",
+        "doctor_name": "박지호",
+        "address": "서울 강남구 도산대로 327 SGF청담타워8층 (신사동)",
+        "number": "02-541-8830"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담오아로피부과",
+        "doctor_name": "김창현",
+        "address": "서울 강남구 도산대로 327 SGF청담타워 8층 (신사동)",
+        "number": "02-541-8830"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "청담은피부과의원",
+        "doctor_name": "김태은1",
+        "address": "서울 강남구 선릉로152길 17 6층  (청담동, 아시아청담부띠끄)",
+        "number": "02-546-3322"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담이엘피부과",
+        "doctor_name": "안민균",
+        "address": "서울 강남구 도산대로 417 창담이엘피부과 (청담동, FIRST LIGHT 타워)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담이엘피부과의원",
+        "doctor_name": "김병철",
+        "address": "서울 강남구 도산대로 417 (청담동) 4층 서울 강남구 청담동 87-11",
+        "number": "02-511-0506"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담이지함피부과",
+        "doctor_name": "지혜구",
+        "address": "서울 강남구 봉은사로 302 2층  (역삼동, 역삼아모제SK리더스뷰)",
+        "number": "02-596-3600"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담이지함피부과",
+        "doctor_name": "윤수현",
+        "address": "서울 강남구 봉은사로 302 2층 (역삼동, 역삼아모제SK리더스뷰)",
+        "number": "02-596-3600"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "청담쥬넥스피부과",
+        "doctor_name": "김정빈",
+        "address": "서울 강남구 도산대로 435 4층  (청담동, 삼이빌딩)",
+        "number": "02-549-0025"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담하나피부과",
+        "doctor_name": "박하나",
+        "address": "서울 강남구 압구정로 461 (청담동)  서울 강남구 청담동 118-17",
+        "number": "02-549-6788"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담하트피부과",
+        "doctor_name": "윤혜정",
+        "address": "서울 강남구 영동대로 704 (청담동) 4층 서울 강남구 청담동 133-2",
+        "number": "02-518-1519"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "청담헤아린의원",
+        "doctor_name": "김윤지",
+        "address": "서울 강남구 도산대로 412 4층  (청담동, 남강빌딩)",
+        "number": "02-518-1600"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "청담현피부과의원",
+        "doctor_name": "최현주",
+        "address": "서울 강남구 압구정로20길 21 정빌딩 2층 (신사동, 정빌딩)",
+        "number": "02-3447-0075"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "체인지미피부과",
+        "doctor_name": "박진우1",
+        "address": "서울 강북구 번동 418-1 코스타빌딩 202호 체인지미 피부과",
+        "number": "02-998-9114"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "초이스피부과 신사점",
+        "doctor_name": "양성규",
+        "address": "서울 강남구 강남대로 616 8층 (신사동, 신사미타워)",
+        "number": "02-546-5346"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "최용섭피부과",
+        "doctor_name": "최용섭",
+        "address": "서울 강남구 신사동 573-1",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "최윤정피부과의원",
+        "doctor_name": "최윤정1",
+        "address": "서울 강남구 선릉로 704 (청담동) 4층 최윤정피부과의원",
+        "number": "02-6205-7575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "최종성피부과의원",
+        "doctor_name": "최종성",
+        "address": "서울 관악구 신림본동 1641-101",
+        "number": "02-882-3650"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "최혜민피부과",
+        "doctor_name": "최혜민",
+        "address": "서울 송파구 송파대로 374 (송파동) 메디포레빌딩 2층",
+        "number": "02-423-8584"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "캐나다 거주 피부과전문의",
+        "doctor_name": "유민석",
+        "address": "서울특별시 강남구 도곡동 (캐나다 거주 피부과전문의)",
+        "number": "02-0000-0000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "케이디스타피부과",
+        "doctor_name": "윤우진",
+        "address": "서울 강동구 고덕로 353 (고덕동) 그라시움 종합 1상가 3층 301호 서울 강동구 고덕동 217",
+        "number": "02-3013-3301"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "퀸즈피부과",
+        "doctor_name": "이상욱",
+        "address": "서울 영등포구 영등포동3가 10-15 대선빌딩 4층",
+        "number": "02-2676-8875"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "큐피부과의원",
+        "doctor_name": "강원형",
+        "address": "서울 종로구 신문로1가  135-2번지 이화빌딩 4층",
+        "number": "02-733-1352"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "클래식피부과의원",
+        "doctor_name": "조규민",
+        "address": "서울 중구 명동길 60 (명동2가) 티에비뉴빌딩 5층 클래식피부과의원",
+        "number": "02-778-0330"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "클렌피부과",
+        "doctor_name": "정호주",
+        "address": "서울특별시 송파구 양재대로 1222 3층 (방이동 89-11,올림픽프라자)",
+        "number": "02-408-7676"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "클리니크후즈후의원",
+        "doctor_name": "홍경국",
+        "address": "서울 강남구 청담동 84",
+        "number": "02-1588-7536"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "클리니크후즈후의원",
+        "doctor_name": "이규엽",
+        "address": "서울 강남구 선릉로 842 클리니크후즈후의원  (청담동)",
+        "number": "02-487-7552"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "클리니크후즈후피부과",
+        "doctor_name": "오세웅",
+        "address": "서울 강남구 선릉로 842  (청담동)",
+        "number": "02-1588-7536"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "클리니크후즈후피부과",
+        "doctor_name": "박새미",
+        "address": "서울 강남구 선릉로 842   (청담동)",
+        "number": "02-1588-7536"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "클리닉엠",
+        "doctor_name": "김민",
+        "address": "서울 강남구 압구정로 445 (청담동) 8층 클리닉엠 서울 강남구 청담동 100-17",
+        "number": "02-511-8556"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "클린앤미피부과",
+        "doctor_name": "김학주",
+        "address": "서울 마포구 상암동 115-11",
+        "number": "02-307-3375"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "클린피부과",
+        "doctor_name": "이미경",
+        "address": "서울 강남구 청담동 80-4 송재 빌딩  3층",
+        "number": "02-3445-9101"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스 피부과",
+        "doctor_name": "김종엽",
+        "address": "서울 서대문구 신촌로33길 16 2층 타임리스 피부과 (북아현동, 헤센스마트 더 센트럴)",
+        "number": "02-365-0077"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스 피부과 도곡점",
+        "doctor_name": "신원웅",
+        "address": "서울 강남구 남부순환로 2806 (도곡동) 군인공제회관 2층",
+        "number": "0221357960"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스 피부과 도곡점",
+        "doctor_name": "이경구",
+        "address": "서울 강남구 남부순환로 2806 (도곡동) 타임리스 피부과 의원",
+        "number": "02-2135-7960"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과 고덕점",
+        "doctor_name": "이현지2",
+        "address": "서울 강동구 고덕로 385 4층 (고덕동, 고덕그라시움(제4상가))",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과 도곡점",
+        "doctor_name": "김영지",
+        "address": "서울 강남구 남부순환로 2806 타임리스피부과 도곡점 (도곡동, 군인공제회관)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과 도곡점",
+        "doctor_name": "오태석",
+        "address": "서울 강남구 남부순환로 2806 2층 (도곡동, 군인공제회관)",
+        "number": "02-2135-7906"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과 도곡점",
+        "doctor_name": "권연숙",
+        "address": "서울 강남구 남부순환로 2806 2층 (도곡동, 군인공제회관)",
+        "number": "02-2135-7960"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과 마포본점",
+        "doctor_name": "김현빈",
+        "address": "서울 서대문구 신촌로33길 16 2층  (북아현동, 헤센스마트 더 센트럴)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "타임리스피부과 마포본점",
+        "doctor_name": "이서경",
+        "address": "서울 서대문구 신촌로33길 16 2층  (북아현동, 헤센스마트 더 센트럴)",
+        "number": "02-365-0077"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과 마포본점",
+        "doctor_name": "송진영",
+        "address": "서울 서대문구 신촌로33길 16 2층  (북아현동, 헤센스마트 더 센트럴)",
+        "number": "02-365-0077"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과 마포본점",
+        "doctor_name": "김충혁",
+        "address": "서울 서대문구 신촌로33길 16 2층  (북아현동, 헤센스마트 더 센트럴)",
+        "number": "0507-1316-0145"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과의원 교대점",
+        "doctor_name": "안재우",
+        "address": "서울 서초구 서초중앙로 130 (서초동) 3층 타임리스피부과의원 교대점",
+        "number": "025876883"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "타임리스피부과의원 마포점",
+        "doctor_name": "김성민3",
+        "address": "서울 서대문구 신촌로33길 16 2층  (북아현동, 헤센스마트 더 센트럴)",
+        "number": "0507-1316-0145"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "탑메디피부과의원",
+        "doctor_name": "최우석",
+        "address": "서울 노원구 한글비석로 270 (중계동) 4층 탑메디피부과 서울 노원구 중계동 366-9",
+        "number": "02-932-0770"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "탑메디피부과의원",
+        "doctor_name": "강유석",
+        "address": "서울 노원구 한글비석로 270 4층 401호, 402호 탑메디피부과의원 (중계동, 스카이타워)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "테크필피부과의원",
+        "doctor_name": "배영재",
+        "address": "서울 강남구 대치2동 은마상가2층 A-235, B-201",
+        "number": "02-568-7175"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "토탈피부과",
+        "doctor_name": "임기섭",
+        "address": "서울특별시 마포구 도화길 43  307호(도화동 571,나눔빌딩)",
+        "number": "02-719-7676"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "톤앤업피부과의원",
+        "doctor_name": "김성우",
+        "address": "서울 서초구 반포대로 291 213호, 214호 (반포동, 원베일리 스퀘어)",
+        "number": "02-6951-1900"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "투명 피부과",
+        "doctor_name": "장홍선",
+        "address": "서울 강남구 테헤란로 141 (역삼동) KR tower 3층 투명피부과 서울 강남구 역삼동 646-20",
+        "number": "02-556-5522"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "투명피부과",
+        "doctor_name": "박현철2",
+        "address": "서울 강남구 역삼동 646-21 KR타워 3층",
+        "number": "02-556-5522"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "트로피 피부과",
+        "doctor_name": "김희정2",
+        "address": "서울 강남구 논현로 828 5층 (신사동)",
+        "number": "02-518-9720"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "트리에피부과",
+        "doctor_name": "신동윤",
+        "address": "서울 성동구 매봉길 48 (옥수동) 힐스타운 2층, 트리에피부과의원 서울 성동구 옥수동 563",
+        "number": "02-6956-9963"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "티엔피부과",
+        "doctor_name": "김지현3",
+        "address": "서울 서초구 반포4동 52-7 진일빌딩 8층",
+        "number": "02-537-6030"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "파스텔휴먼피부과",
+        "doctor_name": "하재원",
+        "address": "서울 성동구 왕십리로 410 센트라스상가 L동 2층 226호 파스텔휴먼피부과의원 (하왕십리동, 센트라스)",
+        "number": "02-6953-7771"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "파인드피부과의원",
+        "doctor_name": "황종익",
+        "address": "서울 강남구 논현로 820 5층  (신사동, 제이씨빌딩)",
+        "number": "02-511-6004"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "파티마피부과의원",
+        "doctor_name": "최연홍",
+        "address": "서울 노원구 중계동 453-16",
+        "number": "02-938-3154"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "퍼스트피부과의원",
+        "doctor_name": "양유진",
+        "address": "서울 마포구 백범로31길 7 (공덕동, 공덕SK리더스뷰) 상가 1동 106호",
+        "number": "02-707-3555"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "페이브피부과의원",
+        "doctor_name": "손지희",
+        "address": "서울 용산구 한강대로 69 상가동 2층, 217-1,2호 페이브피부과의원 (한강로2가, 용산푸르지오써밋)",
+        "number": "2039-1656"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "페이스피부과",
+        "doctor_name": "김소민2",
+        "address": "서울 마포구 마포대로 73 2층 페이스피부과 (도화동, SK허브그린)",
+        "number": "02-6951-0888"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "페이스피부과의원",
+        "doctor_name": "최수연",
+        "address": "서울 마포구 마포대로 73 SK허브그린 2층 203호 (도화동, 에스케이허브그린)",
+        "number": "02-6951-0888"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "포레스트피부과의원",
+        "doctor_name": "송준규",
+        "address": "서울 양천구 중앙로 291 푸른숲빌딩 5층 포레스트피부과의원 (신월동)",
+        "number": "02-6953-7517"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "포레피부과의원",
+        "doctor_name": "이하은",
+        "address": "서울 성동구 한림말길 56 (옥수동) 204호 포레피부과 서울 성동구 옥수동 191-3",
+        "number": "02-2294-4888"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "퓨린 피부과",
+        "doctor_name": "김연진1",
+        "address": "서울 서초구 반포동 20-45 반포자이프라자 4층",
+        "number": "02-3477-7070"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "퓨린피부과",
+        "doctor_name": "이유나",
+        "address": "서울 서초구 잠원로 24 4층 퓨린피부과 (반포동, 반포자이플라자)",
+        "number": "02-3477-7070"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "퓨린피부과",
+        "doctor_name": "엄승혜",
+        "address": "서울 서초구 반포동  20-45 반포자이프라자 4층",
+        "number": "02-3477-7070"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "퓨어피부과의원",
+        "doctor_name": "이수현",
+        "address": "서울 강남구 선릉로 801 (신사동) 배강빌딩 3층 302호 퓨어피부과의원",
+        "number": "02-3443-1222"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "플라워피부과",
+        "doctor_name": "윤양현",
+        "address": "서울특별시 양천구 목3동  4층 (공항대로558, 남영빌딩)",
+        "number": "02-2061-9553"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "플렉스 피부과",
+        "doctor_name": "박혜영",
+        "address": "서울 강남구 선릉로 830 (청담동) 7층 플렉스 피부과의원 서울 강남구 청담동 84-7",
+        "number": "02-557-3344"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "플렉스피부과",
+        "doctor_name": "최선철",
+        "address": "서울 강남구 선릉로 830 (청담동) 7층 서울 강남구 청담동 84-7",
+        "number": "02-517-0912"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "플로레스 피부과",
+        "doctor_name": "우청하",
+        "address": "서울 서초구 동작대로 118 방배 예다인 프라자 7층 (방배동, 방배동예다인프라자빌딩)",
+        "number": "025377582"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "플로레스 피부과",
+        "doctor_name": "고원선",
+        "address": "서울 서초구 동작대로 118 7층  (방배동, 방배동예다인프라자빌딩)",
+        "number": "02-537-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "플로레스피부과",
+        "doctor_name": "이영채",
+        "address": "서울 서초구 동작대로 118 7층 플로레스피부과 (방배동, 방배동예다인프라자빌딩)",
+        "number": "-"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "플로레스피부과",
+        "doctor_name": "신지연1",
+        "address": "서울 서초구 동작대로 118 7층 (방배동, 방배동예다인프라자빌딩)",
+        "number": "02-537-7582"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "피부사랑피부과",
+        "doctor_name": "황상민",
+        "address": "서울 마포구 월드컵북로 233-1 1층 (성산동)",
+        "number": "02-711-9757"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "피에이치디피부과",
+        "doctor_name": "김학태",
+        "address": "서울 강남구 논현로 842 2층 201호 (신사동, 압구정빌딩)",
+        "number": "02-514-5130"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "피에이치디피부과",
+        "doctor_name": "김영균2",
+        "address": "서울 강남구 논현로 842 2층 201호 피에이치디피부과 (신사동, 압구정빌딩)",
+        "number": "02-514-5130"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "피에이치디피부과의원",
+        "doctor_name": "권인호",
+        "address": "서울 강남구 논현로 842 2층 201호 피에이치디피부과의원 (신사동, 압구정빌딩)",
+        "number": "02-514-5130"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "필그린피부과의원",
+        "doctor_name": "김지현2",
+        "address": "서울 마포구 아현동  397-5 보령빌딩2층",
+        "number": "02-362-7582"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "하계초이스피부과",
+        "doctor_name": "송성은",
+        "address": "서울 노원구 공릉로59길 28 미성상가 301호 (하계동, 미성아파트)",
+        "number": "02-977-3344"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "하계초이스피부과",
+        "doctor_name": "김지웅1",
+        "address": "서울 노원구 공릉로59길 28 3층  (하계동, 미성아파트)",
+        "number": "02-977-3344"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하늘느낌 피부과",
+        "doctor_name": "임선미",
+        "address": "서울 강남구 신사동  648-12 3,4층 하늘느낌 피부과",
+        "number": "02-511-8035"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하늘느낌피부과",
+        "doctor_name": "최천필",
+        "address": "서울 강남구 신사동  648-12 스마트익스체인지 빌딩 3층",
+        "number": "02-511-8035"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하늘호수피부과의원",
+        "doctor_name": "김동하1",
+        "address": "서울 강동구 고덕로 254 (명일동) 3층 서울 강동구 명일동 46",
+        "number": "02-481-3555"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하범석피부과",
+        "doctor_name": "하범석",
+        "address": "서울 강남구 학동로 443 2층 (청담동, 정한빌딩)",
+        "number": "02-6958-7897"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하얀 J 피부과",
+        "doctor_name": "주현중",
+        "address": "서울 노원구 한글비석로 253 304호 306호 (중계동, 세신프라자빌딩)",
+        "number": "02-933-3145"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하얀나라린피부과의원",
+        "doctor_name": "전경민",
+        "address": "서울 영등포구 문래동3가  55-5번지 로데오왁 306호",
+        "number": "02-2672-4602"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하얀나라피부과",
+        "doctor_name": "김휘준",
+        "address": "서울 동대문구 전농로 102 2층  (답십리동, 목련빌딩)",
+        "number": "02-2244-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하얀나라피부과 서대문점",
+        "doctor_name": "이동근",
+        "address": "서울 서대문구 통일로 131 (충정로2가) 공화당 빌딩 7층 하얀나라피부과의원",
+        "number": "02-364-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "하태영피부과의원",
+        "doctor_name": "하태영",
+        "address": "서울 강동구 암사1동  501-3 기업은행 3층",
+        "number": "02-481-1751"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "한경원피부과의원",
+        "doctor_name": "한경원",
+        "address": "서울 도봉구 해등로 255 신원상가 203호,  204호 (쌍문동, 에벤에셀아파트)",
+        "number": "02-900-7662"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "한림대학교 강남성심병원",
+        "doctor_name": "정보영",
+        "address": "서울 영등포구 대림동 한림대학교 강남성심병원 피부과",
+        "number": "02-3462-9879"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "한양대학교병원",
+        "doctor_name": "주민숙",
+        "address": "서울 성동구 왕십리로 222-1 서관 5층 피부과 (사근동, 한양대학교병원)",
+        "number": "02-2290-8441"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "한을남하늘피부과의원",
+        "doctor_name": "한을남",
+        "address": "서울 중구 왕십리로 415   (신당동)",
+        "number": "02-2235-1175"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "한희 피부과",
+        "doctor_name": "한원석",
+        "address": "서울 강남구 논현로 503 송촌빌딩 9층 한희피부과 (역삼동, 송촌빌딩)",
+        "number": "02-501-0210"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "함익병  피부과",
+        "doctor_name": "함익병",
+        "address": "서울 강남구 도곡로 408 (대치동) 디마크 빌딩 409호 서울 강남구 대치동 1024",
+        "number": "02-3454-0080"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "해피부과",
+        "doctor_name": "김승일",
+        "address": "서울 서초구 나루터로 43 (잠원동) 신사스포츠 5층  서울 서초구 잠원동 50-6",
+        "number": "02-532-7582"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "행복한제이피부과",
+        "doctor_name": "김성준2",
+        "address": "서울 노원구 노해로 494 (상계동) 고려빌딩 4층 행복한제이피부과 서울 노원구 상계동 724-3",
+        "number": "02-937-8575"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "행복한피부과",
+        "doctor_name": "김면수",
+        "address": "서울 노원구 상계2동716 금정빌딩 5층  716",
+        "number": "02-932-2255"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "허수경피부과의원",
+        "doctor_name": "허수경",
+        "address": "서울 송파구 가락본동 48-12 동서울빌딩 4F 허수경피부과의원",
+        "number": "02-430-3565"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "허준원MD피부과의원",
+        "doctor_name": "허준원",
+        "address": "서울 강남구 언주로174길 26 (신사동) 남강빌딩 2층 허준원MD피부과의원 서울 강남구 신사동 640-1",
+        "number": "02-518-0382"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "홍익의원",
+        "doctor_name": "김복순",
+        "address": "서울 마포구 양화로 106  2층 홍익피부과",
+        "number": "02-336-3013"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "홍진호피부과의원",
+        "doctor_name": "홍진호",
+        "address": "서울 강서구 방화2동 614-34 메디스타워502호",
+        "number": "02-2663-1232"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "홍피부과 잠실점",
+        "doctor_name": "양명현",
+        "address": "서울 송파구 석촌호수로 118 5층  (잠실동, 규영빌딩)",
+        "number": "02-412-9396"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "홍피부과의원",
+        "doctor_name": "이시현",
+        "address": "서울특별시 서대문구 수색로 38 우창빌딩별관4층 홍피부과의원 (남가좌동 295-9)",
+        "number": "02-000-0000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "화안피부과",
+        "doctor_name": "안화영",
+        "address": "서울 영등포구 여의도동 44-32 에리트 빌딩 305호  에리트빌딩 305호",
+        "number": "02-784-5580"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "화이트피부과",
+        "doctor_name": "노태우",
+        "address": "서울 강동구 올림픽로 665 (천호동) 대일빌딩 402호",
+        "number": "02-470-4555"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "후즈후피부과의원 천호",
+        "doctor_name": "김충재",
+        "address": "서울 강동구 천호대로 1015 3층 후즈후피부과 (천호동)",
+        "number": "02-487-7542"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "휴먼피부과 강서점",
+        "doctor_name": "천상진",
+        "address": "서울 강서구 공항대로 261 3층  (마곡동, 발산파크프라자)",
+        "number": "02-1600-5940"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "휴먼피부과 강서점",
+        "doctor_name": "박수진",
+        "address": "서울 강서구 공항대로 261 3층 (마곡동, 발산파크프라자)",
+        "number": "02-1600-5940"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "휴먼피부과 광장점",
+        "doctor_name": "김윤미",
+        "address": "서울 광진구 아차산로 502 (광장동) 진넥스오딧세이 202,203호 휴먼피부과의원 서울 광진구 광장동 470-3",
+        "number": "02-453-8275"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "휴먼피부과 서울대입구역점",
+        "doctor_name": "노연아",
+        "address": "서울 관악구 관악로 186 (봉천동) 2층 휴먼피부과",
+        "number": "028837703"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "휴먼피부과 서울대점",
+        "doctor_name": "방찬일",
+        "address": "서울 관악구 관악로 186 (봉천동) 2층 휴먼피부과",
+        "number": "02-883-7703"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "휴먼피부과 용산점",
+        "doctor_name": "양승걸",
+        "address": "서울 용산구 서빙고로 17 센트럴파크타워 E몰(105동) 2층 8호 (한강로3가)",
+        "number": "02-792-8555"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "휴먼피부과(강서점)",
+        "doctor_name": "송현정",
+        "address": "서울 강서구 공항대로 261 (마곡동) 3층 휴먼피부과의원 서울 강서구 마곡동 797-4",
+        "number": "02-1600-5940"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "휴먼피부과용산점",
+        "doctor_name": "최지영1",
+        "address": "서울 용산구 서빙고로 17 해링턴스퀘어 E몰 2층 8호  (한강로3가)",
+        "number": "02-792-8555"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "휴먼피부과의원",
+        "doctor_name": "한성협",
+        "address": "서울 은평구 대조동 6-9 오산상가 2층 휴먼피부과의원",
+        "number": "02-352-9888"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "휴킨스피부과",
+        "doctor_name": "안종성",
+        "address": "서울 노원구 동일로204가길 34 (중계동) 시앤미빌딩 2층 휴킨스피부과 서울 노원구 중계동 509-1",
+        "number": "02-977-6447"
+    },
+    {
+        "dermatologist": "No",
+        "hospital_name": "히어(HEER)피부과의원",
+        "doctor_name": "이상신",
+        "address": "서울 서초구 서초대로77길 54 10층 (서초동, 서초더블유타워)",
+        "number": "02-000-0000"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "힐하우스피부과 건대점",
+        "doctor_name": "이도영",
+        "address": "서울 광진구 능동로 90 B동 2층 (자양동, 더클래식500)",
+        "number": "02-444-7585"
+    },
+    {
+        "dermatologist": "Yes",
+        "hospital_name": "힐하우스피부과 건대점",
+        "doctor_name": "강현진",
+        "address": "서울 광진구 능동로 90 더클래식500 B동 2층  (자양동, 더클래식500)",
+        "number": "02-444-7585"
+    }
+]
