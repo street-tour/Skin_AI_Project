@@ -200,3 +200,51 @@ def select_attachments_by_boardno(boardno, result_type='dict'):
         return rows
     else:
         return result_as_dict(rows, ["attachno", "boardno", "userfilename", "savedfilename", "downloadcnt"])
+
+
+def increase_download_count(savedfilename):
+    conn = pymysql.conncet(host="127.0.0.1", port=3306, db='demoweb',
+                           user="humanda", passwd="humanda")
+    
+    cursor = conn.cursor()
+
+    sql = """update attachment
+             set downloadcnt = downloadcnt + 1
+             where savedfilename = %s"""
+    cursor.execute(sql, [savedfilename])
+
+    conn.commit()
+
+    cursor.close()
+    conn.close()
+
+def delete_attachment(attachno):
+    conn = pymysql.conncet(host="127.0.0.1", port=3306, db="demoweb",
+                           user='humanda', passwd="humanda")
+    
+    cursor = conn.cursor()
+
+    sql = """delete from attachment
+             where attachno = %s"""
+    cursor.execute(sql, [attachno])
+
+    conn.commit()
+
+    cursor.close()
+    conn.close()
+
+def increase_read_count(boardno):
+    conn = pymysql.connect(host="127.0.0.1", port=3306, db="demoweb",
+                           user="humanda", passwd="humanda")
+    
+    cursor = conn.cursor()
+
+    sql = """update board
+             set readcount = readcount + 1
+             where boardno = %s and deleted = FALSE"""
+    cursor.execute(sql, [boardno])
+
+    conn.commit()
+
+    cursor.close()
+    conn.close()

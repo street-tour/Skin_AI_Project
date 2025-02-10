@@ -71,7 +71,16 @@ def detail():
     if not boardno:
         return redirect(url_for('board.list'))
     
-
+    # boardno에 해당하는 게시글 조회수 증가
+    read_list = session.get('readlist')
+    print("----------------------->", read_list)
+    if not read_list:
+        read_list=[]
+        session['readlist']=read_list
+    if boardno not in read_list: # 아직 읽지 않은 글이라면
+        board_util.increase_read_count(boardno)
+        read_list.append(boardno)
+        session['readlist'] = read_list
     
     board = board_util.select_board_by_boardno(boardno, result_type = 'dict')
 
