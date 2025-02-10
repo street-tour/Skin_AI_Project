@@ -12,8 +12,14 @@ def insert_board(title, writer, content):
 
     conn.commit()
 
+    sql = 'select last_insert_id()'
+    cursor.execute(sql)
+    last_insert_id_row = cursor.fetchone()
+
     cursor.close()
     conn.close()
+
+    return last_insert_id_row[0]
 
 def select_board_list(result_type = 'list'):
     conn = pymysql.connect(host = "127.0.0.1", port = 3306, db = 'demoweb',
@@ -158,3 +164,39 @@ def select_board_count():
     conn.close()
 
     return row[0]
+
+def insert_attachment(boardno, userfilename, savedfilename):
+    conn = pymysql.connect(host = "127.0.0.1", port = 3306, db = "demoweb",
+                           user ='humanda', passwd='humanda')
+    cursor = conn.cursor()
+
+    sql = """insert into attachment (boardno, userfilename, savedfilename)
+             values(%s,%s,%s)"""
+
+    cursor.execute(sql, [boardno, userfilename, savedfilename])
+
+    conn.commit()
+
+
+    cursor.close()
+    conn.close()
+
+def select_attachments_by_boardno(boardno, result_type='dict'):
+    conn = pymysql.connect(host = "127.0.0.1", port = 3306, db = "demoweb",
+                           user ='humanda', passwd='humanda')
+    cursor = conn.cursor()
+
+    sql = """select attachno, boardno, userfilename, savedfilename, downloadcnt
+             from attachment
+             where boardno = %s"""
+    cursor.execute(sql,[boardno])
+
+    rows = cursor.fetchall()
+    
+    cursor.close()
+    conn.close()
+
+    if result_type =='list':
+        return rows
+    else:
+        return result_as_dict(rows, ["attachno", "boardno", "userfilename", "savedfilename", "downloadcnt"])
