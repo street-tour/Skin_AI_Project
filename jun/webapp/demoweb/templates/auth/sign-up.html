@@ -55,6 +55,7 @@
                 </div>
                 {% endif %}
                     {{ form.csrf_token}}
+                    <h5>아이디 비밀번호 설정</h5>
                     <div class="form-group">
                         <input class="form-control form-control-lg" type="text" name="memberid" placeholder="이름" autocomplete="off">
                     </div>
@@ -68,8 +69,12 @@
                         <input class="form-control form-control-lg"  type = "password" name="passwdok" placeholder="비밀번화 재입력">
                     </div>
                     <div class="form-group">
+                        <h5>주소</h5>
+                        <input class="form-control form-control-lg" type="text" name="address" placeholder="주소를 입력해주세요" autocomplete="off">
+                    </div>
+                    <div class="form-group">
                         <h5>나이</h5>
-                        
+                        <input class="form-control form-control-lg" id="age" type="number" name='age' min='0' max = '100' placeholder="나이를 입력해주세요">
                     </div>
                     <div class="form-group">
                         <h5>성별</h5>
@@ -83,33 +88,18 @@
                     <div class="form-group">
                         <h5>피부 타입</h5>
                         <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="dry" name="skin" value='dry' class="custom-control-input"><span class="custom-control-label">건성</span>
+                            <input type="radio" id="dry" name="skintype" value='dry' class="custom-control-input"><span class="custom-control-label">건성</span>
                         </label>
                         <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="oily" name="skin" value='oily' class="custom-control-input"><span class="custom-control-label">지성</span>
+                            <input type="radio" id="oily" name="skintype" value='oily' class="custom-control-input"><span class="custom-control-label">지성</span>
                         </label>
                         <label class="custom-control custom-radio custom-control-inline">
-                            <input type="radio" id="combination" name="skin" value='combination' class="custom-control-input"><span class="custom-control-label">복합성</span>
+                            <input type="radio" id="combination" name="skintype" value='combination' class="custom-control-input"><span class="custom-control-label">복합성</span>
                         </label>
                     </div>
                     <div class="form-group pt-2">
                         <button class="btn btn-block btn-primary" type="submit">Register My Account</button>
                     </div>
-                    <div class="form-group">
-                        <label class="custom-control custom-checkbox">
-                            <input class="custom-control-input" type="checkbox"><span class="custom-control-label">By creating an account, you agree the <a href="#">terms and conditions</a></span>
-                        </label>
-                    </div>
-                    <div class="form-group row pt-0">
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12 mb-2">
-                            <button class="btn btn-block btn-social btn-facebook " type="button">Facebook</button>
-                        </div>
-                        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
-                            <button class="btn  btn-block btn-social btn-twitter" type="button">Twitter</button>
-                        </div>
-                    </div>
-                    
-
             </div>
             <div class="card-footer bg-white">
                 <p>Already member? <a href="{{ url_for('auth.login')}}" class="text-secondary">Login Here.</a></p>

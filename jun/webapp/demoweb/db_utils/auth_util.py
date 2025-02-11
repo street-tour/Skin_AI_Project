@@ -1,30 +1,30 @@
 import pymysql
 
-def insert_member(member_id, passwd, email):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "cosmetic_product",
+def insert_member(memberid, passwd, email, age, gender, skintype, address):
+    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     cursor = conn.cursor()
 
-    sql = """insert into member (memberid, passwd, email)
-             values(%s,%s,%s)"""
+    sql = """insert into member (memberid, passwd, email, age, gender, skintype, address)
+             values(%s,%s,%s,%s,%s,%s,%s)"""
 
-    cursor.execute(sql, [member_id, passwd, email])
+    cursor.execute(sql, [memberid, passwd, email, age, gender, skintype, address])
 
     conn.commit()
 
     cursor.close()
     conn.close()
     
-def select_member_by_id(member_id):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "cosmetic_product",
+def select_member_by_id(memberid):
+    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     cursor = conn.cursor()
 
-    sql = """select memberid, passwd, email
+    sql = """select memberid, passwd, email, age, gender, skintype, address
             from member
             where memberid = %s"""
 
-    cursor.execute(sql, [member_id])
+    cursor.execute(sql, [memberid])
 
     row = cursor.fetchone()
 
