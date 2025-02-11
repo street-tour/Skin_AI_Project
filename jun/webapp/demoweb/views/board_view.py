@@ -1,7 +1,10 @@
-from flask import Blueprint, render_template, redirect, request, url_for
+from flask import Blueprint, render_template, redirect, request, url_for, send_from_directory
 from ..db_utils import board_util
 from flask import session
 from ..forms import board_form
+from pathlib import Path
+import os
+import uuid
 
 
 board_bp = Blueprint("board", __name__, url_prefix="/board")
@@ -41,11 +44,25 @@ def write():
     form = board_form.BoardForm()
 
     if request.method.lower() =='post' and form.validate_on_submit():
-        
-        board_util.insert_board(form.title.data, form.writer.data, form.content.data)
+        # 게시판 테이블에 데이터 저장
+        boardno = board_util.insert_board(form.title.data, form.writer.data, form.content.data)
+
+        attachment = request.files.get('attachment')
+        if attachment:
+            # 파일 저장 (디스크 저장)
+            ext = attachment.filename.rsplit('.')[-1]
+            unique_file_name = f'{uuid.uuid4().hex}.{ext}' #a/b/c.txt ->['a/b/c/','txt'] -> 'txt'
+            bp_path = board_bp.root_path # Blueprint 경로 : views
+            root_path = Path(bp_path).parent # 부모 경로 : 여기서는 demoweb
+            upload_dir = os.path.join(root_path, "upload-files", unique_file_name)
+            attachment.save(upload_dir)
+
+            # 첨부파일 테이블에 데이터 저장
+            board_util.insert_attachment(boardno, attachment.filename, unique_file_name)
+
         return redirect(url_for('board.list'))
     else:
-        return render_template('board/write.html', form = form)
+        return render_template('board/write.html', form=form )
     
 @board_bp.route("/detail/", methods = ["GET"])
 def detail():
@@ -54,9 +71,24 @@ def detail():
     if not boardno:
         return redirect(url_for('board.list'))
     
+    # boardno에 해당하는 게시글 조회수 증가
+    read_list = session.get('readlist')
+    print("----------------------->", read_list)
+    if not read_list:
+        read_list=[]
+        session['readlist']=read_list
+    if boardno not in read_list: # 아직 읽지 않은 글이라면
+        board_util.increase_read_count(boardno)
+        read_list.append(boardno)
+        session['readlist'] = read_list
+    
     board = board_util.select_board_by_boardno(boardno, result_type = 'dict')
 
-    return render_template('board/detail.html', board = board)
+    attachments = board_util.select_attachments_by_boardno(boardno)
+    if not board:
+        return redirect(url_for('board.list'))
+    else:
+        return render_template('board/detail.html', board = board, attachments=attachments)
     
 @board_bp.route('/delete/', methods=['GET'])
 def delete():
@@ -86,3 +118,11 @@ def update():
 
         return redirect(url_for('board.detail', boardno = boardno))
     
+@board_bp.route("/download/", methods=["GET"])
+def download():
+    savedfilename = request.args.get('savedfilename')
+    bp_path = board_bp.root_path # Blueprint 경로 : views
+    root_path = Path(bp_path).parent # 부모 경로 : 여기서는 demoweb
+    upload_dir = os.path.join(root_path, "upload-files")
+
+    return send_from_directory(upload_dir, savedfilename, as_attachment=True)

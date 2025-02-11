@@ -18,6 +18,7 @@ auth_bp = Blueprint("auth", __name__, url_prefix = "/auth")
 def register():
     form = auth_form.RegisterForm()
     if request.method.lower() == 'post'and form.validate_on_submit():
+    
         passwd_hash = generate_password_hash(form.passwd.data)
         auth_util.insert_member(form.memberid.data, passwd_hash, form.email.data)
         return redirect( url_for('auth.login'))
