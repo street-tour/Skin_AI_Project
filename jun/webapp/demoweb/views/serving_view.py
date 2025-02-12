@@ -34,7 +34,7 @@ def predict():
 
 
     image_input = Image.open(file)
-    image_input = image_input.resize((256,256))
+    image_input = image_input.resize((128,128))
     image_array = tf_keras.utils.img_to_array(image_input)
     image_array = image_array/255
     image_array = np.expand_dims(image_array, 0)
@@ -50,7 +50,13 @@ def predict():
 
 
     model_paths = {
-        "forehead": "serving_model/model76-1.h5"
+        # "forehead": "serving_model/model76-1.h5",
+        "cheeks" : "serving_model/볼모공_분류모델.h5",
+        "glabella": "serving_model/미간주름_분류모델.h5",
+        "chin" : "serving_model/턱쳐짐_분류모델.h5",
+        "lips" : "serving_model/입술건조_분류모델.h5",
+        "eye wrinkles" : "serving_model/눈가주름_분류모델.h5",
+        "acne" : "serving_model/여드름_분류모델.h5"
 
     }
 
@@ -64,7 +70,7 @@ def predict():
                 rpath = serving_bp.root_path
                 root_path = Path(rpath).parent
                 model = tf_keras.models.load_model(os.path.join(root_path, model_path))
-
+                print(model)
 
                 area_prediction = model.predict(image_array)
                 predicted_class = (area_prediction >= 0.5).astype(int)[0][0]
