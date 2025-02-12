@@ -1,0 +1,431 @@
+CREATE TABLE `product` (
+	`product_no`   INT          NOT NULL COMMENT '제품번호',
+	`category`     VARCHAR(300) NULL     COMMENT '카테고리',
+	`url`          VARCHAR(200) NULL     COMMENT 'url',
+	`product_name` VARCHAR(300) NULL     COMMENT '제품명'
+)
+COMMENT '제품'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `product`
+	ADD CONSTRAINT `PK_product`
+	PRIMARY KEY (
+	`product_no`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `product`
+	MODIFY COLUMN `product_no` INT NOT NULL AUTO_INCREMENT COMMENT '제품번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `ingredient` (
+	`ingredient_no` INT          NOT NULL COMMENT '성분번호',
+	`product_no`    INT          NOT NULL COMMENT '제품번호',
+	`ingredient`    VARCHAR(100) NULL     COMMENT '성분',
+	`count`         INT          NULL     COMMENT '성분수'
+)
+COMMENT '성분'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `ingredient`
+	ADD CONSTRAINT `PK_ingredient`
+	PRIMARY KEY (
+	`ingredient_no`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `ingredient`
+	MODIFY COLUMN `ingredient_no` INT NOT NULL AUTO_INCREMENT COMMENT '성분번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `hospital` (
+	`hospital_no`   INT          NOT NULL COMMENT '병원번호',
+	`hospital_name` VARCHAR(100) NOT NULL COMMENT '병원이름',
+	`doctor_name`   VARCHAR(100) NOT NULL COMMENT '의사이름',
+	`address`       VARCHAR(200) NOT NULL COMMENT '주소',
+	`number`        VARCHAR(30)  NULL     COMMENT '전화번호',
+	`dermatologist` VARCHAR(10)  NOT NULL COMMENT '피부과전문의'
+)
+COMMENT '병원'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `hospital`
+	ADD CONSTRAINT `PK_hospital`
+	PRIMARY KEY (
+	`hospital_no`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `hospital`
+	MODIFY COLUMN `hospital_no` INT NOT NULL AUTO_INCREMENT COMMENT '병원번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `customer` (
+)
+COMMENT '회원'
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')	 COMMENT '회원'' at line 1
+CREATE TABLE `product` (
+	`product_no`   INT          NOT NULL COMMENT '제품번호',
+	`category`     VARCHAR(300) NULL     COMMENT '카테고리',
+	`url`          VARCHAR(200) NULL     COMMENT 'url',
+	`product_name` VARCHAR(300) NULL     COMMENT '제품명'
+)
+COMMENT '제품'
+
+Table 'product' already exists
+CREATE TABLE `product` (
+	`product_no`   INT          NOT NULL COMMENT '제품번호',
+	`category`     VARCHAR(300) NULL     COMMENT '카테고리',
+	`url`          VARCHAR(200) NULL     COMMENT 'url',
+	`product_name` VARCHAR(300) NULL     COMMENT '제품명'
+)
+COMMENT '제품'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `product`
+	ADD CONSTRAINT `PK_product`
+	PRIMARY KEY (
+	`product_no`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `product`
+	MODIFY COLUMN `product_no` INT NOT NULL AUTO_INCREMENT COMMENT '제품번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `ingredient` (
+	`ingredient_no` INT          NOT NULL COMMENT '성분번호',
+	`product_no`    INT          NOT NULL COMMENT '제품번호',
+	`ingredient`    VARCHAR(100) NULL     COMMENT '성분',
+	`count`         INT          NULL     COMMENT '성분수'
+)
+COMMENT '성분'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `ingredient`
+	ADD CONSTRAINT `PK_ingredient`
+	PRIMARY KEY (
+	`ingredient_no`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `ingredient`
+	MODIFY COLUMN `ingredient_no` INT NOT NULL AUTO_INCREMENT COMMENT '성분번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `hospital` (
+	`hospital_no`   INT          NOT NULL COMMENT '병원번호',
+	`hospital_name` VARCHAR(100) NOT NULL COMMENT '병원이름',
+	`doctor_name`   VARCHAR(100) NOT NULL COMMENT '의사이름',
+	`address`       VARCHAR(200) NOT NULL COMMENT '주소',
+	`number`        VARCHAR(30)  NULL     COMMENT '전화번호',
+	`dermatologist` VARCHAR(10)  NOT NULL COMMENT '피부과전문의'
+)
+COMMENT '병원'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `hospital`
+	ADD CONSTRAINT `PK_hospital`
+	PRIMARY KEY (
+	`hospital_no`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `hospital`
+	MODIFY COLUMN `hospital_no` INT NOT NULL AUTO_INCREMENT COMMENT '병원번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `customer` (
+)
+COMMENT '회원'
+
+You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ')	 COMMENT '회원'' at line 1
+CREATE TABLE `member` (
+	`memberid` VARCHAR(30)  NOT NULL COMMENT '회원아이디',
+	`passwd`   VARCHAR(200) NOT NULL COMMENT '패스워드',
+	`email`    VARCHAR(50)  NOT NULL COMMENT '이메일',
+	`usertype` VARCHAR(20)  NULL     DEFAULT ('user') COMMENT '사용자구분',
+	`regdate`  DATE         NULL     DEFAULT (CURDATE()) COMMENT '등록일자',
+	`active`   BOOLEAN      NULL     DEFAULT (TRUE) COMMENT '회원상태',
+	`gender`   VARCHAR(20)  NOT NULL COMMENT '성별',
+	`skintype` VARCHAR(20)  NOT NULL COMMENT '피부타입',
+	`age`      INT          NOT NULL COMMENT '나이',
+	`address`  VARCHAR(400) NULL     COMMENT '주소'
+)
+COMMENT '회원'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `member`
+	ADD CONSTRAINT `PK_member`
+	PRIMARY KEY (
+	`memberid`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `attachment` (
+	`attachno`      INT          NOT NULL COMMENT '첨부파일번호',
+	`boardno`       INT          NOT NULL COMMENT '글번호',
+	`userfilename`  VARCHAR(100) NOT NULL COMMENT '사용자파일이름',
+	`savedfilename` VARCHAR(100) NOT NULL COMMENT '저장된파일이름',
+	`downloadcnt`   INT          NULL     DEFAULT (0) COMMENT '다운로드횟수'
+)
+COMMENT '첨부파일'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `attachment`
+	ADD CONSTRAINT `PK_attachment`
+	PRIMARY KEY (
+	`attachno`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `board` (
+	`boardno`    INT           NOT NULL COMMENT '글번호',
+	`title`      VARCHAR(100)  NOT NULL COMMENT '제목',
+	`writer`     VARCHAR(30)   NOT NULL COMMENT '작성자',
+	`content`    VARCHAR(2000) NULL     COMMENT '글내용',
+	`writedate`  DATETIME      NULL     DEFAULT (NOW()) COMMENT '작성일자',
+	`modifydate` DATETIME      NULL     DEFAULT (NOW()) COMMENT '수정일자',
+	`deleted`    BOOLEAN       NULL     DEFAULT (FALSE) COMMENT '삭제여부'
+)
+COMMENT '게시판'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `board`
+	ADD CONSTRAINT `PK_board`
+	PRIMARY KEY (
+	`boardno`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `skin_test` (
+	`testno`     INT         NOT NULL COMMENT '검사번호',
+	`model`      VARCHAR(50) NOT NULL COMMENT '모델',
+	`result`     VARCHAR(10) NOT NULL COMMENT '결과값',
+	`confidence` FLOAT       NULL     COMMENT '신뢰도',
+	`tryno`      INT         NULL     COMMENT '회차'
+)
+COMMENT '피부검사'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `skin_test`
+	ADD CONSTRAINT `PK_skin_test`
+	PRIMARY KEY (
+	`testno`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `skin_test`
+	MODIFY COLUMN `testno` INT NOT NULL AUTO_INCREMENT COMMENT '검사번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `cosmetic_recommendation` (
+	`recommendno` INT NOT NULL COMMENT '추천번호',
+	`product_no`  INT NULL     COMMENT '제품번호',
+	`testno`      INT NULL     COMMENT '검사번호'
+)
+COMMENT '추천화장품'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `cosmetic_recommendation`
+	ADD CONSTRAINT `PK_cosmetic_recommendation`
+	PRIMARY KEY (
+	`recommendno`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `cosmetic_recommendation`
+	MODIFY COLUMN `recommendno` INT NOT NULL AUTO_INCREMENT COMMENT '추천번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `disease_test` (
+	`testno`     INT          NOT NULL COMMENT '검사번호',
+	`memberid`   VARCHAR(30)  NOT NULL COMMENT '회원아이디',
+	`result`     VARCHAR(100) NOT NULL COMMENT '결과값',
+	`testdate`   DATETIME     NOT NULL DEFAULT (NOW()) COMMENT '검사일자',
+	`confidence` FLOAT        NULL     COMMENT '신뢰도'
+)
+COMMENT '질병검사'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `disease_test`
+	ADD CONSTRAINT `PK_disease_test`
+	PRIMARY KEY (
+	`testno`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `disease_test`
+	MODIFY COLUMN `testno` INT NOT NULL AUTO_INCREMENT COMMENT '검사번호'
+DDL 구문이 수행되었습니다.
+
+
+CREATE TABLE `test_table` (
+	`tryno`    INT         NOT NULL COMMENT '회차',
+	`memberid` VARCHAR(30) NOT NULL COMMENT '회원아이디',
+	`testdate` DATETIME    NOT NULL DEFAULT (NOW()) COMMENT '검사일자'
+)
+COMMENT '검사테이블'
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `test_table`
+	ADD CONSTRAINT `PK_test_table`
+	PRIMARY KEY (
+	`tryno`
+	)
+
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `test_table`
+	MODIFY COLUMN `tryno` INT NOT NULL AUTO_INCREMENT COMMENT '회차'
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `ingredient`
+	ADD CONSTRAINT `FK_product_TO_ingredient`
+	FOREIGN KEY (
+	`product_no`
+	)
+	REFERENCES `product` (
+	`product_no`
+	)
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `attachment`
+	ADD CONSTRAINT `FK_board_TO_attachment`
+	FOREIGN KEY (
+	`boardno`
+	)
+	REFERENCES `board` (
+	`boardno`
+	)
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `board`
+	ADD CONSTRAINT `FK_member_TO_board`
+	FOREIGN KEY (
+	`writer`
+	)
+	REFERENCES `member` (
+	`memberid`
+	)
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `skin_test`
+	ADD CONSTRAINT `FK_test_table_TO_skin_test`
+	FOREIGN KEY (
+	`tryno`
+	)
+	REFERENCES `test_table` (
+	`tryno`
+	)
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `cosmetic_recommendation`
+	ADD CONSTRAINT `FK_product_TO_cosmetic_recommendation`
+	FOREIGN KEY (
+	`product_no`
+	)
+	REFERENCES `product` (
+	`product_no`
+	)
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `cosmetic_recommendation`
+	ADD CONSTRAINT `FK_skin_test_TO_cosmetic_recommendation`
+	FOREIGN KEY (
+	`testno`
+	)
+	REFERENCES `skin_test` (
+	`testno`
+	)
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `disease_test`
+	ADD CONSTRAINT `FK_member_TO_disease_test`
+	FOREIGN KEY (
+	`memberid`
+	)
+	REFERENCES `member` (
+	`memberid`
+	)
+DDL 구문이 수행되었습니다.
+
+
+ALTER TABLE `test_table`
+	ADD CONSTRAINT `FK_member_TO_test_table`
+	FOREIGN KEY (
+	`memberid`
+	)
+	REFERENCES `member` (
+	`memberid`
+	)
+DDL 구문이 수행되었습니다.
+
+
