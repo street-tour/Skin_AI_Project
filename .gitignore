@@ -203,3 +203,4 @@ oosweb
 test.model.h5
 *.zip
 *.h5
+jun/webapp/demoweb/serving_model
