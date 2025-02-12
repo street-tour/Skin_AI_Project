@@ -62,8 +62,11 @@ def predict():
 
     predictions = {}
 
+    expanded_parts = []
+    for part in parts:
+        expanded_parts.extend(part.split(","))  # 쉼표로 구분된 값을 분리
 
-    for area in parts:
+    for area in expanded_parts:
         if area in model_paths:
             try:
                 model_path = model_paths[area]

@@ -20,7 +20,7 @@ def register():
     if request.method.lower() == 'post'and form.validate_on_submit():
     
         passwd_hash = generate_password_hash(form.passwd.data)
-        auth_util.insert_member(form.memberid.data, passwd_hash, form.email.data, form.age.data, form.gender.data, form.skin.data, form.address.data)
+        auth_util.insert_member(form.memberid.data, passwd_hash, form.email.data, form.age.data, form.gender.data, form.skintype.data, form.address.data)
         return redirect( url_for('auth.login'))
     else:
        return render_template("auth/sign-up.html", form = form)
