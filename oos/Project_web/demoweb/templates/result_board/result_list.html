@@ -1,0 +1,137 @@
+{% extends 'base_with_layout.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+            <h5 class="card-header">검사 기록</h5>
+            <div class="card-body">
+                <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th>모델1결과</th>
+                          <th>모델2결과</th>
+                          <th>모델3결과</th>
+                          <th>모델4결과</th>
+                          <th>모델5결과</th>
+                          <th>모델6결과</th>
+                          <th>모델7결과</th>
+                          <th>피부질환</th>
+                          <th>마지막검사일</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td class = "text">결과1</td>
+                        <td class = "text">결과2</td>
+                        <td class= "text">결과3</td>
+                        <td class= "text">결과4</td>
+                        <td class = "text">결과5</td>
+                        <td class = "text">결과6</td>
+                        <td class = "text">결과7</td>
+                        <td class= "text">질환</td>
+                        <td class= "text">250212</td>
+                    </tr>
+                </tbody>
+                </table>
+              </div>
+
+              <h5 class="card-header">검사 기록 자세히 보기</h5>
+              <div class="card-body">
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>검사번호</th>
+                            <th>검사모델</th>
+                            <th>검사결과</th>
+                            <th>작성일자</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                      {% if skin_test %}
+                          {% for test in skin_test %}
+                          <tr>
+                              <td class="text">{{ test['testno'] }}</td>
+                              <td class="text">{{ test['model'] }}</td>
+                              <td class="text">{{ test['result'] }}</td>
+                              <td class="text">{{ test['modeldate'] }}</td>
+                          </tr>
+                          {% endfor %}
+                      {% else %}
+                          <tr>
+                              <td colspan="4" class="text-center">결과 없음</td>
+                          </tr>
+                      {% endif %}
+                  </tbody>                  
+                </table>
+            </div>
+            <nav aria-label="board pager">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                        {% if pager['page_no'] > 1 %}
+                        <a class="page-link" href="{{ url_for('result_board.list', page_no=1) }}" aria-label="First">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        {% else %}
+                        <a class="page-link" href="javascript:" aria-label="First">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        {% endif %}
+                  </li>
+                  <li class="page-item">
+                    {% if pager['page_no'] > 1 %}
+                    <a class="page-link" href="{{ url_for('result_board.list', page_no=(pager['page_no']-1)) }}" aria-label="Previous">
+                      <span aria-hidden="true">&lt;</span>
+                    </a>
+                    {% else %}
+                    <a class="page-link" href="javascript:" aria-label="Previous">
+                        <span aria-hidden="true">&lt;</span>
+                    </a>
+                    {% endif %}
+                  </li>
+                  {% for page_no in range(pager['page_start'], pager['page_end']) %}
+                  {% if page_no <= pager['page_cnt'] %}
+                  <li class = "page-item">
+                    <a class="page-link" href="{{ url_for('result_board.list',page_no=page_no) }}">{{ page_no }}</a></li>
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                  <li class="page-item">
+                    {% if pager['page_no'] < pager['page_cnt'] %}
+                    <a class="page-link" href="{{ url_for('result_board.list', page_no=(pager['page_no']+1)) }}" aria-label="Next">
+                      <span aria-hidden="true">&gt;</span>
+                    </a>
+                    {% else %}
+                    <a class="page-link" href="javascript:" aria-label="Previous">
+                        <span aria-hidden="true">&gt;</span>
+                    </a>
+                    {% endif %}
+                  </li>
+                  <li class="page-item">
+                    {% if pager['page_no'] < pager['page_cnt'] %}
+                    <a class="page-link" href="{{ url_for('result_board.list', page_no=pager['page_cnt']) }}" aria-label="Last">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                    {% else %}
+                    <a class="page-link" href="javascript:" aria-label="Last">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                    {% endif %}
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js_block %}
+<script>
+$(function(){
+    $('#btn-write').on('click', function(event){
+        //loaction.href = "/board/write/"; // 브라우저의 주소입력 위치에 'write'를 입력
+        location.href = "{{ url_for('board.write') }}"
+    });
+});
+</script>
+{% endblock %}

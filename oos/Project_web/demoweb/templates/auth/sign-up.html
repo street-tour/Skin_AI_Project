@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+ 
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Concept - Bootstrap 4 Admin Dashboard Template</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="/static/vendor/bootstrap/css/bootstrap.min.css">
+    <link href="/static/vendor/fonts/circular-std/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="/static/libs/css/style.css">
+    <link rel="stylesheet" href="/static/vendor/fonts/fontawesome/css/fontawesome-all.css">
+    <style>
+    html,
+    body {
+        height: 100%;
+    }
+
+    body {
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-align: center;
+        align-items: center;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+    </style>
+</head>
+<!-- ============================================================== -->
+<!-- signup form  -->
+<!-- ============================================================== -->
+
+<body>
+    <!-- ============================================================== -->
+    <!-- signup form  -->
+    <!-- ============================================================== -->
+    <form class="splash-container"  action ="{{ url_for('auth.register')}} " method="post">
+        <div class="card">
+            
+            <div class="card-header">
+                <h3 class="mb-1">Registrations Form</h3>
+                <p>Please enter your user information.</p>
+            </div>
+            <div class="card-body">
+                {% if form.errors %}
+                <div class ="alert alert-danger" role = "alert">
+                    <ul>
+                    {% for field, errors in form.errors.items() %}
+                        {% for error in errors %}
+                            <li>{{error}}</li>
+                        {% endfor %}
+                    {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+                    {{ form.csrf_token}}
+                    <h5>아이디 비밀번호 설정</h5>
+                    <div class="form-group">
+                        <input class="form-control form-control-lg" type="text" name="memberid" placeholder="이름" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-control-lg" type="email" name="email"  placeholder="이메일" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-control-lg" id="pass1" type="password" name='passwd'  placeholder="비밀번호">
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control form-control-lg"  type = "password" name="passwdok" placeholder="비밀번화 재입력">
+                    </div>
+                    <div class="form-group">
+                        <h5>주소</h5>
+                        <input class="form-control form-control-lg" type="text" name="address" placeholder="주소를 입력해주세요" autocomplete="off">
+                    </div>
+                    <div class="form-group">
+                        <h5>나이</h5>
+                        <input class="form-control form-control-lg" id="age" type="number" name='age' min='0' max = '100' placeholder="나이를 입력해주세요">
+                    </div>
+                    <div class="form-group">
+                        <h5>성별</h5>
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="male" name="gender" value='male' class="custom-control-input"><span class="custom-control-label">남</span>
+                        </label>
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="female" name="gender" value='female' class="custom-control-input"><span class="custom-control-label">여</span>
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <h5>피부 타입</h5>
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="dry" name="skintype" value='dry' class="custom-control-input"><span class="custom-control-label">건성</span>
+                        </label>
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="oily" name="skintype" value='oily' class="custom-control-input"><span class="custom-control-label">지성</span>
+                        </label>
+                        <label class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="combination" name="skintype" value='combination' class="custom-control-input"><span class="custom-control-label">복합성</span>
+                        </label>
+                    </div>
+                    <div class="form-group pt-2">
+                        <button class="btn btn-block btn-primary" type="submit">Register My Account</button>
+                    </div>
+            </div>
+            <div class="card-footer bg-white">
+                <p>Already member? <a href="{{ url_for('auth.login')}}" class="text-secondary">Login Here.</a></p>
+            </div>
+        </div>
+    </form>
+</body>
+
+ 
+</html>
