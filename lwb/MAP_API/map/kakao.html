@@ -4,7 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>카카오맵 병원 검색</title>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=KAKAO_JAVA_KEY&libraries=services"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e0f41a4d816847e2c93554533d265199&libraries=services"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            if (typeof kakao !== "undefined") {
+                console.log("카카오맵 API 로드 완료");
+                kakao.maps.load(initializeMap); // API 로드 후 실행
+            } else {
+                console.error("카카오맵 API 로드 실패!");
+            }
+        };
+    </script>
     <style>
         #map { width: 100%; height: 500px; }
         #hospital-details {
@@ -74,17 +84,18 @@
 
         // SVG 마커 아이콘 정의
         function createSVGMarker(color) {
-            return new kakao.maps.MarkerImage(
-                `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                    <path fill="${color}" d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z"/>
-                </svg>`,
-                new kakao.maps.Size(24, 35)
-            );
+            const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                            <path fill="${color}" d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z"/>
+                        </svg>`;
+
+            const blob = new Blob([svg], { type: 'image/svg+xml' });
+            return URL.createObjectURL(blob);
         }
 
-        const userMarkerImage = createSVGMarker("blue");    // 사용자
-        const redMarkerImage = createSVGMarker("red");      // 전문의
-        const greenMarkerImage = createSVGMarker("green");  // 비전문의
+        // 마커 이미지 생성
+        const userMarkerImage = new kakao.maps.MarkerImage(createSVGMarker("blue"), new kakao.maps.Size(40, 40));
+        const redMarkerImage = new kakao.maps.MarkerImage(createSVGMarker("red"), new kakao.maps.Size(40, 40));
+        const greenMarkerImage = new kakao.maps.MarkerImage(createSVGMarker("green"), new kakao.maps.Size(40, 40));
 
         // 병원 정보 업데이트 함수
         function updateHospitalDetails(name, address, doctor, phone, distance) {
@@ -98,18 +109,19 @@
 
         // 지도 초기화
         function initMap(lat, lng) {
-            userLat = lat;
-            userLng = lng;
+            console.log("🗺️ 지도 초기화 중...");
+            
             let container = document.getElementById('map');
             let options = { center: new kakao.maps.LatLng(lat, lng), level: 5 };
+            
             map = new kakao.maps.Map(container, options);
 
             userMarker = new kakao.maps.Marker({
                 position: new kakao.maps.LatLng(lat, lng),
-                map: map,
-                image: userMarkerImage 
+                map: map
             });
 
+            console.log("✅ 지도 생성 완료");
             geocodeHospitals(lat, lng);
         }
 
@@ -121,7 +133,10 @@
                         let lat = position.coords.latitude;
                         let lng = position.coords.longitude;
                         document.getElementById('status').innerText = `내 위치: ${lat}, ${lng}`;
-                        initMap(lat, lng);
+                        
+                        kakao.maps.load(function() {
+                            initMap(lat, lng);
+                        });
                     },
                     () => {
                         document.getElementById('status').innerText = "위치 정보를 가져올 수 없습니다.";
@@ -135,52 +150,52 @@
         // 병원의 주소를 검색 후 지도에 마커 추가
         function geocodeHospitals(userLat, userLng) {
             let geocoder = new kakao.maps.services.Geocoder();
+
             hospitals.forEach(hospital => {
-                let addressParts = hospital.address.split(" ");
                 let addressToSearch = hospital.address;
 
-                function searchAddressRecursive(index) {
-                    if (index >= addressParts.length) {
-                        console.error(`검색 실패: ${hospital.hospital_name}, 주소: ${hospital.address}`);
-                        return;
+                geocoder.addressSearch(addressToSearch, function(result, status) {
+                    if (status === kakao.maps.services.Status.OK) {
+                        let hospitalLat = parseFloat(result[0].y);
+                        let hospitalLng = parseFloat(result[0].x);
+                        let distance = calculateDistance(userLat, userLng, hospitalLat, hospitalLng);
+
+                        console.log(`✅ ${hospital.hospital_name} 주소 변환 성공 → ${hospitalLat}, ${hospitalLng}`);
+
+                        addHospitalMarker(
+                            hospitalLat, 
+                            hospitalLng, 
+                            hospital.hospital_name, 
+                            hospital.address, 
+                            hospital.doctor_name, 
+                            hospital.number, 
+                            hospital.dermatologist,
+                            distance
+                        );
+                    } else {
+                        console.warn(`❌ 주소 변환 실패: ${hospital.hospital_name}, 주소: ${hospital.address}`);
                     }
-
-                    geocoder.addressSearch(addressToSearch, function(result, status) {
-                        if (status === kakao.maps.services.Status.OK) {
-                            let hospitalLat = result[0].y;
-                            let hospitalLng = result[0].x;
-                            let distance = calculateDistance(userLat, userLng, hospitalLat, hospitalLng);
-
-                            console.log(`주소: ${hospital.hospital_name} → ${addressToSearch}`);
-
-                            addHospitalMarker(
-                                hospitalLat, 
-                                hospitalLng, 
-                                hospital.hospital_name, 
-                                addressToSearch, 
-                                hospital.doctor_name, 
-                                hospital.number, 
-                                hospital.dermatologist,
-                                distance
-                            );
-                        } else {
-                            console.warn(`검색 실패, 다음 시도: ${addressToSearch}`);
-                            addressToSearch = addressParts.slice(0, addressParts.length - (index + 1)).join(" ");
-                            searchAddressRecursive(index + 1);
-                        }
-                    });
-                }
-
-                searchAddressRecursive(0);
+                });
             });
         }
 
+
         // 병원 마커 추가 함수
         function addHospitalMarker(lat, lng, name, address, doctor, phone, dermatologist, distance) {
+            if (!lat || !lng || isNaN(lat) || isNaN(lng)) {
+                console.error(`❌ 잘못된 좌표: ${name}, lat=${lat}, lng=${lng}`);
+                return;
+            }
+
+            lat = parseFloat(lat);
+            lng = parseFloat(lng);
+
             let markerImage = dermatologist === "Yes" ? redMarkerImage : greenMarkerImage;
 
+            let position = new kakao.maps.LatLng(lat, lng);
+
             let marker = new kakao.maps.Marker({
-                position: new kakao.maps.LatLng(lat, lng),
+                position: position,
                 map: map,
                 image: markerImage
             });
@@ -191,7 +206,6 @@
 
             let isOpen = false;
 
-            // 마커 클릭 이벤트
             kakao.maps.event.addListener(marker, 'click', function () {
                 if (isOpen) {
                     infowindow.close();
@@ -201,7 +215,10 @@
                 }
                 isOpen = !isOpen;
             });
+
+            console.log(`✅ 마커 추가 성공: ${name}, 좌표: (${lat}, ${lng})`);
         }
+
 
         // 두 지점 간의 거리 계산
         function calculateDistance(lat1, lon1, lat2, lon2) {
@@ -221,13 +238,14 @@
 
 
         window.onload = function() {
-            fetch('hospital_data.json')
+            fetch('/static/hospital_data.json')
                 .then(response => response.json())
                 .then(data => {
                     hospitals = data;
                 })
                 .catch(error => console.error("JSON 파일 로드 실패:", error));
         };
+
     </script>
 </body>
 </html>
