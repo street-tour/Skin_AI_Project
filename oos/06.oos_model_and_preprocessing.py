@@ -93,3 +93,33 @@ def preprocess_input(image):
     processed_image = processed_image.unsqueeze(0)  # shape: (1, C, H, W)
 
     return processed_image
+
+
+
+def predict(image, model, device='cpu'):
+    """
+    Args:
+        image (PIL.Image 또는 numpy.ndarray): 입력 이미지
+        model (torch.nn.Module): 학습된 모델
+        device (str): 'cpu' 또는 'cuda'
+    Returns:
+        tuple: (결과 클래스 (0 또는 1), 신뢰도 (확률 값))
+    """
+    # 모델을 평가 모드로 전환
+    model.eval()
+    model.to(device)
+
+    # 입력 이미지를 전처리
+    processed_image = preprocess_input(image)
+    processed_image = processed_image.to(device)
+
+    # 모델에 입력하여 예측
+    with torch.no_grad():
+        output = model(processed_image)
+
+    # 결과 값과 신뢰도 추출
+    confidence = output.item()  # Sigmoid 값
+    predicted_class = 1 if confidence >= 0.5 else 0  # 0.5 기준으로 클래스 분류
+
+    return predicted_class, confidence
+
