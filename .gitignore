@@ -198,7 +198,6 @@ pyrightconfig.json
 jey/content
 jey/web
 oos/Data
-oos/Model
 oosweb
 test.model.h5
 *.zip
