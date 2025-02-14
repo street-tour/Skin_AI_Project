@@ -4,67 +4,125 @@
 <div class="row">
     <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
         <div class="card">
-            <h5 class="card-header">검사 기록</h5>
+          <h5 class="card-header bg-primary text-white rounded-top">종합 검사 기록</h5>
             <div class="card-body">
                 <table class="table table-striped">
                   <thead>
                       <tr>
-                          <th>모델1결과</th>
-                          <th>모델2결과</th>
-                          <th>모델3결과</th>
-                          <th>모델4결과</th>
-                          <th>모델5결과</th>
-                          <th>모델6결과</th>
-                          <th>모델7결과</th>
-                          <th>피부질환</th>
-                          <th>마지막검사일</th>
+                          <th class="text" style="text-align: center;">forehead_1</th>
+                          <th class="text" style="text-align: center;">forehead_2</th>
+                          <th class="text" style="text-align: center;">lips</th>
+                          <th class="text" style="text-align: center;">chin</th>
+                          <th class="text" style="text-align: center;">eyewrinkles</th>
+                          <th class="text" style="text-align: center;">glabella</th>
+                          <th class="text" style="text-align: center;">cheeks</th>
+                          <th class="text" style="text-align: center;">피부질환</th>
+                          <th class="text" style="text-align: center;">마지막검사일</th>
                       </tr>
                   </thead>
                   <tbody>
                     <tr>
-                        <td class = "text">결과1</td>
-                        <td class = "text">결과2</td>
-                        <td class= "text">결과3</td>
-                        <td class= "text">결과4</td>
-                        <td class = "text">결과5</td>
-                        <td class = "text">결과6</td>
-                        <td class = "text">결과7</td>
-                        <td class= "text">질환</td>
-                        <td class= "text">250212</td>
+                        <td class="text" style="text-align: center;">{{recent_result['forehead_1']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['forehead_2']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['lips']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['chin']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['eyewrinkles']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['glabella']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['cheeks']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_disease[0]}}</td>
+                        <td class="text" style="text-align: center;">
+                          {% if skin_test[-1]['testdate'] > recent_disease[1] %}
+                              {{ skin_test[-1]['testdate'] }}
+                          {% else %}
+                              {{ recent_disease[1] }}
+                          {% endif %}
+                        </td>
+                      
                     </tr>
                 </tbody>
                 </table>
               </div>
 
-              <h5 class="card-header">검사 기록 자세히 보기</h5>
+              <h5 class="card-header bg-primary text-white rounded-top">검사 기록 자세히 보기</h5>
               <div class="card-body">
                 <table class="table table-striped">
-                    <thead>
-                        <tr>
-                            <th>검사번호</th>
-                            <th>검사모델</th>
-                            <th>검사결과</th>
-                            <th>작성일자</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                      {% if skin_test %}
-                          {% for test in skin_test %}
-                          <tr>
-                              <td class="text">{{ test['testno'] }}</td>
-                              <td class="text">{{ test['model'] }}</td>
-                              <td class="text">{{ test['result'] }}</td>
-                              <td class="text">{{ test['modeldate'] }}</td>
-                          </tr>
-                          {% endfor %}
-                      {% else %}
-                          <tr>
-                              <td colspan="4" class="text-center">결과 없음</td>
-                          </tr>
-                      {% endif %}
-                  </tbody>                  
+                  <thead>
+                    <tr>
+                      <th class="text" style="text-align: center;">검사번호</th>
+                      <th class="text" style="text-align: center;">아이디</th>
+                      <th class="text" style="text-align: center;">검사일자</th>
+                      <th class="text" style="text-align: center;">상세보기</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {% if skin_test %}
+                      {% for test in skin_test %}
+                      <tr>
+                        <td class="text" style="text-align: center;">{{ test['tryno'] }}</td>
+                        <td class="text" style="text-align: center;">{{ test['memberid'] }}</td>
+                        <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
+                        <td style="text-align: center;">
+                          <a 
+                            href="#"
+                            style="cursor: pointer; font-size: 1.2rem; text-decoration: none; text-align: center;"
+                            class="toggle-icon"
+                            data-toggle="collapse"
+                            data-target="#detail-{{ loop.index }}"
+                            aria-expanded="false"
+                            aria-controls="detail-{{ loop.index }}">
+                            ▶
+                          </a>
+                        </td>                        
+                      </tr>
+                      <!-- Collapse Section -->
+                      <tr class="collapse" id="detail-{{ loop.index }}">
+                        <td colspan="4">
+                          <div class="card-body">
+                            <table class="table table-striped">
+                              <thead>
+                                <tr>
+                                  <th class="text" style="text-align: center;">구분</th>
+                                  <th class="text" style="text-align: center;">이마(색소침착)</th>
+                                  <th class="text" style="text-align: center;">이마(주름)</th>
+                                  <th class="text" style="text-align: center;">입술</th>
+                                  <th class="text" style="text-align: center;">턱</th>
+                                  <th class="text" style="text-align: center;">눈가(주름)</th>
+                                  <th class="text" style="text-align: center;">미간</th>
+                                  <th class="text" style="text-align: center;">볼</th>
+                                  <th class="text" style="text-align: center;">피부질환</th>
+                                  <th class="text" style="text-align: center;">마지막검사일</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <th class="text" style="text-align: center;">결과</th>
+                                  <td class="text" style="text-align: center;">{{ recent_result['forehead_1'] }}</td>
+                                  <td class="text" style="text-align: center;">{{ recent_result['forehead_2'] }}</td>
+                                  <td class="text" style="text-align: center;">{{ recent_result['lips'] }}</td>
+                                  <td class="text" style="text-align: center;">{{ recent_result['chin'] }}</td>
+                                  <td class="text" style="text-align: center;">{{ recent_result['eyewrinkles'] }}</td>
+                                  <td class="text" style="text-align: center;">{{ recent_result['glabella'] }}</td>
+                                  <td class="text" style="text-align: center;">{{ recent_result['cheeks'] }}</td>
+                                  <td class="text" style="text-align: center;">atopic</td>
+                                  <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </div>
+                        </td>
+                      </tr>
+                      {% endfor %}
+                    {% else %}
+                      <tr>
+                        <td class="text" colspan="4">결과없음</td>
+                      </tr>
+                    {% endif %}
+                  </tbody>
                 </table>
-            </div>
+              </div>
+              
+              
+
             <nav aria-label="board pager">
                 <ul class="pagination justify-content-center">
                   <li class="page-item">
@@ -133,5 +191,21 @@ $(function(){
         location.href = "{{ url_for('board.write') }}"
     });
 });
+
+document.addEventListener('DOMContentLoaded', function () {
+    // 모든 Collapse 요소에 이벤트 리스너 추가
+    const collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
+    collapseElements.forEach(element => {
+      element.addEventListener('click', function (event) {
+        event.preventDefault(); // 기본 동작 방지
+        const targetId = this.getAttribute('data-target'); // Collapse 타겟 ID 가져오기
+        const targetElement = document.querySelector(targetId); // 해당 타겟 요소 찾기
+        
+        // Collapse 상태 변경 후 아이콘 업데이트
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.textContent = isExpanded ? '▶' : '▼'; // 아이콘 업데이트
+      });
+    });
+  });
 </script>
 {% endblock %}

@@ -92,7 +92,7 @@ def detail():
     
 @board_bp.route('/delete/', methods=['GET'])
 def delete():
-    boardno = request.args.get('boardno');
+    boardno = request.args.get('boardno')
     if boardno:
         board_util.delete_board(boardno)
     return redirect(url_for('board.lst'))

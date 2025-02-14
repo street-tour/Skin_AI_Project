@@ -18,7 +18,7 @@ class RegisterForm(LoginForm):
                        validators = [DataRequired("나이를 입력하세요")])
     gender = RadioField('성별',
                         choices = [('male','남'), ('female','여')], validators = [DataRequired("성별을 선택하세요")])
-    skin = RadioField('피부 타입',
+    skintype = RadioField('피부 타입',
                       choices = [('dry','건성'),('oily','지성'),('combination','복합성')], validators =[DataRequired('피부 타입을 선택하세요')])
     address = StringField("주소",
                           validators = [DataRequired("주소를 입력하세요")])
