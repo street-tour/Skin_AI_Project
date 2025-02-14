@@ -11,13 +11,13 @@
                 <form id ="form-predict" class="form-horizontal"
                       action = "/serving/predict/" method="POST" enctype="multipart/form-data">
                     <h3>분석할 부위 선택:</h3>
-                    <label><input type="checkbox" name="part" value="forehead-wrinkle,forehead-hyperpigmentation"> 이마</label>
-                    <label><input type="checkbox" name="part" value="cheeks"> 볼</label>
-                    <label><input type="checkbox" name="part" value="glabella"> 미간</label>
-                    <label><input type="checkbox" name="part" value="chin"> 턱</label>
-                    <label><input type="checkbox" name="part" value="lips"> 입술</label>
-                    <label><input type="checkbox" name="part" value="eye wrinkles"> 눈주름</label>
-                    <label><input type="checkbox" name="part" value="acne"> 여드름</label>
+                    <label><input type="checkbox" name="part" value="이마-주름,이마-색소침착"> 이마</label>
+                    <label><input type="checkbox" name="part" value="볼"> 볼</label>
+                    <label><input type="checkbox" name="part" value="미간"> 미간</label>
+                    <label><input type="checkbox" name="part" value="턱"> 턱</label>
+                    <label><input type="checkbox" name="part" value="입술"> 입술</label>
+                    <label><input type="checkbox" name="part" value="눈가주름"> 눈주름</label>
+                    <label><input type="checkbox" name="part" value="여드름"> 여드름</label>
                     <div class="row form-group">
                         <div class="col col-md-2">
                             <label for="image_input" class=" form-control-label">입력 이미지</label>
@@ -106,9 +106,13 @@ $(function(){
                     //alert(result);
                     let msg = "";
                     for (let i = 0; i < selected_part.length; i++) {
-                        const r = result.predictions[selected_part[i]]
-                        if (r)
-                            msg += `[번호 : ${r.predicted_class}][신뢰도 : ${r.confidence}]`;
+                        const parts = selected_part[i].split(',')
+                        for (let j = 0; j < parts.length; j++) {
+                            const r = result.predictions[parts[j]]
+                            if (r)
+                                msg += `[모델이름 : ${r.model_name}][분석결과 : ${r.predicted_class}][신뢰도 : ${r.confidence}]\n`;
+                        }
+                        
                     }
                     $("#result").val(msg);
                 },
