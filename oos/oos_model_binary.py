@@ -2,6 +2,8 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 from torchvision import transforms
+from PIL import Image
+import numpy as np
 
 class ResidualBlock(nn.Module):
     def __init__(self, in_channels, out_channels, stride=1):
@@ -72,7 +74,9 @@ class SkinNet(nn.Module):
 
 
 
-# 전처리 함수 정의
+
+
+# 전처리 함수
 def preprocess_input(image):
     """
     Args:
@@ -80,23 +84,39 @@ def preprocess_input(image):
     Returns:
         torch.Tensor: 전처리된 이미지 텐서
     """
-    # 학습 시와 동일한 transform 정의
+    # numpy.ndarray일 경우
+    if isinstance(image, np.ndarray):
+        # 데이터 타입 변환 (float64 → uint8)
+        if image.dtype != np.uint8:
+            image = (image * 255).astype(np.uint8)  # 0~1 범위라면 0~255로 스케일링
+        
+        # 배열의 크기 확인
+        if len(image.shape) == 3 and image.shape[0] == 1:  # (1, H, W, C) 형상일 경우
+            image = np.squeeze(image, axis=0)  # 첫 번째 차원 제거
+
+        # PIL.Image로 변환
+        image = Image.fromarray(image)
+
+    # 전처리 순서: Resize → ToTensor
     transform = transforms.Compose([
-        transforms.ToTensor(),
-        transforms.Resize((128, 128))
+        transforms.Resize((128, 128)),  # 크기 조정
+        transforms.ToTensor()          # 텐서로 변환
     ])
 
     # 전처리 적용
     processed_image = transform(image)
 
-    # 배치 차원을 추가 (모델 입력에 필요)
+    # 배치 차원 추가
     processed_image = processed_image.unsqueeze(0)  # shape: (1, C, H, W)
 
     return processed_image
 
 
 
+
+
 def predict(image, model, device='cpu'):
+    
     """
     Args:
         image (PIL.Image 또는 numpy.ndarray): 입력 이미지
@@ -106,6 +126,7 @@ def predict(image, model, device='cpu'):
         tuple: (결과 클래스 (0 또는 1), 신뢰도 (확률 값))
     """
     # 모델을 평가 모드로 전환
+    model = model
     model.eval()
     model.to(device)
 
@@ -118,8 +139,10 @@ def predict(image, model, device='cpu'):
         output = model(processed_image)
 
     # 결과 값과 신뢰도 추출
+    
     confidence = output.item()  # Sigmoid 값
+    confidence_percentage = max(confidence, 1 - confidence) * 100  # 신뢰도 계산
     predicted_class = 1 if confidence >= 0.5 else 0  # 0.5 기준으로 클래스 분류
 
-    return predicted_class, confidence
+    return predicted_class, confidence_percentage
 
