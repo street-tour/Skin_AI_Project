@@ -22,8 +22,6 @@ def index():
 @serving_bp.route("/predict/", methods=["POST"])
 def predict():
 
-
-
     files = request.files
     if 'img_input' not in files:
         return jsonify({

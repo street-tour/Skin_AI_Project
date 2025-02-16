@@ -27,11 +27,15 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col col-md-2">
-                            <label for="img_preview" class=" form-control-label">미리보기</label>
-                        </div>
-                        <div class="col-12 col-md-10">
-                            <img id="img_preview" style="width:400px;">
+                        <h3>bbox</h3>
+                        <button id='drawBboxBtn'>박스 그리기</button>
+                        <div id="canvas" style="width:400px; height: auto; position: relative">
+                            <div class="col col-md-2">
+                                <label for="img_preview" class=" form-control-label">미리보기</label>
+                            </div>
+                            <div class="col-12 col-md-10">
+                                <img id="img_preview" style="width:400px; height: auto; display:none;">
+                            </div>
                         </div>
                     </div>
                     <div class="row form-group">
@@ -59,35 +63,140 @@
 
 {% block js_block %}
 <script>
-$(function(){
-    
-    // 파일 선택기에 파일이 선택 되었을때 (선택된 파일이 변경되었을 때)
-        $("#img_input").on('change', function(event){
-            const file = event.target.files[0];
-            if (file) { // 선택된 파일이 있다면
-                const reader = new FileReader();
-    
-                reader.onload = function(e) { // 파일을 다 읽었을 떄 실행
-                    $('#img_preview').attr('src', e.target.result);
-                    $('#img_preview').css("display", "block");
-                }
-    
-                reader.readAsDataURL(file); // 파일 읽기 시작
-            } else{
-                $('#img_preview').attr('src', '');
-                $('#img_preview').css("display", "none");
+ $(function(){
+    const canvas = document.getElementById('canvas');
+    const drawBboxBtn = document.getElementById('drawBboxBtn');
+    const imgPreview = document.getElementById('img_preview');
+
+    let startX, startY, isDrawing = false, bbox;
+    let drawMode = false; // 그리기 모드 상태
+
+    // ✅ 마우스 클릭 시 bbox 생성
+    canvas.addEventListener("mousedown", (e) => {
+        if (!drawMode) return; // drawMode가 활성화되지 않으면 실행되지 않음
+
+        const canvasRect = canvas.getBoundingClientRect();
+        startX = e.clientX - canvasRect.left;
+        startY = e.clientY - canvasRect.top;
+        isDrawing = true;
+
+        // 새로운 bbox 생성
+        bbox = document.createElement('div');
+        bbox.style.position = 'absolute';
+        bbox.style.border = '2px solid red';
+        bbox.style.backgroundColor = 'rgba(255, 0, 0, 0.2)';
+        bbox.style.left = `${startX}px`;
+        bbox.style.top = `${startY}px`;
+
+        canvas.appendChild(bbox);
+    });
+
+    // ✅ 마우스 움직이면 bbox 크기 조정
+    canvas.addEventListener("mousemove", (e) => {
+        if (!isDrawing) return;
+
+        const canvasRect = canvas.getBoundingClientRect();
+        const width = e.clientX - canvasRect.left - startX;
+        const height = e.clientY - canvasRect.top - startY;
+
+        bbox.style.left = `${Math.min(startX, e.clientX - canvasRect.left)}px`;
+        bbox.style.top = `${Math.min(startY, e.clientY - canvasRect.top)}px`;
+        bbox.style.width = `${Math.abs(width)}px`;
+        bbox.style.height = `${Math.abs(height)}px`;
+    });
+
+    // ✅ 마우스 떼면 bbox 확정
+    canvas.addEventListener("mouseup", () => {
+        isDrawing = false;
+        drawMode = false; // 박스 한 번 그리면 그리기 모드 비활성화
+
+        // bbox 그린 후 이미지 잘라내기
+        const croppedImageData = cropImage(imgPreview, bbox);
+        console.log("잘라낸 이미지 데이터:", croppedImageData);
+
+        // 잘라낸 이미지를 딥러닝 모델에 전송
+        sendToModel(croppedImageData);
+    });
+
+    // ✅ 마우스가 영역 밖으로 나가면 그리기 취소
+    canvas.addEventListener("mouseleave", () => {
+        isDrawing = false;
+    });
+
+    // 버튼 클릭 시 그리기 모드 활성화
+    drawBboxBtn.addEventListener("click", () => {
+        drawMode = true;  // 그리기 모드 활성화
+    });
+
+    // 파일 선택기에서 파일이 변경될 때 이미지 미리보기 설정
+    $("#img_input").on('change', function(event){
+        const file = event.target.files[0];
+        if (file) {
+            const reader = new FileReader();
+
+            reader.onload = function(e) {
+                $('#img_preview').attr('src', e.target.result);
+                $('#img_preview').css("display", "block");
             }
+
+            reader.readAsDataURL(file);
+        } else {
+            $('#img_preview').attr('src', '');
+            $('#img_preview').css("display", "none");
+        }
+    });
+
+    // 이미지를 잘라내는 함수
+    function cropImage(image, bbox) {
+        const canvas = document.createElement('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // bbox 좌표로 영역 자르기
+        const x = parseInt(bbox.style.left);
+        const y = parseInt(bbox.style.top);
+        const width = parseInt(bbox.style.width);
+        const height = parseInt(bbox.style.height);
+
+        canvas.width = width;
+        canvas.height = height;
+
+        ctx.drawImage(image, x, y, width, height, 0, 0, width, height);
+
+        // 잘라낸 이미지를 Base64로 반환
+        return canvas.toDataURL();
+    }
+
+    // 이미지를 딥러닝 모델에 보내는 함수
+    function sendToModel(croppedImageData) {
+        fetch('/predict', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                image: croppedImageData,  // Base64로 인코딩된 이미지
+            }),
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('모델 예측 결과:', data);
+            // 예측 결과를 화면에 표시하거나 후속 작업 수행
+        })
+        .catch(error => {
+            console.error('에러 발생:', error);
         });
-       
+    }
+        
+    
         $("#btn-predict").on('click', function(event){
             $('#form-predict').submit(); // 동기 방식 요청
         });
-    
+
         $('#form-predict').on('submit', function(event){ // submit 하기 직전에 자동으로 호출
             event.preventDefault(); // 기본 동작 차단
-    
+
             const formData = new FormData(this); // <form> 내부의 입력 데이터를 읽어서 변수에 저장
-            
+        
             // $.ajax : jQuery 의 비동기 요청 함수
             let selected_part = []
             $('input[name=part]').each(function(idx, v) { 
@@ -95,7 +204,6 @@ $(function(){
                     selected_part.push($(v).val()); 
                 }
             });
-
             $.ajax({
                 "url" : "/serving/predict/",
                 "type": "POST",
@@ -110,9 +218,9 @@ $(function(){
                         for (let j = 0; j < parts.length; j++) {
                             const r = result.predictions[parts[j]]
                             if (r)
-                                msg += `[모델이름 : ${r.model_name}][분석결과 : ${r.predicted_class}][신뢰도 : ${r.confidence}]\n`;
+                                msg += `모델이름 : ${r.model_name},분석결과 : ${r.predicted_class},신뢰도 : ${r.confidence}\n`;
                         }
-                        
+                    
                     }
                     $("#result").val(msg);
                 },
@@ -120,8 +228,8 @@ $(function(){
                     alert('fail to execute predicting')
                 }
             });
-       });
-        
+    });
+    
         $("#btn-reset").on('click', function(event){
             //$('#form-write').reset(); ///오류 : jQuery 객체집합에는 reset 함수 없음
             $('#form-write')[0].reset(); // jQuery 객체집합에서 DOM객체를 뽑아서 사용
