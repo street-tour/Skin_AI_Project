@@ -6,6 +6,8 @@
         <div class="card">
             <div class="card-header">
                 <strong>예측 서비스</strong>
+                <button id="tooltipBtn">?</button>
+                <div id="tooltip" class="tooltip1" style="display:none;">설명이 나오는 곳</div>
             </div>
             <div class="card-body card-block">
                 <form id ="form-predict" class="form-horizontal"
@@ -27,30 +29,41 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <h3>bbox</h3>
-                        <button id='drawBboxBtn'>박스 그리기</button>
+                        <div class="col col-md-2">
+                            <button id='drawBboxBtn' type="button" class="btn btn-rounded btn-light btn-sm">
+                                <i class="fas fa-pencil-alt">박스 그리기</i>
+                            </button>
+                        </div>
                         <div id="canvas" style="width:400px; height: auto; position: relative">
-                            <div class="col col-md-2">
-                                <label for="img_preview" class=" form-control-label">미리보기</label>
-                            </div>
                             <div class="col-12 col-md-10">
                                 <img id="img_preview" style="width:400px; height: auto; display:none;">
                             </div>
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col col-md-2">
+                        <!-- <div class="col col-md-2">
                             <label for="result" class=" form-control-label">예측 결과</label>
                         </div>
                         <div class="col-12 col-md-10">
                             <textarea id="result" rows="9" readonly class="form-control" style = 'resize: none;'></textarea>
+                        </div> -->
+                        <div class="card border-3 border-top border-top-primary" style="width:100%; height:300px;">
+                            <div class="card-body">
+                                <h5 class="text-muted">예측결과</h5>
+                                <div class="col-12 col-md-12" style="width:100%; height:300px;">
+                                    <h1><textarea id="result" rows="9" readonly class="form-control" style = 'resize: none;'></textarea></h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="card-footer text-right">
                 <button id= 'btn-predict' type="button" class="btn btn-primary btn-sm">
-                    <i class="fa fa-dot-circle-o"></i> 예측
+                    <i class="fa fa-play"></i> 예측
+                </button>
+                <button id="resetBboxBtn" type='reset' class="btn btn-warning btn-sm">
+                    <i class='fa fa-sync-alt'></i>bbox초기화
                 </button>
                 <button id='btn-reset' type="reset" class="btn btn-danger btn-sm">
                     <i class="fa fa-ban"></i> 초기화
@@ -63,13 +76,40 @@
 
 {% block js_block %}
 <script>
- $(function(){
+$(function(){
     const canvas = document.getElementById('canvas');
     const drawBboxBtn = document.getElementById('drawBboxBtn');
     const imgPreview = document.getElementById('img_preview');
 
     let startX, startY, isDrawing = false, bbox;
     let drawMode = false; // 그리기 모드 상태
+
+    let croppedImageData = null;
+
+    const tooltipBtn = document.getElementById('tooltipBtn');
+    const tooltipText = document.getElementById('tooltip');
+
+    tooltipBtn.addEventListener('mouseenter', (event) => {
+
+        tooltipText.style.display = 'block';
+    });
+
+    tooltipBtn.addEventListener('mouseleave', (event) => {
+
+        tooltipText.style.display = 'none';
+    });
+
+    drawBboxBtn.addEventListener("click", (event) => {
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        if (bbox) {
+            canvas.removeChild(bbox);
+        }
+
+        drawMode = true; // 그리기 모드 활성화
+    });
 
     // ✅ 마우스 클릭 시 bbox 생성
     canvas.addEventListener("mousedown", (e) => {
@@ -88,7 +128,7 @@
         bbox.style.left = `${startX}px`;
         bbox.style.top = `${startY}px`;
 
-        canvas.appendChild(bbox);
+        canvas.appendChild(bbox);        
     });
 
     // ✅ 마우스 움직이면 bbox 크기 조정
@@ -111,21 +151,18 @@
         drawMode = false; // 박스 한 번 그리면 그리기 모드 비활성화
 
         // bbox 그린 후 이미지 잘라내기
-        const croppedImageData = cropImage(imgPreview, bbox);
-        console.log("잘라낸 이미지 데이터:", croppedImageData);
+        cropImage(imgPreview, bbox);
+        // console.log("잘라낸 이미지 데이터:", croppedImageData);
 
         // 잘라낸 이미지를 딥러닝 모델에 전송
-        sendToModel(croppedImageData);
+        // sendToModel(croppedImageData);
+
     });
+
 
     // ✅ 마우스가 영역 밖으로 나가면 그리기 취소
     canvas.addEventListener("mouseleave", () => {
         isDrawing = false;
-    });
-
-    // 버튼 클릭 시 그리기 모드 활성화
-    drawBboxBtn.addEventListener("click", () => {
-        drawMode = true;  // 그리기 모드 활성화
     });
 
     // 파일 선택기에서 파일이 변경될 때 이미지 미리보기 설정
@@ -162,41 +199,37 @@
 
         ctx.drawImage(image, x, y, width, height, 0, 0, width, height);
 
-        // 잘라낸 이미지를 Base64로 반환
-        return canvas.toDataURL();
+        // Convert cropped area to Blob
+        canvas.toBlob((blob) => {
+                croppedImageData = blob;
+                alert('bbox 처리 완료');
+            }, "image/png");
     }
 
-    // 이미지를 딥러닝 모델에 보내는 함수
-    function sendToModel(croppedImageData) {
-        fetch('/predict', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                image: croppedImageData,  // Base64로 인코딩된 이미지
-            }),
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('모델 예측 결과:', data);
-            // 예측 결과를 화면에 표시하거나 후속 작업 수행
-        })
-        .catch(error => {
-            console.error('에러 발생:', error);
-        });
-    }
-        
+    resetBboxBtn.addEventListener("click", (event) => {
+        event.preventDefault();
+        event.stopPropagation();
+        if (bbox && bbox.parentElement){
+            bbox.parentElement.removeChild(bbox);
+            bbox = null;
+        }
+
+    });
+
     
         $("#btn-predict").on('click', function(event){
-            $('#form-predict').submit(); // 동기 방식 요청
+            $('#form-predict').submit(); // 동기 방식 요청            
         });
 
         $('#form-predict').on('submit', function(event){ // submit 하기 직전에 자동으로 호출
             event.preventDefault(); // 기본 동작 차단
-
-            const formData = new FormData(this); // <form> 내부의 입력 데이터를 읽어서 변수에 저장
-        
+            let formData = new FormData(this); // <form> 내부의 입력 데이터를 읽어서 변수에 저장
+            if (croppedImageData != null) {
+                formData.delete('img_input');
+                formData.append("img_input", croppedImageData, "cropped.png");
+            } 
+                
+            
             // $.ajax : jQuery 의 비동기 요청 함수
             let selected_part = []
             $('input[name=part]').each(function(idx, v) { 
@@ -218,7 +251,7 @@
                         for (let j = 0; j < parts.length; j++) {
                             const r = result.predictions[parts[j]]
                             if (r)
-                                msg += `모델이름 : ${r.model_name},분석결과 : ${r.predicted_class},신뢰도 : ${r.confidence}\n`;
+                                msg += `부위 : ${r.model_name},\t 분석결과 : ${r.predicted_class},\t 예측 정확도 : ${r.confidence}\n`;
                         }
                     
                     }
@@ -231,9 +264,15 @@
     });
     
         $("#btn-reset").on('click', function(event){
-            //$('#form-write').reset(); ///오류 : jQuery 객체집합에는 reset 함수 없음
-            $('#form-write')[0].reset(); // jQuery 객체집합에서 DOM객체를 뽑아서 사용
+            $('#form-predict')[0].reset(); // jQuery 객체집합에서 DOM객체를 뽑아서 사용
+            
+            if (bbox) {
+                canvas.removeChild(bbox);
+            }
+
+            $('#img_preview').attr('src', '');
+            $('#img_preview').css("display", "none");
         });
-    });
+});
 </script>
 {% endblock %}

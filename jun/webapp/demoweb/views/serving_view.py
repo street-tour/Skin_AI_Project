@@ -66,7 +66,7 @@ def predict():
     for part in parts:
         expanded_parts.extend(part.split(","))  # 쉼표로 구분된 값을 분리
 
-    print('--------------------> 1.', expanded_parts)
+
     # pythorch_model = SkinNet()
     # weight_path = 'serving_model/FP_5084.pth'
     # pythorch_model = torch.load(os.path.join(root_path, weight_path), map_location=torch.device('cpu'))
@@ -104,9 +104,9 @@ def predict():
 
                     # 결과 및 신뢰도 출력
                     if result == 0:
-                        result_text = "색소침착 없음"
+                        result_text = "준수"
                     else:
-                        result_text = "색소침착 심함"
+                        result_text = "미흡"
 
 
                     predictions[area] = {
@@ -118,6 +118,7 @@ def predict():
                 else:
 
                     image_input = Image.open(file)
+                    image_input = image_input.convert('RGB')
                     image_input = image_input.resize((128,128))
                     image_array = tf_keras.utils.img_to_array(image_input)
                     image_array = image_array/255
@@ -136,41 +137,10 @@ def predict():
                     # 예측 클래스 결정 (더 높은 확률을 가진 클래스로 예측)
                     predicted_class = np.argmax([prob_class_0, prob_class_1])  # 0 또는 1
                 
-                    if area == "이마-주름":
-                        if predicted_class ==0:
-                            result_text = "주름이 없습니다."
-                        else:
-                            result_text = "주름이 많습니다."
-                    elif area =='볼':
-                        if predicted_class ==0:
-                            result_text = "0"
-                        else:
-                            result_text = "1"
-                    elif area =='미간':
-                        if predicted_class ==0:
-                            result_text = "2"
-                        else:
-                            result_text = "3"
-                    elif area =='턱':
-                        if predicted_class ==0:
-                            result_text = "4"
-                        else:
-                            result_text = "5"
-                    elif area =='입술':
-                        if predicted_class ==0:
-                            result_text = "6"
-                        else:
-                            result_text = "7"
-                    elif area =='눈가주름':
-                        if predicted_class ==0:
-                            result_text = "8"
-                        else:
-                            result_text = "9"
+                    if predicted_class ==0:
+                        result_text = "준수"
                     else:
-                        if predicted_class ==0:
-                            result_text = "10"
-                        else:
-                            result_text = "11"
+                        result_text = "미흡"
 
                     
                     # confidence는 예측된 클래스의 확률

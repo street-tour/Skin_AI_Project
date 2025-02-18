@@ -1,7 +1,7 @@
 import pymysql
 
 def insert_board(title, writer, content):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     cursor = conn.cursor()
 
@@ -22,7 +22,7 @@ def insert_board(title, writer, content):
     return last_insert_id_row[0]
 
 def select_board_list(result_type = 'list'):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = 'skin',
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = 'skin',
                            user = "humanda", passwd = 'humanda')
     
     cursor = conn.cursor()
@@ -54,7 +54,7 @@ def result_as_dict(rows, columns):
 
     
 def select_member_by_id(member_id):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     cursor = conn.cursor()
 
@@ -72,7 +72,7 @@ def select_member_by_id(member_id):
     return row
 
 def select_board_by_boardno(boardno, result_type='list'):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = 'skin',
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = 'skin',
                            user = "humanda", passwd = 'humanda')
     
     cursor = conn.cursor()
@@ -97,7 +97,7 @@ def select_board_by_boardno(boardno, result_type='list'):
         return results[0]
     
 def delete_board(boardno):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     
     cursor = conn.cursor()
@@ -113,7 +113,7 @@ def delete_board(boardno):
     conn.close()
 
 def update_board(boardno, title, content):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     
     cursor = conn.cursor()
@@ -128,7 +128,7 @@ def update_board(boardno, title, content):
     conn.close()
 
 def select_board_list_with_paging(start, page_size, result_type="list"):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     cursor = conn.cursor()
 
@@ -151,7 +151,7 @@ def select_board_list_with_paging(start, page_size, result_type="list"):
         return result_as_dict(rows, ['boardno', 'title', 'writer','readcount','writedate','modifydate','deleted'])
     
 def select_board_count():
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     cursor = conn.cursor()
 
@@ -166,7 +166,7 @@ def select_board_count():
     return row[0]
 
 def insert_attachment(boardno, userfilename, savedfilename):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     cursor = conn.cursor()
 
@@ -182,7 +182,7 @@ def insert_attachment(boardno, userfilename, savedfilename):
     conn.close()
 
 def select_attachments_by_boardno(boardno, result_type='dict'):
-    conn = pymysql.connect(host = "192.168.0.51", port = 3306, db = "skin",
+    conn = pymysql.connect(host = "192.168.0.31", port = 3306, db = "skin",
                            user ='humanda', passwd='humanda')
     cursor = conn.cursor()
 
@@ -203,7 +203,7 @@ def select_attachments_by_boardno(boardno, result_type='dict'):
 
 
 def increase_download_count(savedfilename):
-    conn = pymysql.conncet(host="192.168.0.51", port=3306, db='skin',
+    conn = pymysql.conncet(host="192.168.0.31", port=3306, db='skin',
                            user="humanda", passwd="humanda")
     
     cursor = conn.cursor()
@@ -219,7 +219,7 @@ def increase_download_count(savedfilename):
     conn.close()
 
 def delete_attachment(attachno):
-    conn = pymysql.conncet(host="192.168.0.51", port=3306, db="skin",
+    conn = pymysql.conncet(host="192.168.0.31", port=3306, db="skin",
                            user='humanda', passwd="humanda")
     
     cursor = conn.cursor()
@@ -234,7 +234,7 @@ def delete_attachment(attachno):
     conn.close()
 
 def increase_read_count(boardno):
-    conn = pymysql.connect(host="192.168.0.51", port=3306, db="skin",
+    conn = pymysql.connect(host="192.168.0.31", port=3306, db="skin",
                            user="humanda", passwd="humanda")
     
     cursor = conn.cursor()

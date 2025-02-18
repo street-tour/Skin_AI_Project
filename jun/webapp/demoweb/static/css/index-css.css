@@ -1,0 +1,15 @@
+.tooltip {
+    display: none;  /* 기본적으로 숨겨짐 */
+    position: absolute;  /* 절대 위치로 설정 */
+    top: 100%; /* 버튼 아래에 툴팁이 표시됨 */
+    left: 50%; /* 버튼의 가운데에서 툴팁이 표시됨 */
+    transform: translateX(-50%);  /* 수평으로 중앙 정렬 */
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* 약간의 그림자 추가 */
+}
