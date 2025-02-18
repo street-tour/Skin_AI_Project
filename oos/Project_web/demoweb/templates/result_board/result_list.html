@@ -21,6 +21,7 @@
                       </tr>
                   </thead>
                   <tbody>
+                    {% if skin_test %}
                     <tr>
                         <td class="text" style="text-align: center;">{{recent_result['forehead_1']}}</td>
                         <td class="text" style="text-align: center;">{{recent_result['forehead_2']}}</td>
@@ -37,8 +38,12 @@
                               {{ recent_disease[1] }}
                           {% endif %}
                         </td>
-                      
                     </tr>
+                    {% else %}
+                    <tr>
+                        <td class="text-center" colspan ="9">결과없음 : 검사를 먼저 진행해 주세요.</td>
+                    </tr>
+                    {% endif %}
                 </tbody>
                 </table>
               </div>
@@ -54,70 +59,75 @@
                       <th class="text" style="text-align: center;">상세보기</th>
                     </tr>
                   </thead>
+
+
+
                   <tbody>
                     {% if skin_test %}
-                      {% for test in skin_test %}
-                      <tr>
-                        <td class="text" style="text-align: center;">{{ test['tryno'] }}</td>
-                        <td class="text" style="text-align: center;">{{ test['memberid'] }}</td>
-                        <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
-                        <td style="text-align: center;">
-                          <a 
-                            href="#"
-                            style="cursor: pointer; font-size: 1.2rem; text-decoration: none; text-align: center;"
-                            class="toggle-icon"
-                            data-toggle="collapse"
-                            data-target="#detail-{{ loop.index }}"
-                            aria-expanded="false"
-                            aria-controls="detail-{{ loop.index }}">
-                            ▶
-                          </a>
-                        </td>                        
-                      </tr>
-                      <!-- Collapse Section -->
-                      <tr class="collapse" id="detail-{{ loop.index }}">
-                        <td colspan="4">
-                          <div class="card-body">
-                            <table class="table table-striped">
-                              <thead>
-                                <tr>
-                                  <th class="text" style="text-align: center;">구분</th>
-                                  <th class="text" style="text-align: center;">이마(색소침착)</th>
-                                  <th class="text" style="text-align: center;">이마(주름)</th>
-                                  <th class="text" style="text-align: center;">입술</th>
-                                  <th class="text" style="text-align: center;">턱</th>
-                                  <th class="text" style="text-align: center;">눈가(주름)</th>
-                                  <th class="text" style="text-align: center;">미간</th>
-                                  <th class="text" style="text-align: center;">볼</th>
-                                  <th class="text" style="text-align: center;">피부질환</th>
-                                  <th class="text" style="text-align: center;">마지막검사일</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <th class="text" style="text-align: center;">결과</th>
-                                  <td class="text" style="text-align: center;">{{ recent_result['forehead_1'] }}</td>
-                                  <td class="text" style="text-align: center;">{{ recent_result['forehead_2'] }}</td>
-                                  <td class="text" style="text-align: center;">{{ recent_result['lips'] }}</td>
-                                  <td class="text" style="text-align: center;">{{ recent_result['chin'] }}</td>
-                                  <td class="text" style="text-align: center;">{{ recent_result['eyewrinkles'] }}</td>
-                                  <td class="text" style="text-align: center;">{{ recent_result['glabella'] }}</td>
-                                  <td class="text" style="text-align: center;">{{ recent_result['cheeks'] }}</td>
-                                  <td class="text" style="text-align: center;">atopic</td>
-                                  <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
-                                </tr>
-                              </tbody>
-                            </table>
-                          </div>
-                        </td>
-                      </tr>
-                      {% endfor %}
+                        {% for test in skin_test %}
+                        <tr>
+                            <td class="text" style="text-align: center;">{{ test['tryno'] }}</td>
+                            <td class="text" style="text-align: center;">{{ test['memberid'] }}</td>
+                            <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
+                            <td style="text-align: center;">
+                                <a 
+                                    href="#"
+                                    style="cursor: pointer; font-size: 1.2rem; text-decoration: none; text-align: center;"
+                                    class="toggle-icon"
+                                    data-toggle="collapse"
+                                    data-target="#detail-{{ loop.index }}"
+                                    aria-expanded="false"
+                                    aria-controls="detail-{{ loop.index }}">
+                                    ▶
+                                </a>
+                            </td>                        
+                        </tr>
+                        <!-- Collapse Section -->
+                        <tr class="collapse" id="detail-{{ loop.index }}">
+                            <td colspan="4">
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class="text" style="text-align: center;">구분</th>
+                                                <th class="text" style="text-align: center;">이마(색소)</th>
+                                                <th class="text" style="text-align: center;">이마(주름)</th>
+                                                <th class="text" style="text-align: center;">입술</th>
+                                                <th class="text" style="text-align: center;">턱</th>
+                                                <th class="text" style="text-align: center;">눈주름</th>
+                                                <th class="text" style="text-align: center;">미간</th>
+                                                <th class="text" style="text-align: center;">볼</th>
+                                                <th class="text" style="text-align: center;">피부질환</th>
+                                                <th class="text" style="text-align: center;">마지막검사일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text" style="text-align: center;">결과</th>
+                                                {% set select_skin_test = select_skin_test.get(test['tryno'], None) %}
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['forehead_1'] if select_skin_test['forehead_1'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['forehead_2'] if select_skin_test['forehead_2'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['lips'] if select_skin_test['lips'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['chin'] if select_skin_test['chin'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['eyewrinkles'] if select_skin_test['eyewrinkles'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['glabella'] if select_skin_test['glabella'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['cheeks'] if select_skin_test['cheeks'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['disease'] if select_skin_test['disease'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
                     {% else %}
-                      <tr>
-                        <td class="text" colspan="4">결과없음</td>
-                      </tr>
+                    <tr>
+                        <td class="text-center" colspan="4">결과없음 : 검사를 먼저 진행해 주세요.</td>
+                    </tr>
                     {% endif %}
                   </tbody>
+                
                 </table>
               </div>
               

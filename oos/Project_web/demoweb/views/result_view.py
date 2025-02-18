@@ -32,13 +32,49 @@ def list():
     start = (pager['page_no'] -1) * pager['page_size']
 
     skin_test = result_util.select_skin_test_with_paging(memberid=memberid, start=start, page_size=pager["page_size"], result_type='dict')
-    print(skin_test[-1]['testdate'])
+    
     # skin_test 리스트에서 'tryno' 값만 추출
-    tryno_list = [item['tryno'] for item in skin_test if 'tryno' in item]
+    if skin_test:
+        tryno_list = [item['tryno'] for item in skin_test if 'tryno' in item]
+    else:
+        tryno_list = []
     # print(tryno_list)  # 추출된 tryno 값 리스트 출력
 
-    recent_result = result_util.select_result_list_with_tryno(tryno=tryno_list, result_type='dict')
+    model_list = ['eyewrinkles', 'lips', 'chin', 'forehead_1', 'forehead_2', 'cheeks', 'glabella']
+
+    recent_result = {}
+    for mo in model_list:
+        v = result_util.select_result_by_memberid_and_model(memberid, mo)
+        recent_result.update({mo:v})
+
+    # recent_result = result_util.select_result_list_with_tryno(tryno=tryno_list, result_type='dict')
     recent_disease = result_util.select_disease_test(memberid=memberid)
+    select_skin_test = result_util.select_skin_test(tryno_list=tryno_list)
+    select_skin_test_data = {}
+    select_skin_test_data = {}
+    if select_skin_test:
+        for row in select_skin_test:
+            tryno = row[3]  # tryno 값
+            model = row[1]  # 모델명 (예: 'forehead_1', 'lips' 등)
+            result = row[2]  # 검사 결과 값
+
+            # tryno가 없으면 새 dictionary 생성
+            if tryno not in select_skin_test_data:
+                select_skin_test_data[tryno] = {}
+
+            # 모델명을 키로 결과값 저장
+            select_skin_test_data[tryno][model] = result
+
+
+
+    print(select_skin_test_data)
     print(recent_disease)
     print(recent_result)
-    return render_template("result_board/result_list.html", pager = pager, skin_test=skin_test, recent_result=recent_result, recent_disease=recent_disease)
+    return render_template(
+        "result_board/result_list.html",
+        pager=pager,
+        skin_test=skin_test,
+        recent_result=recent_result,
+        recent_disease=recent_disease,
+        select_skin_test=select_skin_test_data  # 수정된 딕셔너리를 전달
+    )

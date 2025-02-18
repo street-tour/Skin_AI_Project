@@ -1,0 +1,215 @@
+{% extends 'base_with_layout.html' %}
+
+{% block content %}
+<div class="row">
+    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col-12">
+        <div class="card">
+          <h5 class="card-header bg-primary text-white rounded-top">종합 검사 기록</h5>
+            <div class="card-body">
+                <table class="table table-striped">
+                  <thead>
+                      <tr>
+                          <th class="text" style="text-align: center;">forehead_1</th>
+                          <th class="text" style="text-align: center;">forehead_2</th>
+                          <th class="text" style="text-align: center;">lips</th>
+                          <th class="text" style="text-align: center;">chin</th>
+                          <th class="text" style="text-align: center;">eyewrinkles</th>
+                          <th class="text" style="text-align: center;">glabella</th>
+                          <th class="text" style="text-align: center;">cheeks</th>
+                          <th class="text" style="text-align: center;">피부질환</th>
+                          <th class="text" style="text-align: center;">마지막검사일</th>
+                      </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                        <td class="text" style="text-align: center;">{{recent_result['forehead_1']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['forehead_2']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['lips']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['chin']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['eyewrinkles']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['glabella']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['cheeks']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_disease[0]}}</td>
+                        <td class="text" style="text-align: center;">
+                          {% if skin_test[-1]['testdate'] > recent_disease[1] %}
+                              {{ skin_test[-1]['testdate'] }}
+                          {% else %}
+                              {{ recent_disease[1] }}
+                          {% endif %}
+                        </td>
+                    </tr>
+                </tbody>
+                </table>
+              </div>
+
+              <h5 class="card-header bg-primary text-white rounded-top">검사 기록 자세히 보기</h5>
+              <div class="card-body">
+                <table class="table table-striped">
+                  <thead>
+                    <tr>
+                      <th class="text" style="text-align: center;">검사번호</th>
+                      <th class="text" style="text-align: center;">아이디</th>
+                      <th class="text" style="text-align: center;">검사일자</th>
+                      <th class="text" style="text-align: center;">상세보기</th>
+                    </tr>
+                  </thead>
+
+
+
+                  <tbody>
+                    {% if skin_test %}
+                        {% for test in skin_test %}
+                        <tr>
+                            <td class="text" style="text-align: center;">{{ test['tryno'] }}</td>
+                            <td class="text" style="text-align: center;">{{ test['memberid'] }}</td>
+                            <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
+                            <td style="text-align: center;">
+                                <a 
+                                    href="#"
+                                    style="cursor: pointer; font-size: 1.2rem; text-decoration: none; text-align: center;"
+                                    class="toggle-icon"
+                                    data-toggle="collapse"
+                                    data-target="#detail-{{ loop.index }}"
+                                    aria-expanded="false"
+                                    aria-controls="detail-{{ loop.index }}">
+                                    ▶
+                                </a>
+                            </td>                        
+                        </tr>
+                        <!-- Collapse Section -->
+                        <tr class="collapse" id="detail-{{ loop.index }}">
+                            <td colspan="4">
+                                <div class="card-body">
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th class="text" style="text-align: center;">구분</th>
+                                                <th class="text" style="text-align: center;">이마(색소)</th>
+                                                <th class="text" style="text-align: center;">이마(주름)</th>
+                                                <th class="text" style="text-align: center;">입술</th>
+                                                <th class="text" style="text-align: center;">턱</th>
+                                                <th class="text" style="text-align: center;">눈주름</th>
+                                                <th class="text" style="text-align: center;">미간</th>
+                                                <th class="text" style="text-align: center;">볼</th>
+                                                <th class="text" style="text-align: center;">피부질환</th>
+                                                <th class="text" style="text-align: center;">마지막검사일</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th class="text" style="text-align: center;">결과</th>
+                                                {% set select_skin_test = select_skin_test.get(test['tryno'], None) %}
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['forehead_1'] if select_skin_test['forehead_1'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['forehead_2'] if select_skin_test['forehead_2'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['lips'] if select_skin_test['lips'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['chin'] if select_skin_test['chin'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['eyewrinkles'] if select_skin_test['eyewrinkles'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['glabella'] if select_skin_test['glabella'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['cheeks'] if select_skin_test['cheeks'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['disease'] if select_skin_test['disease'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </td>
+                        </tr>
+                        {% endfor %}
+                    {% else %}
+                        <tr>
+                            <td class="text" colspan="4">결과없음</td>
+                        </tr>
+                    {% endif %}
+                  </tbody>
+                
+                </table>
+              </div>
+              
+              
+
+            <nav aria-label="board pager">
+                <ul class="pagination justify-content-center">
+                  <li class="page-item">
+                        {% if pager['page_no'] > 1 %}
+                        <a class="page-link" href="{{ url_for('result_board.list', page_no=1) }}" aria-label="First">
+                          <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        {% else %}
+                        <a class="page-link" href="javascript:" aria-label="First">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                        {% endif %}
+                  </li>
+                  <li class="page-item">
+                    {% if pager['page_no'] > 1 %}
+                    <a class="page-link" href="{{ url_for('result_board.list', page_no=(pager['page_no']-1)) }}" aria-label="Previous">
+                      <span aria-hidden="true">&lt;</span>
+                    </a>
+                    {% else %}
+                    <a class="page-link" href="javascript:" aria-label="Previous">
+                        <span aria-hidden="true">&lt;</span>
+                    </a>
+                    {% endif %}
+                  </li>
+                  {% for page_no in range(pager['page_start'], pager['page_end']) %}
+                  {% if page_no <= pager['page_cnt'] %}
+                  <li class = "page-item">
+                    <a class="page-link" href="{{ url_for('result_board.list',page_no=page_no) }}">{{ page_no }}</a></li>
+                  </li>
+                  {% endif %}
+                  {% endfor %}
+                  <li class="page-item">
+                    {% if pager['page_no'] < pager['page_cnt'] %}
+                    <a class="page-link" href="{{ url_for('result_board.list', page_no=(pager['page_no']+1)) }}" aria-label="Next">
+                      <span aria-hidden="true">&gt;</span>
+                    </a>
+                    {% else %}
+                    <a class="page-link" href="javascript:" aria-label="Previous">
+                        <span aria-hidden="true">&gt;</span>
+                    </a>
+                    {% endif %}
+                  </li>
+                  <li class="page-item">
+                    {% if pager['page_no'] < pager['page_cnt'] %}
+                    <a class="page-link" href="{{ url_for('result_board.list', page_no=pager['page_cnt']) }}" aria-label="Last">
+                      <span aria-hidden="true">&raquo;</span>
+                    </a>
+                    {% else %}
+                    <a class="page-link" href="javascript:" aria-label="Last">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                    {% endif %}
+                  </li>
+                </ul>
+              </nav>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block js_block %}
+<script>
+$(function(){
+    $('#btn-write').on('click', function(event){
+        //loaction.href = "/board/write/"; // 브라우저의 주소입력 위치에 'write'를 입력
+        location.href = "{{ url_for('board.write') }}"
+    });
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+    // 모든 Collapse 요소에 이벤트 리스너 추가
+    const collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
+    collapseElements.forEach(element => {
+      element.addEventListener('click', function (event) {
+        event.preventDefault(); // 기본 동작 방지
+        const targetId = this.getAttribute('data-target'); // Collapse 타겟 ID 가져오기
+        const targetElement = document.querySelector(targetId); // 해당 타겟 요소 찾기
+        
+        // Collapse 상태 변경 후 아이콘 업데이트
+        const isExpanded = this.getAttribute('aria-expanded') === 'true';
+        this.textContent = isExpanded ? '▶' : '▼'; // 아이콘 업데이트
+      });
+    });
+  });
+</script>
+{% endblock %}
