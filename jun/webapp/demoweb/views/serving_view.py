@@ -216,9 +216,32 @@ def predict2():
     #predicted_class = (predictions >= 0.5).astype(int)[0][0]
     confidence = np.max(predictions)
 
+    if predicted_class==1:
+        result_text = '습진'
+    elif predicted_class ==2:
+        result_text = "흑색종"
+    elif predicted_class ==3:
+        result_text = "아토피 피부염"
+    elif predicted_class ==4:
+        result_text = "기저세포암"
+    elif predicted_class ==5:
+        result_text ='멜라닌세포 모반'
+    elif predicted_class ==6:
+        result_text = '양성 각화증 유사 병변'
+    elif predicted_class == 7:
+        result_text = "건선, 편평태선 및 관련 질환"
+    elif predicted_class == 8:
+        result_text = "지루각화증 및 기타 양성 종양"
+    elif predicted_class == 9:
+        result_text = "백선, 칸디다증 및 기타 진균 감염"
+    elif predicted_class == 10:
+        result_text = "사마귀, 전염성 및 기타 바이러스 감염"
+    else:
+        result_text ="지성-건성 피부 타입"
+
     return jsonify({
         "result": "success",
         "message": "",
-        "predicted_class" : str(predicted_class),
+        "predicted_class" : str(result_text),
         "confidence" : str(confidence)
     })

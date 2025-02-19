@@ -6,6 +6,24 @@
         <div class="card">
             <div class="card-header">
                 <strong>질병 상태 진단 서비스</strong>
+                <button id="tooltipBtn">?</button>
+                <div id="tooltip" class="tooltip1" style="display:none;">
+                    이 사이트는 사용자가 피부 질환이 의심되는 부위를 근접 촬영하여 업로드하면,<br> 
+                    분석을 통해 질환 상태를 확인할 수 있도록 돕습니다.<br><br>
+                    <strong>판별 가능한 질환 목록:</strong><br>
+                    - 습진<br>
+                    - 흑색종<br>
+                    - 아토피 피부염<br>
+                    - 기저세포암<br>
+                    - 멜라닌세포 모반<br>
+                    - 양성 각화증 유사 병변<br>
+                    - 건선, 편평태선 및 관련 질환<br>
+                    - 지루각화증 및 기타 양성 종양<br>
+                    - 백선, 칸디다증 및 기타 진균 감염<br>
+                    - 사마귀, 전염성 및 기타 바이러스 감염<br>
+                    - 지성-건성 피부 타입<br>
+                    에 대해서만 판별할 수 있습니다.
+                </div>
             </div>
             <div class="card-body card-block">
                 <form id ="form-predict" class="form-horizontal"
@@ -27,18 +45,20 @@
                         </div>
                     </div>
                     <div class="row form-group">
-                        <div class="col col-md-2">
-                            <label for="result" class=" form-control-label">예측 결과</label>
-                        </div>
-                        <div class="col-12 col-md-10">
-                            <textarea id="result" rows="9" readonly class="form-control" style = 'resize: none;'></textarea>
+                        <div class="card border-3 border-top border-top-primary" style="width:100%; height:300px;">
+                            <div class="card-body">
+                                <h5 class="text-muted">예측결과</h5>
+                                <div class="col-12 col-md-12" style="width:100%; height:300px;">
+                                    <h1><textarea id="result" rows="9" readonly class="form-control" style = 'resize: none;'></textarea></h1>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </form>
             </div>
             <div class="card-footer text-right">
                 <button id= 'btn-predict' type="button" class="btn btn-primary btn-sm">
-                    <i class="fa fa-dot-circle-o"></i> 예측
+                    <i class="fa fa-play"></i> 예측
                 </button>
                 <button id='btn-reset' type="reset" class="btn btn-danger btn-sm">
                     <i class="fa fa-ban"></i> 초기화
@@ -52,6 +72,18 @@
 {% block js_block %}
 <script>
 $(function(){
+    const tooltipBtn = document.getElementById('tooltipBtn');
+    const tooltipText = document.getElementById('tooltip');
+
+    tooltipBtn.addEventListener('mouseenter', (event) => {
+
+        tooltipText.style.display = 'block';
+    });
+
+    tooltipBtn.addEventListener('mouseleave', (event) => {
+
+        tooltipText.style.display = 'none';
+    });
     
     // 파일 선택기에 파일이 선택 되었을때 (선택된 파일이 변경되었을 때)
         $("#img_input").on('change', function(event){
@@ -99,7 +131,7 @@ $(function(){
         
         $("#btn-reset").on('click', function(event){
             //$('#form-write').reset(); ///오류 : jQuery 객체집합에는 reset 함수 없음
-            $('#form-write')[0].reset(); // jQuery 객체집합에서 DOM객체를 뽑아서 사용
+            $('#form-predict')[0].reset(); // jQuery 객체집합에서 DOM객체를 뽑아서 사용
         });
     });
 </script>
