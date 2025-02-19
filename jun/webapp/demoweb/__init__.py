@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from .views import main_view, auth_view, board_view, serving_view, map_view
+from .views import main_view, auth_view, board_view, serving_view, map_view, result_view, chatbot_view
 
 def create_app():
 
@@ -15,5 +15,6 @@ def create_app():
     app.register_blueprint(board_view.board_bp)
     app.register_blueprint(serving_view.serving_bp)
     app.register_blueprint(map_view.map_bp)
-    
+    app.register_blueprint(result_view.result_board_bp)
+    app.register_blueprint(chatbot_view.chatbot_bp)
     return app

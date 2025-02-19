@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template
+from flask import Blueprint, render_template, redirect, url_for
 from flask import request, jsonify
 
 from PIL import Image
@@ -12,16 +12,23 @@ import torch.nn.functional as F
 import warnings
 import oos_model_binary
 import sys
+from flask import session
+from ..db_utils import index_util
 
 serving_bp = Blueprint("serving", __name__, url_prefix = "/serving")
 
 @serving_bp.route("/index/")
 def index():
+    if not session.get('loginuser'):
+        return redirect(url_for('auth.login'))
     return render_template("serving/index.html")
+
 
 @serving_bp.route("/predict/", methods=["POST"])
 def predict():
-
+    memberid=session['loginuser'].get('memberid')
+    index_util.insert_test_table(memberid=memberid)
+    tryno = index_util.select_tryno(memberid=memberid)
     files = request.files
     if 'img_input' not in files:
         return jsonify({
@@ -70,6 +77,7 @@ def predict():
     # pythorch_model = SkinNet()
     # weight_path = 'serving_model/FP_5084.pth'
     # pythorch_model = torch.load(os.path.join(root_path, weight_path), map_location=torch.device('cpu'))
+    model_list = []
 
     for area in expanded_parts:
         if area in model_paths:
@@ -115,6 +123,8 @@ def predict():
                         "confidence": str(confidence)
                     }
 
+                    model_list.append(area)
+
                 else:
 
                     image_input = Image.open(file)
@@ -151,6 +161,8 @@ def predict():
                         "predicted_class": str(result_text),
                         "confidence": str(confidence)
                     }
+                    model_list.append(area)
+                    print("_------->",predictions[area])
 
 
             except Exception as e:
@@ -158,7 +170,12 @@ def predict():
                 predictions[area] = {
                     "error": str(e)
                 }
-
+    
+    for i in model_list:
+        model = predictions[i]['model_name']
+        result = predictions[i]['predicted_class']
+        confidence = predictions[i]['confidence']
+        index_util.insert_skin_test(model=model, result=result, confidence=confidence,tryno=tryno)
 
 
     return jsonify({
@@ -172,11 +189,13 @@ def predict():
 
 @serving_bp.route("/disease/")
 def disease():
+    if not session.get('loginuser'):
+        return redirect(url_for('auth.login'))
     return render_template("serving/disease.html")
 
 @serving_bp.route("/predict2/", methods=["POST"])
 def predict2():
-
+    
     from PIL import Image
     from tensorflow import keras as tf_keras
     import numpy as np
