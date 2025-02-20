@@ -24,6 +24,27 @@ def handle_chat_text_with_custom_info2():
     memberinfo = chatbot_util.memberinfo(memberid=memberid)
     model_list = ['eyewrinkles', 'lips', 'chin', 'forehead_1', 'forehead_2', 'cheeks', 'glabella']
 
+    bad_conditions = chatbot_util.get_bad_skin_conditions(memberid)
+
+    if bad_conditions is None:
+        bad_conditions_text = "검사 결과가 없습니다."
+    elif not bad_conditions:
+        bad_conditions_text = "피부 상태가 양호합니다."
+    else:
+        bad_conditions_text = ", ".join(bad_conditions)
+
+    selected_ingredients = chatbot_util.get_ingredients_for_conditions(bad_conditions)
+
+    recommended_products = chatbot_util.recommended_best_products(selected_ingredients)
+
+    if recommended_products:
+        recommended_text = "\n".join([f"- {p['product_name']}" for p in recommended_products])
+    else:
+        recommended_text = "추천할 제품이 없습니다."
+
+    json_data = request.get_json()
+    message = json_data.get('message')
+    
     recent_result = {}
     for mo in model_list:
         v = chatbot_util.select_result_by_memberid_and_model(memberid, mo)
@@ -40,6 +61,15 @@ def handle_chat_text_with_custom_info2():
         2. 사용자의 피부타입은 {memberinfo[0][1]} 입니다.
         3. 사용자의 나이는 {memberinfo[0][2]} 입니다.
         4. 사용자의 피부 상태는 {recent_result} 입니다.
+
+        [사용자 피부 고민]
+        - 최근 피부 진단 결과에서 미흡한 부분: {bad_conditions_text}
+
+        [해결 성분]
+        - {', '.join(selected_ingredients)}
+
+        [추천 제품]
+        {recommended_text}
 
         질문: {message}
         답변: 
