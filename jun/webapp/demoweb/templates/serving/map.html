@@ -14,7 +14,13 @@
         };
     </script>
     <style>
-        #map { width: 100%; height: 500px; }
+        #map { 
+            width: 100%; 
+            height: 500px;
+            border: 3px solid black;
+            box-sizing: border-box;
+            border-radius: 10px; 
+        }
         #hospital-details {
             margin-top: 20px;
             border-collapse: collapse;
@@ -50,13 +56,33 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header">
+<<<<<<< HEAD
                 <strong>내 위치 기준 피부과 병원 검색</strong>
+=======
+            <strong>내 위치 기준 피부과 병원 검색</strong>
+            <a href="javascript:" id="tooltipBtn" class="btn btn-light">상세 설명</a>
+            <!-- <a href="javascript:" id="tooltipBtn" class="btn btn-primary btn-sm">상세 설명</a> -->
+                <div id="tooltip" class="tooltip1" style="display:none;">
+                    '내 위치 가져오기'를 클릭하면 거리 기반 가까운 피부과를 찾습니다.<br> 
+                    <strong>병원 설명</strong><br>
+                    <strong>빨간색 마커:</strong>
+                    피부질환 진료가 가능한 전문의 병원입니다.<br>
+                    <strong>초록색 마커:</strong>
+                    미용 목적의 피부과 병원입니다.</div><br>
+                </div>
+>>>>>>> abdd61415f16b22dd7a36ff4b1447b3d29d25afd
             </div>
             <div class="card-body card-block">
                 <form id ="form-predict" class="form-horizontal"
                       action = "/serving/predict/" method="POST" enctype="multipart/form-data">
+<<<<<<< HEAD
                 <button onclick="getUserLocation()">내 위치 가져오기</button>
                 <p id="status">위치를 가져오는 중...</p>
+=======
+                <a href="javascript:" onclick="getUserLocation()" class="btn btn-outline-dark">내 위치 가져오기</a>
+                <!-- <a href="javascript:" onclick="getUserLocation()" class="btn btn-primary btn-sm">내 위치 가져오기</a> -->
+                <p id="status"></p>
+>>>>>>> abdd61415f16b22dd7a36ff4b1447b3d29d25afd
                 <div id="map"></div>
 
                 <!-- 병원 상세 정보 표시 테이블 -->
@@ -251,6 +277,31 @@
                             })
                             .catch(error => console.error("JSON 파일 로드 실패:", error));
                     };
+<<<<<<< HEAD
     </script>
 </body>
+=======
+
+    </script>
+</body>
+{% endblock %}
+
+{% block js_block %}
+<script>
+$(function(){
+    const tooltipBtn = document.getElementById('tooltipBtn');
+    const tooltipText = document.getElementById('tooltip');
+
+    tooltipBtn.addEventListener('mouseenter', (event) => {
+
+        tooltipText.style.display = 'block';
+    });
+
+    tooltipBtn.addEventListener('mouseleave', (event) => {
+
+        tooltipText.style.display = 'none';
+    });
+    });
+</script>
+>>>>>>> abdd61415f16b22dd7a36ff4b1447b3d29d25afd
 {% endblock %}

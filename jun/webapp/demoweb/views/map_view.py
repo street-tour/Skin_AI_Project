@@ -1,4 +1,4 @@
-from flask import Blueprint, render_template, jsonify
+from flask import Blueprint, render_template, jsonify, redirect
 import json
 import os
 from flask import request, url_for, session
@@ -12,7 +12,10 @@ map_bp = Blueprint("map", __name__, url_prefix="/serving")
 
 @map_bp.route("/map/")
 def map():
-    return render_template("serving/map.html")
+    if not session.get('loginuser'):
+        return redirect(url_for('auth.login'))
+    else:
+        return render_template("serving/map.html")
 
 @map_bp.route('/api/hospitals')
 def get_hospitals():
