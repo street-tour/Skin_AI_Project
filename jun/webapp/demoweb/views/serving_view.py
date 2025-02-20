@@ -195,7 +195,11 @@ def disease():
 
 @serving_bp.route("/predict2/", methods=["POST"])
 def predict2():
-    
+
+    memberid=session['loginuser'].get('memberid')
+    index_util.insert_test_table(memberid=memberid)
+    tryno = index_util.select_tryno(memberid=memberid)
+
     from PIL import Image
     from tensorflow import keras as tf_keras
     import numpy as np
@@ -257,6 +261,8 @@ def predict2():
         result_text = "사마귀, 전염성 및 기타 바이러스 감염"
     else:
         result_text ="지성-건성 피부 타입"
+
+    index_util.insert_skin_test(model="질병분류" ,result=result_text, confidence=confidence, tryno=tryno)
 
     return jsonify({
         "result": "success",

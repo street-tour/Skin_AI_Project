@@ -53,3 +53,18 @@ def insert_skin_test(model, result, confidence, tryno):
 
     cursor.close()
     conn.close()
+
+# def insert_disease_test(memberid, result, confidence):
+#     conn = pymysql.connect(host="192.168.0.31", port=3306, db ='skin',
+#                            user='humanda', passwd='humanda')
+#     cursor = conn.cursor()
+
+#     sql = """insert into disease_test(memberid, result, confidence)
+#              values(%s, %s,%s)"""
+    
+#     cursor.execute(sql, [memberid, result, confidence])
+
+#     conn.commit()
+
+#     cursor.close()
+#     conn.close()
