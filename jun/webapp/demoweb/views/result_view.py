@@ -41,9 +41,10 @@ def list():
     # print(tryno_list)  # 추출된 tryno 값 리스트 출력
 
     model_list = ['eyewrinkles', 'lips', 'chin', 'forehead_1', 'forehead_2', 'cheeks', 'glabella']
+    model_list_jun = ['눈가주름', '입술', '턱', '이마-색소침착', '이마-주름', '볼', '미간', '여드름','질병분류']
 
     recent_result = {}
-    for mo in model_list:
+    for mo in model_list_jun:
         v = result_util.select_result_by_memberid_and_model(memberid, mo)
         recent_result.update({mo:v})
 
