@@ -1,12 +1,26 @@
-<!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+{% extends 'base_with_layout.html' %}
+
+{% block content %}
     <title>카카오맵 병원 검색</title>
-    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=b2d548ba9b894bddd48ca204ae24988b&libraries=services"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=e0f41a4d816847e2c93554533d265199&libraries=services"></script>
+    <script type="text/javascript">
+        window.onload = function () {
+            if (typeof kakao !== "undefined") {
+                console.log("카카오맵 API 로드 완료");
+                kakao.maps.load(initializeMap); // API 로드 후 실행
+            } else {
+                console.error("카카오맵 API 로드 실패!");
+            }
+        };
+    </script>
     <style>
-        #map { width: 100%; height: 500px; }
+        #map { 
+            width: 100%; 
+            height: 500px;
+            border: 3px solid black;
+            box-sizing: border-box;
+            border-radius: 10px; 
+        }
         #hospital-details {
             margin-top: 20px;
             border-collapse: collapse;
@@ -38,196 +52,242 @@
     </style>
 </head>
 <body>
-    <h2>내 위치 기준 피부과 병원 검색</h2>
-    <button onclick="getUserLocation()">내 위치 가져오기</button>
-    <p id="status">위치를 가져오는 중...</p>
-    <div id="map"></div>
+<div class = 'row'>
+    <div class="col-lg-12">
+        <div class="card">
+            <div class="card-header">
+            <strong>내 위치 기준 피부과 병원 검색</strong>
+            <a href="javascript:" id="tooltipBtn" class="btn btn-light">상세 설명</a>
+            <!-- <a href="javascript:" id="tooltipBtn" class="btn btn-primary btn-sm">상세 설명</a> -->
+                <div id="tooltip" class="tooltip1" style="display:none;">
+                    '내 위치 가져오기'를 클릭하면 거리 기반 가까운 피부과를 찾습니다.<br> 
+                    <strong>병원 설명</strong><br>
+                    <strong>빨간색 마커:</strong>
+                    피부질환 진료가 가능한 전문의 병원입니다.<br>
+                    <strong>초록색 마커:</strong>
+                    미용 목적의 피부과 병원입니다.</div><br>
+                </div>
+            </div>
+            <div class="card-body card-block">
+                <form id ="form-predict" class="form-horizontal"
+                      action = "/serving/predict/" method="POST" enctype="multipart/form-data">
+                <a href="javascript:" onclick="getUserLocation()" class="btn btn-outline-dark">내 위치 가져오기</a>
+                <!-- <a href="javascript:" onclick="getUserLocation()" class="btn btn-primary btn-sm">내 위치 가져오기</a> -->
+                <p id="status"></p>
+                <div id="map"></div>
 
-    <!-- 병원 상세 정보 표시 테이블 -->
-    <table id="hospital-details">
-        <tr>
-            <th>병원이름</th>
-            <th>주소</th>
-            <th>의사이름</th>
-            <th>전화번호</th>
-            <th>거리 (km)</th>
-        </tr>
-        <tr>
-            <td id="hospital-name">-</td>
-            <td id="hospital-address">-</td>
-            <td id="doctor-name">-</td>
-            <td id="hospital-phone">-</td>
-            <td id="hospital-distance">-</td>
-        </tr>
-    </table>
+                <!-- 병원 상세 정보 표시 테이블 -->
+                <table id="hospital-details">
+                    <tr>
+                        <th>병원이름</th>
+                        <th>주소</th>
+                        <th>의사이름</th>
+                        <th>전화번호</th>
+                        <th>거리 (km)</th>
+                    </tr>
+                    <tr>
+                        <td id="hospital-name">-</td>
+                        <td id="hospital-address">-</td>
+                        <td id="doctor-name">-</td>
+                        <td id="hospital-phone">-</td>
+                        <td id="hospital-distance">-</td>
+                    </tr>
+                </table>
 
-    <script>
-        let map, userMarker;
-        let userLat, userLng;
-        let hospitals = [];
+                <script>
+                    let map, userMarker;
+                    let userLat, userLng;
+                    let hospitals = [];
 
-        function initializeMap() {
-            console.log("카카오맵 API 로드 완료");
+                    function initializeMap() {
+                        console.log("카카오맵 API 로드 완료");
 
-            getUserLocation();
-        }
-
-        // SVG 마커 아이콘 정의
-        function createSVGMarker(color) {
-            return new kakao.maps.MarkerImage(
-                `data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
-                    <path fill="${color}" d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z"/>
-                </svg>`,
-                new kakao.maps.Size(24, 35)
-            );
-        }
-
-        const userMarkerImage = createSVGMarker("blue");    // 사용자
-        const redMarkerImage = createSVGMarker("red");      // 전문의
-        const greenMarkerImage = createSVGMarker("green");  // 비전문의
-
-        // 병원 정보 업데이트 함수
-        function updateHospitalDetails(name, address, doctor, phone, distance) {
-            document.getElementById("hospital-name").textContent = name;
-            document.getElementById("hospital-address").textContent = address;
-            document.getElementById("doctor-name").textContent = doctor;
-            document.getElementById("hospital-phone").textContent = phone;
-            document.getElementById("hospital-distance").textContent = `${distance.toFixed(2)} km`;
-            document.getElementById("hospital-details").style.display = "table";
-        }
-
-        // 지도 초기화
-        function initMap(lat, lng) {
-            userLat = lat;
-            userLng = lng;
-            let container = document.getElementById('map');
-            let options = { center: new kakao.maps.LatLng(lat, lng), level: 5 };
-            map = new kakao.maps.Map(container, options);
-
-            userMarker = new kakao.maps.Marker({
-                position: new kakao.maps.LatLng(lat, lng),
-                map: map,
-                image: userMarkerImage 
-            });
-
-            geocodeHospitals(lat, lng);
-        }
-
-        // 내 위치 가져오기
-        function getUserLocation() {
-            if (navigator.geolocation) {
-                navigator.geolocation.getCurrentPosition(
-                    (position) => {
-                        let lat = position.coords.latitude;
-                        let lng = position.coords.longitude;
-                        document.getElementById('status').innerText = `내 위치: ${lat}, ${lng}`;
-                        initMap(lat, lng);
-                    },
-                    () => {
-                        document.getElementById('status').innerText = "위치 정보를 가져올 수 없습니다.";
-                    }
-                );
-            } else {
-                document.getElementById('status').innerText = "브라우저가 위치 정보를 지원하지 않습니다.";
-            }
-        }
-
-        // 병원의 주소를 검색 후 지도에 마커 추가
-        function geocodeHospitals(userLat, userLng) {
-            let geocoder = new kakao.maps.services.Geocoder();
-            hospitals.forEach(hospital => {
-                let addressParts = hospital.address.split(" ");
-                let addressToSearch = hospital.address;
-
-                function searchAddressRecursive(index) {
-                    if (index >= addressParts.length) {
-                        console.error(`검색 실패: ${hospital.hospital_name}, 주소: ${hospital.address}`);
-                        return;
+                        getUserLocation();
                     }
 
-                    geocoder.addressSearch(addressToSearch, function(result, status) {
-                        if (status === kakao.maps.services.Status.OK) {
-                            let hospitalLat = result[0].y;
-                            let hospitalLng = result[0].x;
-                            let distance = calculateDistance(userLat, userLng, hospitalLat, hospitalLng);
+                    // SVG 마커 아이콘 정의
+                    function createSVGMarker(color) {
+                        const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24">
+                                        <path fill="${color}" d="M12 2C8.1 2 5 5.1 5 9c0 5.3 7 13 7 13s7-7.7 7-13c0-3.9-3.1-7-7-7zm0 9.5c-1.4 0-2.5-1.1-2.5-2.5S10.6 6.5 12 6.5s2.5 1.1 2.5 2.5-1.1 2.5-2.5 2.5z"/>
+                                    </svg>`;
 
-                            console.log(`주소: ${hospital.hospital_name} → ${addressToSearch}`);
+                        const blob = new Blob([svg], { type: 'image/svg+xml' });
+                        return URL.createObjectURL(blob);
+                    }
 
-                            addHospitalMarker(
-                                hospitalLat, 
-                                hospitalLng, 
-                                hospital.hospital_name, 
-                                addressToSearch, 
-                                hospital.doctor_name, 
-                                hospital.number, 
-                                hospital.dermatologist,
-                                distance
+                    // 마커 이미지 생성
+                    const userMarkerImage = new kakao.maps.MarkerImage(createSVGMarker("blue"), new kakao.maps.Size(40, 40));
+                    const redMarkerImage = new kakao.maps.MarkerImage(createSVGMarker("red"), new kakao.maps.Size(40, 40));
+                    const greenMarkerImage = new kakao.maps.MarkerImage(createSVGMarker("green"), new kakao.maps.Size(40, 40));
+
+                    // 병원 정보 업데이트 함수
+                    function updateHospitalDetails(name, address, doctor, phone, distance) {
+                        document.getElementById("hospital-name").textContent = name;
+                        document.getElementById("hospital-address").textContent = address;
+                        document.getElementById("doctor-name").textContent = doctor;
+                        document.getElementById("hospital-phone").textContent = phone;
+                        document.getElementById("hospital-distance").textContent = `${distance.toFixed(2)} km`;
+                        document.getElementById("hospital-details").style.display = "table";
+                    }
+
+                    // 지도 초기화
+                    function initMap(lat, lng) {
+                        console.log("🗺️ 지도 초기화 중...");
+                        
+                        let container = document.getElementById('map');
+                        let options = { center: new kakao.maps.LatLng(lat, lng), level: 5 };
+                        
+                        map = new kakao.maps.Map(container, options);
+
+                        userMarker = new kakao.maps.Marker({
+                            position: new kakao.maps.LatLng(lat, lng),
+                            map: map
+                        });
+
+                        console.log("✅ 지도 생성 완료");
+                        geocodeHospitals(lat, lng);
+                    }
+
+                    // 내 위치 가져오기
+                    function getUserLocation() {
+                        if (navigator.geolocation) {
+                            navigator.geolocation.getCurrentPosition(
+                                (position) => {
+                                    let lat = position.coords.latitude;
+                                    let lng = position.coords.longitude;
+                                    document.getElementById('status').innerText = `내 위치: ${lat}, ${lng}`;
+                                    
+                                    kakao.maps.load(function() {
+                                        initMap(lat, lng);
+                                    });
+                                },
+                                () => {
+                                    document.getElementById('status').innerText = "위치 정보를 가져올 수 없습니다.";
+                                }
                             );
                         } else {
-                            console.warn(`검색 실패, 다음 시도: ${addressToSearch}`);
-                            addressToSearch = addressParts.slice(0, addressParts.length - (index + 1)).join(" ");
-                            searchAddressRecursive(index + 1);
+                            document.getElementById('status').innerText = "브라우저가 위치 정보를 지원하지 않습니다.";
                         }
-                    });
-                }
+                    }
 
-                searchAddressRecursive(0);
-            });
-        }
+                    // 병원의 주소를 검색 후 지도에 마커 추가
+                    function geocodeHospitals(userLat, userLng) {
+                        let geocoder = new kakao.maps.services.Geocoder();
 
-        // 병원 마커 추가 함수
-        function addHospitalMarker(lat, lng, name, address, doctor, phone, dermatologist, distance) {
-            let markerImage = dermatologist === "Yes" ? redMarkerImage : greenMarkerImage;
+                        hospitals.forEach(hospital => {
+                            let addressToSearch = hospital.address;
 
-            let marker = new kakao.maps.Marker({
-                position: new kakao.maps.LatLng(lat, lng),
-                map: map,
-                image: markerImage
-            });
+                            geocoder.addressSearch(addressToSearch, function(result, status) {
+                                if (status === kakao.maps.services.Status.OK) {
+                                    let hospitalLat = parseFloat(result[0].y);
+                                    let hospitalLng = parseFloat(result[0].x);
+                                    let distance = calculateDistance(userLat, userLng, hospitalLat, hospitalLng);
 
-            let infowindow = new kakao.maps.InfoWindow({
-                content: `<div style="padding:5px;"><b>${name}</b> - ${distance.toFixed(2)} km</div>`
-            });
+                                    console.log(`✅ ${hospital.hospital_name} 주소 변환 성공 → ${hospitalLat}, ${hospitalLng}`);
 
-            let isOpen = false;
-
-            // 마커 클릭 이벤트
-            kakao.maps.event.addListener(marker, 'click', function () {
-                if (isOpen) {
-                    infowindow.close();
-                } else {
-                    infowindow.open(map, marker);
-                    updateHospitalDetails(name, address, doctor, phone, distance);
-                }
-                isOpen = !isOpen;
-            });
-        }
-
-        // 두 지점 간의 거리 계산
-        function calculateDistance(lat1, lon1, lat2, lon2) {
-            function toRad(value) { return value * Math.PI / 180; }
-            
-            let R = 6371; // 지구 반지름 (km)
-            let dLat = toRad(lat2 - lat1);
-            let dLon = toRad(lon2 - lon1);
-            
-            let a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
-                    Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
-                    Math.sin(dLon / 2) * Math.sin(dLon / 2);
-            let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-            
-            return R * c;
-        }
+                                    addHospitalMarker(
+                                        hospitalLat, 
+                                        hospitalLng, 
+                                        hospital.hospital_name, 
+                                        hospital.address, 
+                                        hospital.doctor_name, 
+                                        hospital.number, 
+                                        hospital.dermatologist,
+                                        distance
+                                    );
+                                } else {
+                                    console.warn(`주소 변환 실패: ${hospital.hospital_name}, 주소: ${hospital.address}`);
+                                }
+                            });
+                        });
+                    }
 
 
-        window.onload = function() {
-            fetch('/static/hospital_data.json')
-                .then(response => response.json())
-                .then(data => {
-                    hospitals = data;
-                })
-                .catch(error => console.error("JSON 파일 로드 실패:", error));
-        };
+                    // 병원 마커 추가 함수
+                    function addHospitalMarker(lat, lng, name, address, doctor, phone, dermatologist, distance) {
+                        if (!lat || !lng || isNaN(lat) || isNaN(lng)) {
+                            console.error(`잘못된 좌표: ${name}, lat=${lat}, lng=${lng}`);
+                            return;
+                        }
+
+                        lat = parseFloat(lat);
+                        lng = parseFloat(lng);
+
+                        let markerImage = dermatologist === "Yes" ? redMarkerImage : greenMarkerImage;
+
+                        let position = new kakao.maps.LatLng(lat, lng);
+
+                        let marker = new kakao.maps.Marker({
+                            position: position,
+                            map: map,
+                            image: markerImage
+                        });
+
+                        let infowindow = new kakao.maps.InfoWindow({
+                            content: `<div style="padding:5px;"><b>${name}</b> - ${distance.toFixed(2)} km</div>`
+                        });
+
+                        let previousInfowindow = null;
+
+                        kakao.maps.event.addListener(marker, 'click', function () {
+                            if (previousInfowindow) {
+                                previousInfowindow.close();
+                            } else {
+                                infowindow.open(map, marker);
+                                updateHospitalDetails(name, address, doctor, phone, distance);
+                            }
+                            previousInfowindow = infowindow;
+                        });
+
+                        console.log(`마커 추가: ${name}, 좌표: (${lat}, ${lng})`);
+                    }
+
+
+                    // 두 지점 간의 거리 계산
+                    function calculateDistance(lat1, lon1, lat2, lon2) {
+                        function toRad(value) { return value * Math.PI / 180; }
+                        
+                        let R = 6371; // 지구 반지름 (km)
+                        let dLat = toRad(lat2 - lat1);
+                        let dLon = toRad(lon2 - lon1);
+                        
+                        let a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+                                Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+                                Math.sin(dLon / 2) * Math.sin(dLon / 2);
+                        let c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                        
+                        return R * c;
+                    }
+
+
+                    window.onload = function() {
+                        fetch('/static/hospital_data.json')
+                            .then(response => response.json())
+                            .then(data => {
+                                hospitals = data;
+                            })
+                            .catch(error => console.error("JSON 파일 로드 실패:", error));
+                    };
+
     </script>
 </body>
-</html>
+{% endblock %}
+
+{% block js_block %}
+<script>
+$(function(){
+    const tooltipBtn = document.getElementById('tooltipBtn');
+    const tooltipText = document.getElementById('tooltip');
+
+    tooltipBtn.addEventListener('mouseenter', (event) => {
+
+        tooltipText.style.display = 'block';
+    });
+
+    tooltipBtn.addEventListener('mouseleave', (event) => {
+
+        tooltipText.style.display = 'none';
+    });
+    });
+</script>
+{% endblock %}
