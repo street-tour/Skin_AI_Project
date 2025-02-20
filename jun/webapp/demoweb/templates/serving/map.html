@@ -56,9 +56,6 @@
     <div class="col-lg-12">
         <div class="card">
             <div class="card-header">
-<<<<<<< HEAD
-                <strong>내 위치 기준 피부과 병원 검색</strong>
-=======
             <strong>내 위치 기준 피부과 병원 검색</strong>
             <a href="javascript:" id="tooltipBtn" class="btn btn-light">상세 설명</a>
             <!-- <a href="javascript:" id="tooltipBtn" class="btn btn-primary btn-sm">상세 설명</a> -->
@@ -70,19 +67,11 @@
                     <strong>초록색 마커:</strong>
                     미용 목적의 피부과 병원입니다.</div><br>
                 </div>
->>>>>>> abdd61415f16b22dd7a36ff4b1447b3d29d25afd
             </div>
             <div class="card-body card-block">
-                <form id ="form-predict" class="form-horizontal"
-                      action = "/serving/predict/" method="POST" enctype="multipart/form-data">
-<<<<<<< HEAD
-                <button onclick="getUserLocation()">내 위치 가져오기</button>
-                <p id="status">위치를 가져오는 중...</p>
-=======
                 <a href="javascript:" onclick="getUserLocation()" class="btn btn-outline-dark">내 위치 가져오기</a>
                 <!-- <a href="javascript:" onclick="getUserLocation()" class="btn btn-primary btn-sm">내 위치 가져오기</a> -->
                 <p id="status"></p>
->>>>>>> abdd61415f16b22dd7a36ff4b1447b3d29d25afd
                 <div id="map"></div>
 
                 <!-- 병원 상세 정보 표시 테이블 -->
@@ -277,10 +266,6 @@
                             })
                             .catch(error => console.error("JSON 파일 로드 실패:", error));
                     };
-<<<<<<< HEAD
-    </script>
-</body>
-=======
 
     </script>
 </body>
@@ -303,5 +288,4 @@ $(function(){
     });
     });
 </script>
->>>>>>> abdd61415f16b22dd7a36ff4b1447b3d29d25afd
 {% endblock %}
