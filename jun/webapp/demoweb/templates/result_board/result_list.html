@@ -9,13 +9,14 @@
                 <table class="table table-striped">
                   <thead>
                       <tr>
-                          <th class="text" style="text-align: center;">forehead_1</th>
-                          <th class="text" style="text-align: center;">forehead_2</th>
-                          <th class="text" style="text-align: center;">lips</th>
-                          <th class="text" style="text-align: center;">chin</th>
-                          <th class="text" style="text-align: center;">eyewrinkles</th>
-                          <th class="text" style="text-align: center;">glabella</th>
-                          <th class="text" style="text-align: center;">cheeks</th>
+                          <th class="text" style="text-align: center;">이마(색소)</th>
+                          <th class="text" style="text-align: center;">이마(주름)</th>
+                          <th class="text" style="text-align: center;">입술(건조)</th>
+                          <th class="text" style="text-align: center;">턱(주름)</th>
+                          <th class="text" style="text-align: center;">눈가(주름)</th>
+                          <th class="text" style="text-align: center;">미간</th>
+                          <th class="text" style="text-align: center;">볼</th>
+                          <th class="text" style="text-align: center;">여드름</th>
                           <th class="text" style="text-align: center;">피부질환</th>
                           <th class="text" style="text-align: center;">마지막검사일</th>
                       </tr>
@@ -23,21 +24,16 @@
                   <tbody>
                     {% if skin_test %}
                     <tr>
-                        <td class="text" style="text-align: center;">{{recent_result['forehead_1']}}</td>
-                        <td class="text" style="text-align: center;">{{recent_result['forehead_2']}}</td>
-                        <td class="text" style="text-align: center;">{{recent_result['lips']}}</td>
-                        <td class="text" style="text-align: center;">{{recent_result['chin']}}</td>
-                        <td class="text" style="text-align: center;">{{recent_result['eyewrinkles']}}</td>
-                        <td class="text" style="text-align: center;">{{recent_result['glabella']}}</td>
-                        <td class="text" style="text-align: center;">{{recent_result['cheeks']}}</td>
-                        <td class="text" style="text-align: center;">{{recent_disease[0]}}</td>
-                        <td class="text" style="text-align: center;">
-                          {% if skin_test[-1]['testdate'] > recent_disease[1] %}
-                              {{ skin_test[-1]['testdate'] }}
-                          {% else %}
-                              {{ recent_disease[1] }}
-                          {% endif %}
-                        </td>
+                        <td class="text" style="text-align: center;">{{recent_result['이마-색소침착']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['이마-주름']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['입술']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['턱']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['눈가주름']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['미간']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['볼']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['여드름']}}</td>
+                        <td class="text" style="text-align: center;">{{recent_result['질병분류']}}</td>
+                        <td class="text" style="text-align: center;">{{ skin_test[-1]['testdate'] }}</td>
                     </tr>
                     {% else %}
                     <tr>
@@ -97,23 +93,25 @@
                                                 <th class="text" style="text-align: center;">눈주름</th>
                                                 <th class="text" style="text-align: center;">미간</th>
                                                 <th class="text" style="text-align: center;">볼</th>
+                                                <th class="text" style="text-align: center;">여드름</th>
                                                 <th class="text" style="text-align: center;">피부질환</th>
-                                                <th class="text" style="text-align: center;">마지막검사일</th>
+                                                <!-- <th class="text" style="text-align: center;">검사일자</th> -->
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th class="text" style="text-align: center;">결과</th>
                                                 {% set select_skin_test = select_skin_test.get(test['tryno'], None) %}
-                                                <td class="text" style="text-align: center;">{{ select_skin_test['forehead_1'] if select_skin_test['forehead_1'] else '결과없음' }}</td>
-                                                <td class="text" style="text-align: center;">{{ select_skin_test['forehead_2'] if select_skin_test['forehead_2'] else '결과없음' }}</td>
-                                                <td class="text" style="text-align: center;">{{ select_skin_test['lips'] if select_skin_test['lips'] else '결과없음' }}</td>
-                                                <td class="text" style="text-align: center;">{{ select_skin_test['chin'] if select_skin_test['chin'] else '결과없음' }}</td>
-                                                <td class="text" style="text-align: center;">{{ select_skin_test['eyewrinkles'] if select_skin_test['eyewrinkles'] else '결과없음' }}</td>
-                                                <td class="text" style="text-align: center;">{{ select_skin_test['glabella'] if select_skin_test['glabella'] else '결과없음' }}</td>
-                                                <td class="text" style="text-align: center;">{{ select_skin_test['cheeks'] if select_skin_test['cheeks'] else '결과없음' }}</td>
-                                                <td class="text" style="text-align: center;">{{ select_skin_test['disease'] if select_skin_test['disease'] else '결과없음' }}</td>
-                                                <td class="text" style="text-align: center;">{{ test['testdate'] }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['이마-색소침착'] if select_skin_test['이마-색소침착'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['이마-주름'] if select_skin_test['이마-주름'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['입술'] if select_skin_test['입술'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['턱'] if select_skin_test['턱'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['눈가주름'] if select_skin_test['눈가주름'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['미간'] if select_skin_test['미간'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['볼'] if select_skin_test['볼'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['여드름'] if select_skin_test['여드름'] else '결과없음' }}</td>
+                                                <td class="text" style="text-align: center;">{{ select_skin_test['질병분류'] if select_skin_test['질병분류'] else '결과없음' }}</td>
+                                                <!--<td class="text" style="text-align: center;">{{ test['testdate'] }}</td> -->
                                             </tr>
                                         </tbody>
                                     </table>
@@ -204,7 +202,7 @@ $(function(){
 
 document.addEventListener('DOMContentLoaded', function () {
     // 모든 Collapse 요소에 이벤트 리스너 추가
-    const collapseElements = document.querySelectorAll('[data-toggle="collapse"]');
+    const collapseElements = document.querySelectorAll('a.toggle-icon');
     collapseElements.forEach(element => {
       element.addEventListener('click', function (event) {
         event.preventDefault(); // 기본 동작 방지
