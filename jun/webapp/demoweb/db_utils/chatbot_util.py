@@ -126,9 +126,10 @@ Skin_Concerns = {
 def get_ingredients_for_conditions(conditions):
     "bad skin 리스트에 대한 추천 성분 반환"
     selected_ingredients = []
-    for condition in conditions:
-        if condition in Skin_Concerns:
-            selected_ingredients.extend(Skin_Concerns[condition])
+    if conditions:
+        for condition in conditions:
+            if condition in Skin_Concerns:
+                selected_ingredients.extend(Skin_Concerns[condition])
 
     return list(set(selected_ingredients))
 
@@ -164,3 +165,4 @@ def recommended_best_products(ingredients):
         {"product_no": pid, "category": cat, "product_name": name, "url": url}
         for pid, cat, name, url, _ in products
     ]
+
