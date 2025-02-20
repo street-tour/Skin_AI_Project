@@ -54,21 +54,25 @@ def handle_chat_text_with_custom_info2():
     # print(memberinfo[0][0])
     # print(recent_result)
     prompt = f"""
-        아래 고려사항을 반영하여 질문에 대한 답변을 생성하세요.
+        아래 **고려사항**과 **피부고민**을 반영하여 **지시사항**에 따라 질문에 대한 답변을 생성하세요.
+
+        [지시사항]
+        화장품 추천에 대한 질문인 경우 **추천제품** 내용을 기반으로 답변을 생성하세요
+        화장품 추천이 아닌 경우 다른 정보와 당신의 기존 학습 내용을 기반으로 답변을 생성하세요
         
-        [사용자 정보 고려사항]
+        [고려사항]
         1. 사용자의 성별은 {memberinfo[0][0]}  입니다.
         2. 사용자의 피부타입은 {memberinfo[0][1]} 입니다.
         3. 사용자의 나이는 {memberinfo[0][2]} 입니다.
         4. 사용자의 피부 상태는 {recent_result} 입니다.
 
-        [사용자 피부 고민]
+        [피부고민]
         - 최근 피부 진단 결과에서 미흡한 부분: {bad_conditions_text}
 
-        [해결 성분]
+        [해결성분]
         - {', '.join(selected_ingredients)}
 
-        [추천 제품]
+        [추천제품]
         {recommended_text}
 
         질문: {message}
