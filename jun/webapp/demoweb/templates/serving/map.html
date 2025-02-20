@@ -227,16 +227,16 @@
                             content: `<div style="padding:5px;"><b>${name}</b> - ${distance.toFixed(2)} km</div>`
                         });
 
-                        let previousInfowindow = null;
+                        let isOpen = false;
 
                         kakao.maps.event.addListener(marker, 'click', function () {
-                            if (previousInfowindow) {
-                                previousInfowindow.close();
+                            if (isOpen) {
+                                infowindow.close();
                             } else {
                                 infowindow.open(map, marker);
                                 updateHospitalDetails(name, address, doctor, phone, distance);
                             }
-                            previousInfowindow = infowindow;
+                            isOpen =! isOpen;
                         });
 
                         console.log(`마커 추가: ${name}, 좌표: (${lat}, ${lng})`);
