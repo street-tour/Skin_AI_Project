@@ -8,11 +8,11 @@ import uuid
 from pathlib import Path
 
 
-map_bp = Blueprint("map", __name__, url_prefix="/map")
+map_bp = Blueprint("map", __name__, url_prefix="/serving")
 
-@map_bp.route("/kakao/")
+@map_bp.route("/map/")
 def map():
-    return render_template("map/kakao.html")
+    return render_template("serving/map.html")
 
 @map_bp.route('/api/hospitals')
 def get_hospitals():
