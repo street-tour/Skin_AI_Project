@@ -6,7 +6,7 @@
         <div class="card">
             <div class="card-header">
                 <strong>질병 상태 진단 서비스</strong>
-                <button id="tooltipBtn">?</button>
+                <a href="javascript:" id="tooltipBtn" class="btn btn-light">상세 설명</a>
                 <div id="tooltip" class="tooltip1" style="display:none;">
                     이 사이트는 사용자가 피부 질환이 의심되는 부위를 근접 촬영하여 업로드하면,<br> 
                     분석을 통해 질환 상태를 확인할 수 있도록 돕습니다.<br><br>
@@ -120,7 +120,7 @@ $(function(){
                 "processData": false, // 파일 업로드를 위한 설정
                 "success": function(result, status, xhr) { // 요청에 대한 응답이 오면 호출
                     //alert(result);
-                    msg = `[번호 : ${result.predicted_class}][신뢰도 : ${result.confidence}]`;
+                    msg = ` 상태 : ${result.predicted_class} \t 신뢰도 : ${result.confidence}`;
                     $("#result").val(msg);
                 },
                 "error": function(xhr, status, err) { // 요청이 실패하면 호출
