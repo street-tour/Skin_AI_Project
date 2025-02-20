@@ -87,7 +87,7 @@ def select_board_by_boardno(boardno, result_type='list'):
 
     cursor.close()
     conn.close()
-    if len(rows) ==0:
+    if not rows:
         return None
     elif result_type =='list':
         return rows[0]
@@ -143,8 +143,8 @@ def select_board_list_with_paging(start, page_size, result_type="list"):
 
     cursor.close()
     conn.close()
-    if len(rows) ==0:
-        return None
+    if not rows:
+        return []
     elif result_type =='list':
         return rows
     else:
