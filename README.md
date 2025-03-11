@@ -1,4 +1,4 @@
-# Final Project
+# 개인 맞춤형 뷰티 및 피부 진단 AI
 
 ## Data Set
 - 한국인 피부상태 데이터 (AIhub, 20기가)  [URL](https://www.aihub.or.kr/aihubdata/data/view.do?currMenu=&topMenu=&aihubDataSe=data&dataSetSn=71645)
